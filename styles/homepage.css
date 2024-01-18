@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(0, 0, 0);
+}
+h2 {
+    font-weight: lighter;
+    font-size: 0.75em;
+    text-align: center;
+    /* background-color: rgb(0, 0, 0); */
+    color: rgb(0, 255, 0);
+    margin: 6px;
+    position: absolute;
+    top: 8%;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+div {
+    position: relative;
+    text-align: center;
+    color: red;
+}
+h3 {
+    font-weight: lighter;
+    font-size: 1em;
+}
+h3.sound {
+    position: absolute;
+    top: 22%;
+    right: 3%;
+    display: block;
+    margin: auto;
+}
+h3.main {
+    position: absolute;
+    top: 30%;
+    left:10%;
+    display: block;
+    margin: auto;
+}
+@media only screen and (min-width: 700px) {
+    img {
+        height: 90%;
+        width: auto;
+    }
+    h2 {
+        font-size: 1.7em;
+        width: 90%;
+        left: 5%;
+    }
+    h3 {
+        font-size: 2.1em;
+    }
+    h3.main {
+        left: 16%;
+        top: 31%;
+    }
+    h3.sound {
+        right: 10%;
+        top: 23%;
+    }
+}
+@media only screen and (min-width: 980px) {
+    h2 {
+        width: 60%;
+        left: 20%;
+    }
+    h3.main {
+        left: 27%;
+        top: 31%;
+    }
+    h3.sound {
+        right: 24%;
+        top: 23%;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    h2 {
+        width: 45%;
+        left: 28%;
+    }
+    h3 {
+        font-size: 2.3em;
+    }
+    h3.main {
+        left: 32%;
+    }
+    h3.sound {
+        right: 30%;
+    }
+}
