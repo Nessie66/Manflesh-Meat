@@ -1,15 +1,5 @@
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="styles/homepage.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manflesh Meat</title>
-</head>
-<body>
-    <br><br>
-    <div>
-        <svg version="1.1" viewBox="0 0 1888 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  <defs>
+<svg version="1.1" viewBox="0 0 1888 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  <defs></defs>
     <filter id="filter1" x="-0.075523244" y="-0.094033946" width="1.1510465" height="1.1880679" color-interpolation-filters="sRGB">
       <feGaussianBlur
          stdDeviation="15.262511"
@@ -37,7 +27,7 @@
      id="image1" />
   <a
      id="a1"
-     xlink:href="main.html"
+     xlink:href="/manflesh-meat/main.html"
      xlink:title="monogastric zone">
     <path
        d="m306.45 1078.6c111.76 36.101 218.02 47.39 335.27 4.5512 39.447-80.799 110.85-168.41 47.788-220.73 6.4652-81.168-128.01-153.23-221.49-126.68-139.03-67.411-237.76 121.22-206.32 134.26-74.516 138.61-2.72 166.86 44.754 208.6z"
@@ -52,7 +42,7 @@
   </a>
   <a
      id="a2"
-     xlink:href="sound.html"
+     xlink:href="/manflesh-meat/sound.html"
      xlink:title="sound and music">
     <path
        style="opacity:0;fill:#8d8d8d;fill-opacity:0.43;filter:url(#filter2)"
@@ -64,13 +54,3 @@
        onload="this.style.opacity=0" />
   </a>
 </svg>
-
-        <h3 class="sound">   sound and music</h3>
-        <h3 class="main">monogastric zone</h3>
-        <h2>hey! GIRLWOLF DECADE DESTROYER! acid trail girl and
-        ten tonne damage first marriage. post apocalyptic fantasy of a 
-        girl do a twirl!
-        </h2>
-    </div>   
-</body>
-</html>
