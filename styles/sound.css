@@ -22,7 +22,8 @@ button {
 div.back {
     position: relative;
     display: block;
-    text-align: center;
+    position: relative;
+    bottom: 15.8%;
 }
 #leg {
     display: block;
@@ -47,14 +48,6 @@ a {
 a:active {
     color: white;
 }
-/* div.back {
-    margin: auto;
-
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-
-} */
 @media only screen and (min-width: 700px) {
     button {
         font-size: 0.8em;
@@ -64,6 +57,10 @@ a:active {
     }
     h2 {
         font-size: 2.5em;
+    }
+    div.back {
+        bottom: 24%;
+    
     }
     
 }
@@ -80,6 +77,12 @@ a:active {
     div.sound {
         position: relative;
         right: calc(0.2*100vw);
+    }
+    div.back {
+        position: absolute;
+        left: calc(0.2*100vw);
+        top:75%;
+    
     }
     div {
         margin:  1% 8%;
