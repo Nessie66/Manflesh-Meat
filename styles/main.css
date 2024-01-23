@@ -20,10 +20,32 @@ body {
     scrollbar-width: none;
     background-color: black;
 }
+h1 {
+    color: white;
+    font-size: 1.1em;
+}
+a {
+    color: white;
+    font-size: 0.9em;
+}
+button {
+    font-size: 0.7em;
+}
+div.posts {
+    position: absolute;
+    bottom: 92%;
+    left: 50%;
+}
+
+div.back {
+    position: absolute;
+    bottom: 92%;
+    left: 87%;
+}
 
 @media only screen and (min-aspect-ratio:1280/2267) {
     * {
-        overflow-y: scroll;
+        overflow-y: auto;
     }
     svg {
         width: 100%;
@@ -31,5 +53,36 @@ body {
     }
     
 }
+@media only screen and (min-width: 630px) {
+    div.posts {
+        bottom: 83%;
+    }
+    div.back {
+        bottom: 83%;
 
+    }
+    h1 {
+        font-size: 2.2em;
 
+    }
+    a {
+        font-size: 1.8em;
+    }
+    
+}
+@media only screen and (min-width: 970px) {
+    div.posts {
+        bottom: 82%;
+    }
+    div.back {
+        bottom: 82%;
+
+    }
+    h1 {
+        font-size: 2.5em;
+
+    }
+    a {
+        font-size: 2.1em;
+    }  
+}
