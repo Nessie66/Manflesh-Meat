@@ -41,6 +41,12 @@ div.sound {
     text-align: right;
     direction: rtl;
 }
+a {
+    color: blue;
+}
+a:active {
+    color: white;
+}
 /* div.back {
     margin: auto;
 
