@@ -22,25 +22,35 @@ body {
 }
 h1 {
     color: white;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 a {
     color: white;
-    font-size: 0.9em;
+    font-size: 0.7em;
+    margin: 0 5%;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: rgb(177, 177, 177);
+}
+a:active {
+    color: rgb(115, 115, 194);
 }
 button {
     font-size: 0.7em;
 }
 div.posts {
     position: absolute;
-    bottom: 92%;
+    bottom: 89%;
     left: 50%;
 }
 
 div.back {
     position: absolute;
-    bottom: 92%;
-    left: 87%;
+    bottom: 93.5%;
+    left: 4%;
 }
 
 @media only screen and (min-aspect-ratio:1280/2267) {
@@ -55,34 +65,34 @@ div.back {
 }
 @media only screen and (min-width: 630px) {
     div.posts {
-        bottom: 83%;
+        bottom: 81%;
     }
     div.back {
-        bottom: 83%;
+        bottom: 87%;
 
     }
     h1 {
-        font-size: 2.2em;
+        font-size: 1.9em;
 
     }
     a {
-        font-size: 1.8em;
+        font-size: 1.4em;
     }
     
 }
 @media only screen and (min-width: 970px) {
     div.posts {
-        bottom: 82%;
+        bottom: 72%;
     }
     div.back {
-        bottom: 82%;
+        bottom: 79%;
 
     }
     h1 {
-        font-size: 2.5em;
+        font-size: 2.4em;
 
     }
     a {
-        font-size: 2.1em;
+        font-size: 1.8em;
     }  
 }
