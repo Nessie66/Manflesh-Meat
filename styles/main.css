@@ -3,6 +3,7 @@
     margin: 0;
     overflow: hidden;
     -webkit-tap-highlight-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -52,6 +53,9 @@ div.back {
     position: absolute;
     bottom: 93.5%;
     left: 4%;
+}
+button {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media only screen and (min-aspect-ratio:1280/2267) {
