@@ -11,7 +11,7 @@ img#img1 {
     width: 80%;
     height: auto;
     display: block;
-    margin: 10% auto 5% auto;
+    margin: 5% auto 5% auto;
 }
 
 h1 {
@@ -45,6 +45,13 @@ div.images2 img {
     margin: 5% auto 5% auto;
 }
 
+div.back {
+    text-align: right;
+    position: relative;
+    top: 47%;
+    right: 2%;
+}
+
 
 @media only screen and (min-width: 500px) {
     img#img1 {
@@ -63,12 +70,16 @@ div.images2 img {
 @media only screen and (min-width: 800px) {
     img#img1 {
         width: 45%;
-        display: inline-block;
         float: right;
+        display: block;
         margin: auto;
+        margin-top: 5%;
         margin-left: 2%;
         margin-right: 5%;
 
+    }
+    p {
+        margin-right: 5%;
     }
     div#c1 {
         margin-top: 5%;
@@ -93,7 +104,47 @@ div.images2 img {
         margin: auto 1%;
         vertical-align: middle;
     }
+    div.images3 {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
     
+    div.images3 img {
+        display: inline-block;
+        width: 30%;
+        margin: auto 1%;
+        vertical-align: middle;
+    }
+    div.back {
+        top: 73%;
+        right: 5%;
+    }
+    button {
+        font-size: 1.1em;
+    }
+    
+}
+
+@media only screen and (min-width: 1340px) {
+    img#img1 {
+        width: 600px;
+        float: right;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.4em;
+        margin-right: 5%;
+    }
+    div#c1 {
+        margin-top: 2%;
+
+    }
+    div.images1 {
+        position: relative;
+    }
 }
 
 /* div.images1 {
