@@ -46,16 +46,20 @@ button {
 div.posts {
     position: absolute;
     bottom: 89%;
-    left: 50%;
+    left: 10%;
 }
 
 div.back {
     position: absolute;
-    bottom: 93.5%;
-    left: 4%;
+    bottom: 66%;
+    left: 86%;
+    font-size: 1.3em;
 }
-button {
-    font-family: Arial, Helvetica, sans-serif;
+div.back a {
+    color: blue;
+}
+div.back a:active {
+    color: white;
 }
 
 @media only screen and (min-aspect-ratio:1280/2267) {
@@ -73,7 +77,7 @@ button {
         bottom: 78%;
     }
     div.back {
-        bottom: 86%;
+        bottom: 40%;
 
     }
     h1 {
@@ -90,7 +94,7 @@ button {
         bottom: 70%;
     }
     div.back {
-        bottom: 80%;
+        bottom: 25%;
 
     }
     h1 {
@@ -101,12 +105,13 @@ button {
         font-size: 1.8em;
     }  
 }
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1000px) {
     div.posts {
         bottom: 70%;
     }
     div.back {
-        bottom: 79%;
+        left: 90%;
+        bottom: 5%;
 
     }
     h1 {
