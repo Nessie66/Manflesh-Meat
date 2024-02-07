@@ -8,10 +8,26 @@ body {
     color: white;
 }
 h2 {
-
+    font-size: 1.2em;
+    font-weight: lighter;
+    letter-spacing: 25px;
 }
 p {
-    
+    font-size: 0.7em;
+    font-weight: lighter;
+    letter-spacing: 15px;
+}
+p#p1 {
+    margin-left: 10%;
+}
+p#p2 {
+    margin-left: -8%;
+}
+p#p3 {
+    margin-left: 50%;
+}
+a {
+    font-size: 0.8em;
 }
 video {
     display: block;
@@ -23,13 +39,16 @@ div.content {
 }
 @media only screen and (min-width: 700px) {
     video {
-        width: 500px;
+        width: 600px;
     }
     div.content {
         margin-left: 35%;
     }
     h2 {
         font-size: 1.8em;
+    }
+    p {
+        font-size: 0.9em;
     }
     a {
         font-size: 1.2em;
