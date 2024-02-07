@@ -45,6 +45,8 @@ div.sound {
     direction: rtl;
 }
 a {
+    display: inline-block;
+    margin-bottom: 3%;
     color: blue;
 }
 a:active {
