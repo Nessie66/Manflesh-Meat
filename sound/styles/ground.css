@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+audio {
+    display: block;
+    width: 70%;
+    margin: 2% auto 3% auto;
+}
+div.content {
+    margin: 0 10% 0;
+}
+@media only screen and (min-width: 700px) {
+    audio {
+        width: 500px;
+    }
+    div.content {
+        margin-left: 35%;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    a {
+        font-size: 1.2em;
+    }
+    div.back {
+        font-size: 1.2em;
+    }
+}
