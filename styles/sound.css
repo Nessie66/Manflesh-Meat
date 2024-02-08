@@ -25,12 +25,13 @@ div.back {
     position: relative;
     display: block;
     position: relative;
-    bottom: 15.8%;
+    bottom: 15%;
 }
 #leg {
     display: block;
     text-align: center;
-    margin: 1% 0;
+    width: 20%;
+    margin: 1% auto 0 auto;
 }
 ul {
     list-style: none;

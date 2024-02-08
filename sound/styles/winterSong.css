@@ -3,6 +3,15 @@
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
 }
+h2 {
+    font-size: 1.3em;
+}
+audio {
+    display: block;
+    width: 70%;
+    height: 40px;
+    margin: 2% auto 3% auto;
+}
 video {
     display: block;
     width: 70%;
@@ -11,7 +20,13 @@ video {
 div.content {
     margin: 0 10% 0;
 }
+div.winter {
+    margin-bottom: 5%;
+}
 @media only screen and (min-width: 700px) {
+    audio {
+        width: 300px;
+    }
     video {
         width: 500px;
     }
@@ -19,6 +34,7 @@ div.content {
         margin-left: 35%;
     }
     h2 {
+        
         font-size: 1.8em;
     }
     a {

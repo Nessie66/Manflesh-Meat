@@ -37,7 +37,7 @@ button {
 }
 h3 {
     font-weight: lighter;
-    font-size: 0.9em;
+    font-size: 1em;
     /* background-color: rgba(255, 208, 0, 0.411); */
 }
 h3.sound {
@@ -50,7 +50,7 @@ h3.sound {
 h3.main {
     position: absolute;
     top: 30%;
-    left:10%;
+    left:15%;
     display: block;
     margin: auto;
 }
@@ -69,7 +69,7 @@ h3.main {
     }
     h3.main {
         left: 16%;
-        top: 31%;
+        top: 28%;
     }
     h3.sound {
         right: 20%;
@@ -87,7 +87,7 @@ h3.main {
     }
     h3.main {
         left: 27%;
-        top: 31%;
+        top: 26%;
     }
     h3.sound {
         right: 24%;
@@ -107,10 +107,10 @@ h3.main {
         font-size: 1em;
     }
     h3 {
-        font-size: 2.3em;
+        font-size: 2.1em;
     }
     h3.main {
-        left: 32%;
+        left: 33%;
     }
     h3.sound {
         right: 35%;
