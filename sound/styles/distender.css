@@ -10,7 +10,7 @@ body {
 h2 {
     font-size: 1.2em;
     font-weight: lighter;
-    letter-spacing: 25px;
+    /* letter-spacing: 25px; */
 }
 p {
     font-size: 0.7em;
