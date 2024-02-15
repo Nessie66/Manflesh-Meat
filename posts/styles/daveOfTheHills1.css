@@ -4,7 +4,7 @@
 }
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(65, 51, 45);
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 166, 0);
     margin: 1% 2% 1% 2%;
 }
@@ -50,6 +50,9 @@ button {
     }
     h2 {
         font-size: 1.7em;
+    }
+    img {
+        margin-left: 2%;
     }
     img#img1 {
         height: 500px;
