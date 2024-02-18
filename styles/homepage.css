@@ -37,8 +37,9 @@ button {
 }
 h3 {
     font-weight: lighter;
-    font-size: 0.9em;
-    background-color: rgba(0, 0, 0, 0.829);
+    font-size: 0.7em;
+    color: rgb(170, 22, 22);
+    background-color: rgb(0, 0, 0);
 }
 h3.sound {
     position: absolute;
@@ -49,8 +50,8 @@ h3.sound {
 }
 h3.main {
     position: absolute;
-    top: 26%;
-    left: 9%;
+    top: 30%;
+    left: 15%;
     display: block;
     margin: auto;
 }
@@ -65,15 +66,15 @@ h3.main {
         left: 5%; */
     }
     h3 {
-        font-size: 2em;
+        font-size: 1.6em;
     }
     h3.main {
-        left: 16%;
+        left: 19%;
         top: 28%;
     }
     h3.sound {
         right: 20%;
-        top: 23%;
+        top: 25%;
     }
     button {
         font-size: 0.9em;
@@ -107,10 +108,10 @@ h3.main {
         font-size: 1em;
     }
     h3 {
-        font-size: 2.1em;
+        font-size: 1.7em;
     }
     h3.main {
-        left: 33%;
+        left: 35%;
     }
     h3.sound {
         right: 35%;
