@@ -1,11 +1,11 @@
 //reload page on back
-(function () {
-	window.onpageshow = function(event) {
-		if (event.persisted) {
-			window.location.reload();
-		}
-	};
-})();
+// (function () {
+// 	window.onpageshow = function(event) {
+// 		if (event.persisted) {
+// 			window.location.reload();
+// 		}
+// 	};
+// })();
 
 //speech function
 function speech(message){
@@ -17,6 +17,11 @@ function speech(message){
 
 //potentialPits visited
 window.onload = function () {
+    window.onpageshow = function(event) {
+		if (event.persisted) {
+			window.location.reload();
+		}
+	};
     if (localStorage.getItem("potentialPits") == null){
         console.log("initial set")
     }
