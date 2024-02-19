@@ -1,4 +1,4 @@
-reload page on back
+//reload page on back
 (function () {
     window.onpageshow = function(event) {
         if (event.persisted) {
