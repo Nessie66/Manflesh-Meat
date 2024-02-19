@@ -6,7 +6,10 @@ function speech1(speech) {
     console.log("edited")
 }
 
-
+//reload page on back
+if(performance.navigation.type == 2){
+    location.reload(true);
+ }
 
 //potentialPits visited
 window.onload = function () {
