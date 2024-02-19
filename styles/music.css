@@ -22,10 +22,13 @@ button {
     font-family: Arial, Helvetica, sans-serif;
 }
 div.back {
-    position: relative;
+    /* position: relative;
     display: block;
     position: relative;
-    bottom: 16%;
+    bottom: 16%; */
+    display: block;
+    /* margin: 0% 8%; */
+    float: right;
 }
 #leg {
     display: block;
@@ -84,9 +87,9 @@ a:active {
         right: calc(0.2*100vw);
     }
     div.back {
-        position: absolute;
+        /* position: absolute;
         left: calc(0.2*100vw);
-        top:75%;
+        top:75%; */
     
     }
     div {
