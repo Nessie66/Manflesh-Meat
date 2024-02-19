@@ -4,7 +4,7 @@
 }
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(243, 239, 220);
     color: rgb(131, 43, 28);
     margin: 1% 2% 1% 2%;
     overflow-x: hidden;
@@ -43,7 +43,7 @@ img#ed {
 
 p#ed2 {
     text-align: center;
-    width: 98%;
+    width: 100%;
 }
 
 img#img6 {
