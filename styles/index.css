@@ -29,18 +29,41 @@ button {
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
 }
+div.cave {
+    margin: 0;
+}
 svg {
     display: block;
-    margin: auto auto;
-    max-width: 100%;
-    max-height: 85%;
+    margin: auto;
+    max-width: auto;
+    height: 85%;
 }
+
+div.speech {
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    opacity: 0;
+}
+
+div.speech p {
+    font-size: 1.5em;
+}
+
+div.show {
+    opacity: 1;
+}
+
+
 @media only screen and (max-width: 700px) {
     h1 {
         font-size: 2.5em;
     }
     svg {
         max-width: 90%;
+        height: auto;
     }
     button {
         font-size: 0.7em;
@@ -57,7 +80,6 @@ svg {
         font-size: 2em;
     }
     svg {
-        max-width: 90%;
     }
     button {
         font-size: 0.5em;
