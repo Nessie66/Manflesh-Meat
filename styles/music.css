@@ -27,8 +27,8 @@ div.back {
     position: relative;
     bottom: 16%; */
     display: block;
-    /* margin: 0% 8%; */
-    float: right;
+    margin: 1% 8% 2%;
+    max-height: 1px;
 }
 #leg {
     display: block;
