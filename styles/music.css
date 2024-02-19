@@ -12,6 +12,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 body {
+    overflow: hidden;
     background-color: black;
     color: blue;
     -ms-overflow-style: none;  /* IE and Edge */
@@ -67,7 +68,7 @@ a:active {
         font-size: 2.5em;
     }
     div.back {
-        bottom: 24%;
+        /* bottom: 24%; */
     
     }
     
@@ -82,16 +83,12 @@ a:active {
         position: relative;
         left: calc(0.2*100vw);
     }
-    div.sound {
+    div.back {
         position: relative;
-        right: calc(0.2*100vw);
-    }
-    /* div.back {
-        position: absolute;
         left: calc(0.2*100vw);
-        top:75%;
+        bottom: 0;
     
-    } */
+    }
     div {
         margin:  1% 8%;
     }

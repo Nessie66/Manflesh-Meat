@@ -53,7 +53,7 @@ div.speech p {
 }
 
 div.show {
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 
@@ -78,8 +78,6 @@ div.show {
   @media only screen and (max-width: 540px) {
     h1 {
         font-size: 2em;
-    }
-    svg {
     }
     button {
         font-size: 0.5em;
