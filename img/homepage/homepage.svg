@@ -27,8 +27,8 @@
      id="image1" />
   <a
      id="a1"
-     xlink:href="/manflesh-meat/main.html"
-     xlink:title="monogastric zone">
+     xlink:href="main.html"
+     xlink:title="whats down here!?">
     <path
        d="m306.45 1078.6c111.76 36.101 218.02 47.39 335.27 4.5512 39.447-80.799 110.85-168.41 47.788-220.73 6.4652-81.168-128.01-153.23-221.49-126.68-139.03-67.411-237.76 121.22-206.32 134.26-74.516 138.61-2.72 166.86 44.754 208.6z"
        fill="#8d8d8d"
@@ -42,7 +42,7 @@
   </a>
   <a
      id="a2"
-     xlink:href="/manflesh-meat/sound.html"
+     xlink:href="music.html"
      xlink:title="sound and music">
     <path
        style="opacity:0;fill:#8d8d8d;fill-opacity:0.43;filter:url(#filter2)"
