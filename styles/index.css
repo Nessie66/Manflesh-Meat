@@ -37,6 +37,7 @@ svg {
     margin: auto;
     max-width: auto;
     height: 85%;
+    opacity: 0;
 }
 
 div.speech {
@@ -47,6 +48,10 @@ div.speech {
     left: 23%;
     opacity: 0;
     font-size: 0.8em;
+}
+
+svg.show {
+    opacity: 1;
 }
 
 div.show {

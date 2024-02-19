@@ -33,15 +33,18 @@ window.onload = function () {
     }
     //event 1
     if (localStorage.getItem("potentialPits") == 1){
-        speech("i wonder whats down there. down <br>therIw onder whats down there..");
         replaceSVG(event1);
+        speech("i wonder whats down there. down <br>therIw onder whats down there..");
         console.log("event 1")
         //reset
         if (localStorage.getItem("homepage") == 1){
             reset();
-            replaceSVG(event0);
             console.log("reset")
         }
+    }
+    else {
+        let svg = document.getElementsByTagName("svg");
+        svg[0].classList.add("show")
     }
 }
 
@@ -53,7 +56,6 @@ const event1 = "img/index/pit1event1.svg";
 function replaceSVG(filepath) {
     //Get svg to replace
     let oldSVG = document.getElementsByTagName("svg");
-    console.log(oldSVG[0])
     // Load content
     let xhr = new XMLHttpRequest();
     xhr.open("GET", filepath, true);
@@ -61,7 +63,11 @@ function replaceSVG(filepath) {
         if (xhr.readyState === 4 && xhr.status === 200) {
             //Replace content
             oldSVG[0].outerHTML = xhr.responseText;
+            //show SVG
+            let svg = document.getElementsByTagName("svg");
+            svg[0].classList.add("show")
         }
     };
     xhr.send();
 }
+
