@@ -1,26 +1,26 @@
 //reload page on back
-(function () {
-	window.onpageshow = function(event) {
-		if (event.persisted) {
-			window.location.reload();
-		}
-	};
-})();
+// (function () {
+//     window.onpageshow = function(event) {
+//         if (event.persisted) {
+//             window.location.reload();
+//         }
+//     };
+// })();
 
-//speech function
-function speech(message){
+//speech bubble changer/shower
+function speech(message) {
     let div = document.getElementsByClassName("speech")
     let text = div[0].getElementsByTagName("p")
     text[0].innerHTML = message;
     div[0].classList.add("show")
 }
 
-function reset(){
+//reset function
+function reset() {
     let div = document.getElementsByClassName("speech")
     let text = div[0].getElementsByTagName("p")
     text[0].innerHTML = "";
     div[0].classList.remove("show")
-
 }
 
 //visited
@@ -34,40 +34,35 @@ window.onload = function () {
     //event 1
     if (localStorage.getItem("potentialPits") == 1){
         replaceSVG(event1);
-        speech("i wonder whats down there. down <br>therIw onder whats down there..");
+        speech("I wonder what's down there.");
         console.log("event 1")
         //reset
         if (localStorage.getItem("homepage") == 1){
             reset();
             console.log("reset")
         }
-    }
-    else {
+    } else {
         let svg = document.getElementsByTagName("svg");
         svg[0].classList.add("show")
     }
 }
 
-//list of evernts
+//events
 const event0 = "img/index/pit1.svg";
 const event1 = "img/index/pit1event1.svg";
 
-//svg replacer machine
+//SVG replacer machine
 function replaceSVG(filepath) {
-    //Get svg to replace
-    let oldSVG = document.getElementsByTagName("svg");
-    // Load content
-    let xhr = new XMLHttpRequest();
-    xhr.open("GET", filepath, true);
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            //Replace content
-            oldSVG[0].outerHTML = xhr.responseText;
-            //show SVG
-            let svg = document.getElementsByTagName("svg");
-            svg[0].classList.add("show")
-        }
-    };
-    xhr.send();
+    //load content asynchronously
+    fetch(filepath)
+    .then(response => response.text())
+    .then(data => {
+        //replace content
+        let oldSVG = document.getElementsByTagName("svg")[0];
+        oldSVG.outerHTML = data;
+        //show SVG
+        let svg = document.getElementsByTagName("svg")[0];
+        svg.classList.add("show");
+    })
+    .catch(error => console.error('Error fetching SVG:', error));
 }
-
