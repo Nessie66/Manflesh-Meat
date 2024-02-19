@@ -29,8 +29,8 @@ window.onload = function () {
 }
 
 //list of evernts
-const event0 = "../img/pits/pit1.svg";
-const event1 = "../img/homepage/homepage.svg";
+const event0 = "img/pits/pit1.svg";
+const event1 = "img/homepage/homepage.svg";
 
 //svg replacer machine
 function replaceSVG(filepath) {
