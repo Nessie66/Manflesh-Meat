@@ -86,12 +86,12 @@ a:active {
         position: relative;
         right: calc(0.2*100vw);
     }
-    div.back {
-        /* position: absolute;
+    /* div.back {
+        position: absolute;
         left: calc(0.2*100vw);
-        top:75%; */
+        top:75%;
     
-    }
+    } */
     div {
         margin:  1% 8%;
     }
