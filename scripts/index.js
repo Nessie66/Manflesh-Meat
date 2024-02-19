@@ -34,7 +34,7 @@ window.onload = function () {
     //event 1
     if (localStorage.getItem("potentialPits") == 1){
         replaceSVG(event1);
-        speech("I wonder what's down there.");
+        speech("I wonder what's down ther <br>I wonderwhats down there...");
         console.log("event 1")
         //reset
         if (localStorage.getItem("homepage") == 1){
