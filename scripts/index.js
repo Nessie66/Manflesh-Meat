@@ -7,9 +7,13 @@ function speech1(speech) {
 }
 
 //reload page on back
-if(performance.navigation.type == 2){
-    location.reload(true);
- }
+(function () {
+	window.onpageshow = function(event) {
+		if (event.persisted) {
+			window.location.reload();
+		}
+	};
+})();
 
 //potentialPits visited
 window.onload = function () {
