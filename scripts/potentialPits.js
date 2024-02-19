@@ -3,5 +3,3 @@ window.onload = function () {
         localStorage.setItem("potentialPits", 1)
     }
 }
-
-console.log(localStorage.getItem("potentialPits"))
