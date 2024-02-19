@@ -1,11 +1,11 @@
-//reload page on back
-// (function () {
-//     window.onpageshow = function(event) {
-//         if (event.persisted) {
-//             window.location.reload();
-//         }
-//     };
-// })();
+reload page on back
+(function () {
+    window.onpageshow = function(event) {
+        if (event.persisted) {
+            window.location.reload();
+        }
+    };
+})();
 
 //speech bubble changer/shower
 function speech(message) {
