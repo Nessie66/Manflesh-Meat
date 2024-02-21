@@ -5,9 +5,7 @@ window.onload = function () {
     }
     // if potential pits visited already, reset speech bubble
     if(localStorage.getItem("potentialPits") == 1){
-        if (localStorage.getItem("homepage") == null){
-            localStorage.setItem("homepage", 1)
-        }
+        localStorage.setItem("homepage", 1)
     }
     
 }

@@ -15,7 +15,7 @@ function speech(message) {
     div[0].classList.add("show")
 }
 
-//reset function
+//reset speech function
 function reset() {
     let div = document.getElementsByClassName("speech")
     let text = div[0].getElementsByTagName("p")
@@ -34,13 +34,9 @@ window.onload = function () {
     //event 1 if potential pits visited
     if (localStorage.getItem("potentialPits") == 1){
         replaceSVG(event1);
-        setTimeout(function(){ speech("I wonder what's down there"); }, 500);
+        if (localStorage.getItem("homepage") == null)
+        setTimeout(function(){ speech("i wonder whats down there <br> whats down there..."); }, 500);
         console.log("event 1")
-        //remove message after homepage visited
-        if (localStorage.getItem("homepage") == 1){
-            reset();
-            console.log("reset")
-        }
     } else {
         let svg = document.getElementsByTagName("svg");
         svg[0].classList.add("show")
