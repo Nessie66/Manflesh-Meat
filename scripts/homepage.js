@@ -23,12 +23,18 @@ function reset() {
     div[0].classList.remove("show")
 }
 
-function show() {
+function showSpeech() {
     let div = document.getElementsByClassName("speech")
     let text = div[0].getElementsByTagName("p")
     div[0].classList.add("show")
+    let svg = document.getElementsByTagName("svg");
+    svg[0].classList.add("show")
 }
 
+function showSVG() {
+    let svg = document.getElementsByTagName("svg");
+    svg[0].classList.add("show")
+}
 //events
 const event0 = "img/homepage/homepage.svg";
 const event1 = "img/homepage/homepage0.svg";
@@ -70,17 +76,16 @@ window.onload = function () {
 
     //homepage
     if (localStorage.getItem("main") == 1){
-        replaceSVG(event1);
         reset();
-        console.log("event 1")
+        console.log("remove m1")
+        showSVG();
     } else if (localStorage.getItem("music") == 1) {
-        replaceSVG(event1);
         reset();
-        console.log("event 1")
+        console.log("remove m1")
+        showSVG();
     } else {
-        show();
-        let svg = document.getElementsByTagName("svg");
-        svg[0].classList.add("show")
+        showSpeech();
+        showSVG();
     }
     
 }
