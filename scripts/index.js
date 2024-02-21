@@ -23,26 +23,6 @@ function reset() {
     div[0].classList.remove("show")
 }
 
-//visited
-window.onload = function () {
-    if (localStorage.getItem("potentialPits") == null){
-        console.log("potential pits set")
-    }
-    if (localStorage.getItem("homepage") == null){
-        console.log("homepage set")
-    }
-    //event 1 if potential pits visited
-    if (localStorage.getItem("potentialPits") == 1){
-        replaceSVG(event1);
-        if (localStorage.getItem("homepage") == null)
-        setTimeout(function(){ speech("i wonder whats down there <br> whats down there..."); }, 500);
-        console.log("event 1")
-    } else {
-        let svg = document.getElementsByTagName("svg");
-        svg[0].classList.add("show")
-    }
-}
-
 //events
 const event0 = "img/index/pit1.svg";
 const event1 = "img/index/pit1event1.svg";
@@ -62,3 +42,25 @@ function replaceSVG(filepath) {
     })
     .catch(error => console.error('Error fetching SVG:', error));
 }
+
+window.onload = function () {
+    //visited sets
+    if (localStorage.getItem("potentialPits") == null){
+        console.log("potential pits set")
+    }
+    if (localStorage.getItem("homepage") == null){
+        console.log("homepage set")
+    }
+
+    //event 1 if potential pits visited
+    if (localStorage.getItem("potentialPits") == 1){
+        replaceSVG(event1);
+        if (localStorage.getItem("homepage") == null)
+        setTimeout(function(){ speech("i wonder whats down there <br> whats down there..."); }, 500);
+        console.log("event 1")
+    } else {
+        let svg = document.getElementsByTagName("svg");
+        svg[0].classList.add("show")
+    }
+}
+

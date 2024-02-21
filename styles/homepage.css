@@ -24,6 +24,7 @@ svg {
     width: 100%;
     display: block;
     margin: auto;
+    opacity: 0;
 }
 div {
     position: relative;
@@ -41,7 +42,7 @@ h3 {
     color: rgb(170, 22, 22);
     background-color: rgb(0, 0, 0);
 }
-h3.sound {
+h3.music {
     position: absolute;
     top: 25%;
     right: 15%;
@@ -55,7 +56,40 @@ h3.main {
     display: block;
     margin: auto;
 }
+
+/* speech bubble */
+div.speech {
+    color: black;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5px;
+    display: inline-block;
+    font-size: 0.45em;
+    opacity: 0;
+    padding-left: 0.3%;
+    padding-right: 0.3%;
+    position: absolute;
+    top: calc(21vw);
+    left: 46%;
+    width: 100px;
+}
+
+svg.show {
+    opacity: 1;
+}
+
+div.show {
+    opacity: 1;
+}
+
 @media only screen and (min-width: 700px) {
+    div.speech {
+        font-size: 0.8em;
+        width: 190px;
+        top: 17%;
+        left: 48%;
+    }
     svg {
         height: 85%;
         width: auto;
@@ -72,7 +106,7 @@ h3.main {
         left: 19%;
         top: 28%;
     }
-    h3.sound {
+    h3.music {
         right: 20%;
         top: 25%;
     }
@@ -90,7 +124,7 @@ h3.main {
         left: 27%;
         top: 26%;
     }
-    h3.sound {
+    h3.music {
         right: 24%;
         top: 23%;
     }
@@ -113,7 +147,7 @@ h3.main {
     h3.main {
         left: 35%;
     }
-    h3.sound {
+    h3.music {
         right: 35%;
     }
 }
