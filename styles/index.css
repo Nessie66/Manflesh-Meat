@@ -42,10 +42,13 @@ svg {
 
 div.speech {
     background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5px;
     display: inline-block;
     position: absolute;
-    top: 35%;
-    left: 23%;
+    top: 36%;
+    left: 25%;
     opacity: 0;
     font-size: 0.8em;
 }
@@ -78,8 +81,8 @@ div.show {
     }
 
     div.speech {
-        top: 24%;
-        left: 19%;
+        top: 27%;
+        left: 22%;
         font-size: 0.5em;
     }
   }
@@ -98,9 +101,19 @@ div.show {
     }
 
     div.speech {
-        top: 19%;
-        left: 20%;
+        top: 21%;
+        left: 23%;
         font-size: 0.1em;
         letter-spacing: 0.5em;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    div.speech {
+        left: 30%;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    div.speech {
+        left: 37%;
     }
   }

@@ -31,12 +31,12 @@ window.onload = function () {
     if (localStorage.getItem("homepage") == null){
         console.log("homepage set")
     }
-    //event 1
+    //event 1 if potential pits visited
     if (localStorage.getItem("potentialPits") == 1){
         replaceSVG(event1);
-        speech("I wonder what's down ther <br>I wonderwhats down there...");
+        setTimeout(function(){ speech("I wonder what's down there"); }, 500);
         console.log("event 1")
-        //reset
+        //remove message after homepage visited
         if (localStorage.getItem("homepage") == 1){
             reset();
             console.log("reset")
