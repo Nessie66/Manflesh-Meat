@@ -30,8 +30,8 @@ function show() {
 }
 
 //events
-const event0 = "img/homepage.svg";
-const event1 = "img/homepageEmpty.svg";
+const event0 = "img/homepage/homepage.svg";
+const event1 = "img/homepage/homepage0.svg";
 
 //SVG replacer machine
 function replaceSVG(filepath) {
@@ -70,11 +70,11 @@ window.onload = function () {
 
     //homepage
     if (localStorage.getItem("main") == 1){
-        // replaceSVG(event1);
+        replaceSVG(event1);
         reset();
         console.log("event 1")
     } else if (localStorage.getItem("music") == 1) {
-        // replaceSVG(event1);
+        replaceSVG(event1);
         reset();
         console.log("event 1")
     } else {
@@ -82,8 +82,5 @@ window.onload = function () {
         let svg = document.getElementsByTagName("svg");
         svg[0].classList.add("show")
     }
-    
-    let svg = document.getElementsByTagName("svg");
-    svg[0].classList.add("show")
     
 }
