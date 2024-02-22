@@ -45,15 +45,15 @@ function replaceSVG(filepath) {
 
 window.onload = function () {
     //visited sets
-    if (localStorage.getItem("potentialPits") == null){
-        console.log("potential pits set")
+    if (localStorage.getItem("entrance") == null){
+        console.log("entrance set")
     }
     if (localStorage.getItem("homepage") == null){
         console.log("homepage set")
     }
 
-    //event 1 if potential pits visited
-    if (localStorage.getItem("potentialPits") == 1){
+    //event 1 if entrance visited
+    if (localStorage.getItem("entrance") == 1){
         replaceSVG(event1);
         if (localStorage.getItem("homepage") == null)
         setTimeout(function(){ speech("i wonder whats down there <br> whats down there..."); }, 500);
