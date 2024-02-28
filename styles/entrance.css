@@ -8,12 +8,16 @@
 body {
     background-color: rgb(0, 0, 0);
 }
+div.content {
+    margin-top: 55;
+}
 h2 {
-    color: darkred;
+    color: rgba(255, 255, 255, 0.356);
     text-align: center;
     font-weight: lighter;
-    margin: 5% 0 5% 0;
+    letter-spacing: 0.7px;
     font-size: 1em;
+    margin-bottom: 1%;
 }
 img {
     height: 60%;
@@ -24,6 +28,7 @@ div.index {
     text-align: center;
 }
 button {
+    margin-top: 4%;
     font-size: 0.7em;
 }
 @media only screen and (min-width: 600px) {
@@ -48,5 +53,8 @@ button {
         width: auto;
         display: block;
         margin: auto;
+    }
+    button {
+        margin-top: 2%;
     }
 }
