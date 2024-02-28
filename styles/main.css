@@ -51,10 +51,13 @@ a:active {
 button {
     font-size: 0.7em;
 }
+div.container {
+    position: relative;
+}
 div.posts {
     position: absolute;
-    bottom: 77%;
-    left: 5%;
+    top: 4%;
+    left: 3%;
 }
 
 div.back {
@@ -82,12 +85,7 @@ div.back a:active {
 }
 @media only screen and (min-width: 630px) {
     div.posts {
-        bottom: 67%;
-        left: 3%;
-    }
-    div.back {
-        bottom: 40%;
-
+        left: 4%;
     }
     h1 {
         font-size: 1.9em;
@@ -98,20 +96,11 @@ div.back a:active {
 
     }
     a {
-        font-size: 1.4em;
+        font-size: 1.3em;
         
     }    
 }
 @media only screen and (min-width: 970px) {
-    div.posts {
-        bottom: 65%;
-        left: 3%;
-        
-    }
-    div.back {
-        bottom: 25%;
-
-    }
     h1 {
         font-size: 2.1em;
 
@@ -128,14 +117,6 @@ div.back a:active {
     } 
 }
 @media only screen and (min-width: 1000px) {
-    div.posts {
-        bottom: 46%;
-    }
-    div.back {
-        left: 90%;
-        bottom: 5%;
-
-    }
     h1 {
         font-size: 3.2em;
 
