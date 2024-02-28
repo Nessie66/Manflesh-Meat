@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+body {
+    background-color: black;
+}
+svg {
+    height: 50%;
+    margin-left: 54%;
+    transform: translateX(-50%);
+}
+
+div.container{
+    position: relative;
+}
+
+div.back {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+}
+button {
+    font-size: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+    svg {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    svg {
+        height: 957px;
+    }
+    div.back {
+        
+        bottom: 5%;
+    }
+    button {
+        font-size: 1.2em;
+    }
+}
