@@ -6,3 +6,18 @@ body {
     font-family: 'Times New Roman', Times, serif;
 
 }
+img {
+    height: 90%;
+}
+h2 {
+    font-size: 1em;
+    font-weight: lighter;
+    white-space: nowrap;
+    margin: 1% 5% 1% 5%;
+}
+
+@media only screen and (min-width: 600px) {
+    h2 {
+        font-size: 1.2em;
+    }
+}
