@@ -9,6 +9,7 @@ body {
     background-color: black;
 }
 svg {
+    margin-top: 25%;
     height: 50%;
     margin-left: 54%;
     transform: translateX(-50%);
@@ -30,6 +31,7 @@ button {
 
 @media only screen and (min-width: 600px) {
     svg {
+        margin-top: 0;
         width: 100%;
         height: auto;
         margin-left: 0;
@@ -37,7 +39,7 @@ button {
     }
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 1280px) {
     svg {
         height: 957px;
     }
