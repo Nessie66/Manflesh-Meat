@@ -4,5 +4,22 @@
 }
 body {
     font-family: 'Times New Roman', Times, serif;
-
+    text-align: center;
+}
+div {
+    text-align: center;
+}
+img {
+    margin: 2.5% 1% 2.5% 1%;
+    width: 47%;
+}
+div.content {
+    margin-top: 1%;
+    margin-left: 2.5%;
+}
+div.images3 img {
+    width: 40%;
+}
+a {
+    display: block;
 }
