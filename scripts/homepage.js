@@ -39,7 +39,7 @@ function showSVG() {
 const event0 = "img/homepage/homepage.svg";
 const event1 = "img/homepage/homepage0.svg";
 
-//SVG replacer machine
+//SVG replacer machine (with timeout)
 function replaceSVG(filepath) {
     //load content asynchronously
     fetch(filepath)
@@ -50,7 +50,9 @@ function replaceSVG(filepath) {
         oldSVG.outerHTML = data;
         //show SVG
         let svg = document.getElementsByTagName("svg")[0];
+        // setTimeout(function(){ svg.classList.add("show"); }, 500);
         svg.classList.add("show");
+        
     })
     .catch(error => console.error('Error fetching SVG:', error));
 }
@@ -74,18 +76,28 @@ window.onload = function () {
         localStorage.setItem("homepage", 1)
     }
 
+    
     //homepage
     if (localStorage.getItem("main") == 1){
         reset();
         console.log("remove m1")
-        showSVG();
+        
     } else if (localStorage.getItem("music") == 1) {
         reset();
         console.log("remove m1")
-        showSVG();
+        
     } else {
         showSpeech();
+        
+    }
+    if (localStorage.getItem("crossroads1") == null){
         showSVG();
     }
-    
+    if (localStorage.getItem("crossroads1") == 1){
+        replaceSVG(event1);
+        console.log("event 1")
+    } else {
+        let svg = document.getElementsByTagName("svg");
+        svg[0].classList.add("show")
+    }
 }

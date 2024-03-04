@@ -51,16 +51,33 @@ window.onload = function () {
     if (localStorage.getItem("homepage") == null){
         console.log("homepage set")
     }
-
-    //event 1 if entrance visited
-    if (localStorage.getItem("entrance") == 1){
-        replaceSVG(event1);
-        if (localStorage.getItem("homepage") == null)
-        setTimeout(function(){ speech("i wonder whats down there <br> whats down there..."); }, 500);
-        console.log("event 1")
+    //hasnt visited cont (nested for loading i suppose)
+    if (localStorage.getItem("crossroads1") == null){
+        console.log("crossroads1set")
+        //event 1 if entrance visited
+        if (localStorage.getItem("entrance") == 1){
+            replaceSVG(event1);
+            if (localStorage.getItem("homepage") == null)
+            setTimeout(function(){ speech("i wonder whats down there <br> whats down there..."); }, 500);
+            console.log("event 1")
+        } else {
+            let svg = document.getElementsByTagName("svg");
+            svg[0].classList.add("show")
+        }
     } else {
+        console.log("event 0(effectively)")
         let svg = document.getElementsByTagName("svg");
         svg[0].classList.add("show")
     }
+    //event 1 if entrance visited
+//     if (localStorage.getItem("entrance") == 1){
+//         replaceSVG(event1);
+//         if (localStorage.getItem("homepage") == null)
+//         setTimeout(function(){ speech("i wonder whats down there <br> whats down there..."); }, 500);
+//         console.log("event 1")
+//     } else {
+//         let svg = document.getElementsByTagName("svg");
+//         svg[0].classList.add("show")
+//     }
 }
 
