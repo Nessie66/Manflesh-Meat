@@ -68,7 +68,7 @@ div.speech {
     background-color: white;
     border-style: solid;
     border-color: black;
-    border-width: 1.5px;
+    border-width: 0.5px;
     display: inline-block;
     font-size: 0.45em;
     opacity: 0;
@@ -119,6 +119,9 @@ div.show {
     button {
         font-size: 0.9em;
     }
+    div.speech {
+        border-width: 1.5px;
+    }
 }
 @media only screen and (min-width: 980px) {
     h2 {
@@ -137,6 +140,7 @@ div.show {
     button {
         font-size: 1em;
     }
+    
 }
 @media only screen and (min-width: 1600px) {
     h2 {
