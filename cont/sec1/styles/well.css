@@ -13,28 +13,28 @@ div.container {
     width: fit-content;
 }
 img {
-    height: 150%;
-    margin-left: 33%;
+    height: 190%;
+    margin-left: 27%;
     transform: translateX(-50%);
 }
 h1 {
     font-size: 0.7em;
     font-weight: lighter;
-    color: rgba(255, 255, 255, 0.562);
+    color: rgba(126, 126, 126, 0.432);
     position: absolute;
     bottom: 20%;
-    left: 8%;
+    left: 5%;
 }
 div.content {
     position: relative;
-    bottom: 70%;
+    bottom: 91%;
     overflow-x: visible;
 }
 div.poem {
     position: absolute;
     bottom: 200%;
-    left: 43%;
-    font-size: 1em;
+    left: 45%;
+    font-size: 0.9em;
 
 }
 h2 {
@@ -43,7 +43,21 @@ h2 {
 
 }
 p {
-    color: rgba(255, 255, 255, 0.562);
+    color: rgb(133, 133, 133);
     font-weight: lighter;
 
 }
+@media only screen and (min-width: 620px) {
+    div.poem {
+        left: 21%;
+        font-size: 1em;
+    
+    }
+}
+@media only screen and (min-width: 1210px) {
+    div.poem {
+        left: 50%;
+    
+    }
+}
+
