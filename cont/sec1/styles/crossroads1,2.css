@@ -8,6 +8,12 @@
 body {
     background-color: black;
 }
+img {
+    margin-top: 25%;
+    height: 40%;
+    margin-left: 47%;
+    transform: translateX(-50%);
+}
 svg {
     margin-top: 25%;
     height: 40%;
@@ -29,6 +35,13 @@ button {
 }
 
 @media only screen and (min-width: 480px) {
+    img {
+        margin-top: 75px;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        transform: translateX(0);
+    }
     svg {
         margin-top: 75px;
         width: 100%;
@@ -43,6 +56,10 @@ button {
 
 @media only screen and (min-width: 1280px) {
     svg {
+        margin-top: 0;
+        height: 957px; 
+    }
+    img {
         margin-top: 0;
         height: 957px; 
     }

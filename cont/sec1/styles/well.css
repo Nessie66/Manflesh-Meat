@@ -23,7 +23,7 @@ h1 {
     color: rgba(126, 126, 126, 0.432);
     position: absolute;
     bottom: 20%;
-    left: 5%;
+    left: 4%;
 }
 div.content {
     position: relative;
@@ -34,7 +34,7 @@ div.poem {
     position: absolute;
     bottom: 200%;
     left: 45%;
-    font-size: 0.9em;
+    font-size: 0.8em;
 
 }
 h2 {
