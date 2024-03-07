@@ -27,13 +27,13 @@ h1 {
 }
 div.content {
     position: relative;
-    bottom: 91%;
+    bottom: 89%;
     overflow-x: visible;
 }
 div.poem {
     position: absolute;
     bottom: 200%;
-    left: 45%;
+    left: 43%;
     font-size: 0.8em;
 
 }
