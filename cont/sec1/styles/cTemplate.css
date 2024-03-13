@@ -21,6 +21,15 @@ svg {
     transform: translateX(-50%);
 }
 
+div.devil img {
+    display: block;
+    margin: auto;
+    width: 140%;
+    height: auto;
+    margin-left:65%;
+    margin-top: 5%;
+}
+
 div.container{
     position: relative;
 }
@@ -45,7 +54,8 @@ button {
     div.devil img {
         display: block;
         margin: auto;
-        width: 90%;
+        width: 150%;
+        margin-left: 20%;
         margin-top: 5%;
     }
     svg {
