@@ -10,15 +10,15 @@ body {
 }
 img {
     margin-top: 25%;
-    height: 40%;
-    margin-left: 47%;
+    margin-left: 72%;
+    height: 50%;
     transform: translateX(-50%);
 }
 
 svg {
     margin-top: 25%;
-    height: 40%;
-    margin-left: 47%;
+    margin-left: 72%;
+    height: 50%;
     transform: translateX(-50%);
 }
 
@@ -35,6 +35,51 @@ button {
     font-size: 0.8em;
 }
 
+/* speech bubble */
+div.speech {
+    color: black;
+    background-color: white;
+    /* border-style: solid;
+    border-color: black;
+    border-width: 0.5px; */
+    display: inline-block;
+    font-size: 0.5em;
+    opacity: 0;
+    padding-left: 0.3%;
+    padding-right: 0.3%;
+    width: 40%;
+    text-align: left;
+}
+
+div.talk {
+    position: absolute;
+    top: calc(49vw);
+    right: -30%;
+    text-align: center;
+}
+
+button#next {
+    margin-top: 2%;
+    font-size: 0.5em;
+    opacity: 0;
+}
+
+.hide {
+    opacity: 0;
+}
+
+button#next.show {
+    opacity: 1;
+}
+
+svg.show {
+    opacity: 1;
+}
+
+div.show {
+    opacity: 1;
+}
+
 
 @media only screen and (min-width: 480px) {
     img {
@@ -44,6 +89,7 @@ button {
         margin-left: 0;
         transform: translateX(0);
     }
+
     svg {
         margin-top: 75px;
         width: 100%;
@@ -54,6 +100,18 @@ button {
     button {
         font-size: 0.9em;
     }
+    div.talk {
+        top: 34%;
+        right: -12%;
+    }
+    div.speech {
+        font-size: 1.4vw;
+        width: 40%;
+        
+    }
+    button#next {
+        font-size: 0.8em;
+    }
 
 }
 
@@ -61,6 +119,9 @@ button {
     svg {
         margin-top: 0;
         height: 957px; 
+        width: auto;
+        display: block;
+        margin: auto;
     }
     img {
         margin-top: 0;
@@ -79,5 +140,21 @@ button {
     div.back {
         position: absolute;
         bottom: 2.5%;
+    }
+    div.de2 {
+        bottom: 1%;
+    }
+    div.talk {
+
+        top: 28%;
+        right: 6%;
+    }
+    div.speech {
+        font-size: 1.2em;
+        width: 40%;
+        
+    }
+    button#next {
+        font-size: 1em;
     }
 }

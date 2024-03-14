@@ -14,7 +14,6 @@ img {
     margin-left: 47%;
     transform: translateX(-50%);
 }
-
 svg {
     margin-top: 25%;
     height: 40%;
@@ -35,6 +34,54 @@ button {
     font-size: 0.8em;
 }
 
+/* speech bubble */
+div.speech {
+    color: black;
+    background-color: white;
+    /* border-style: solid;
+    border-color: black;
+    border-width: 0.5px; */
+    display: inline-block;
+    font-size: 0.5em;
+    opacity: 0;
+    padding-left: 0.3%;
+    padding-right: 0.3%;
+    width: 120px;
+    text-align: left;
+}
+
+div.talk {
+    position: absolute;
+    top: calc(61vw);
+    right: 6%;
+    text-align: center;
+}
+
+button#next {
+    margin-top: 2%;
+    font-size: 0.5em;
+    opacity: 0;
+}
+
+.hide {
+    opacity: 0;
+}
+
+button#next.show {
+    opacity: 1;
+}
+
+svg.show {
+    opacity: 1;
+}
+
+div.show {
+    opacity: 1;
+}
+
+div.killyourselfcss {
+    right: 4%;
+}
 
 @media only screen and (min-width: 480px) {
     img {
@@ -53,6 +100,21 @@ button {
     }
     button {
         font-size: 0.9em;
+    }
+    div.talk {
+        top: 46%;
+        right: 8%;
+    }
+    div.killyourselfcss {
+        right: 0%;
+    }
+    div.speech {
+        font-size: 1.4vw;
+        width: 68%;
+        
+    }
+    button#next {
+        font-size: 0.8em;
     }
 
 }
@@ -79,5 +141,24 @@ button {
     div.back {
         position: absolute;
         bottom: 2.5%;
+    }
+    div.de2 {
+        bottom: 1%;
+    }
+    div.talk {
+
+        top: 43%;
+        right: 23%;
+    }
+    div.killyourselfcss {
+        right: 15%;
+    }
+    div.speech {
+        font-size: 1.2em;
+        width: 60%;
+        
+    }
+    button#next {
+        font-size: 1em;
     }
 }

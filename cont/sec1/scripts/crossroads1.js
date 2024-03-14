@@ -5,5 +5,8 @@ window.onload = function () {
     if (localStorage.getItem("dead_end1") == null){
         console.log("dead_end1")
     }
+    if (localStorage.getItem("hallway3") == null){
+        console.log("hallway3")
+    }
 }
 

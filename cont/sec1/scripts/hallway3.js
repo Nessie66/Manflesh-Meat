@@ -38,24 +38,18 @@ function changeImage(a) {
 
 
 //events
-const event0 = "img/drag/drag1opt.gif";
-const event1 = "img/drag/drag2opt.gif";
-const event3 = "img/drag/empty";
+const event0 = "img/jpg/h3v1";
+const event1 = "img/jpg/h3v3";
+const event3 = "img/jpg/h3";
 
 button1 = document.getElementById("next");
+
 
 talk = document.getElementById("talk");
 
 window.onload = function () {
-    if(localStorage.getItem("dead_end1") == null){
+    if(localStorage.getItem("hallway3") == null){
         showSpeech()
-        button1.classList.add("show");
-        button1.addEventListener("click", function() {
-            talk.classList.add("killyourselfcss");
-            changeImage(event1);
-            button1.classList.remove("show");
-            speech("So be it... Perhaps check the potential pits. If you can find them.<br>But I'd be wary of going any deeper if I were you...")
-            localStorage.setItem("dead_end1", 1)  
-        });
+        localStorage.setItem("hallway3", 1)  
     }
 }
