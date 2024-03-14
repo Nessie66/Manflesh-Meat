@@ -33,7 +33,7 @@ function showSpeech() {
 
 //image changer
 function changeImage(a) {
-    document.getElementById("dragon").src=a;
+    document.getElementById("").src=a;
 }
 
 
@@ -52,4 +52,15 @@ window.onload = function () {
         showSpeech()
         localStorage.setItem("hallway3", 1)  
     }
+
+    if(localStorage.getItem("hallway5") == null){
+        console.log("hallway5")
+    }
+
+    if(localStorage.getItem("hallway5") == 1){
+        talk.classList.add("m2");
+        speech("What you nosin around for, you a pervert or something? Only thing round here is rats with bad teeth and grumpy old men. Still, better than being out in the hills.. cant complain eh!");
+        localStorage.setItem("hallway5", 2)  
+    }
+
 }

@@ -59,7 +59,7 @@ div.talk {
 
 button#next {
     margin-top: 2%;
-    font-size: 0.5em;
+    font-size: 0.4em;
     opacity: 0;
 }
 
@@ -109,12 +109,12 @@ div.killyourselfcss {
         right: 0%;
     }
     div.speech {
-        font-size: 1.4vw;
+        font-size: 1.45vw;
         width: 68%;
         
     }
     button#next {
-        font-size: 0.8em;
+        font-size: 0.75em;
     }
 
 }
