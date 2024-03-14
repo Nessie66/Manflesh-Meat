@@ -44,9 +44,9 @@ svg {
 /* speech bubble */
 div.speech {
     background-color: white;
-    border-style: solid;
+    /* border-style: solid;
     border-color: black;
-    border-width: 1.5px;
+    border-width: 1.5px; */
     display: inline-block;
     position: absolute;
     top: 36%;

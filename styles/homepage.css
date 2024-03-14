@@ -66,9 +66,9 @@ h3.main {
 div.speech {
     color: black;
     background-color: white;
-    border-style: solid;
+    /* border-style: solid;
     border-color: black;
-    border-width: 0.5px;
+    border-width: 0.5px; */
     display: inline-block;
     font-size: 0.45em;
     opacity: 0;
