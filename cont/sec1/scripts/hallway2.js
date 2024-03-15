@@ -1,3 +1,13 @@
+//reload page on back
+(function () {
+    window.onpageshow = function(event) {
+        if (event.persisted) {
+            window.location.reload();
+        }
+    };
+})();
+
+
 window.onload = function () {
     let link = document.getElementById("click")
     if(localStorage.getItem("hallway3") == 1){
