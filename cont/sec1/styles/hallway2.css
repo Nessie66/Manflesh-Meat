@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+body {
+    background-color: black;
+}
+img {
+    margin-top: 25%;
+    height: 40%;
+    margin-left: 47%;
+    transform: translateX(-50%);
+}
+
+svg {
+    margin-top: 25%;
+    height: 40%;
+    margin-left: 47%;
+    transform: translateX(-50%);
+}
+
+div.container{
+    position: relative;
+}
+
+div.back {
+    width: 100%;
+    text-align: center;
+    margin-top: 2.5%;
+}
+button {
+    font-size: 0.8em;
+}
+
+a#click.show {
+    opacity: 1;
+}
+
+a#click {
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    right: 15%;
+    animation-name: rainbowtext;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+/* rainbow text */
+@keyframes rainbowtext {
+    0% {
+        color: red;
+    }
+    25% {
+        color: orange;
+    }
+    50% {
+        color: yellow;
+    }
+    75% {
+        color: green;
+    }
+    100% {
+        color: blue;
+    }
+}
+
+
+@media only screen and (min-width: 480px) {
+    img {
+        margin-top: 75px;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        transform: translateX(0);
+    }
+    svg {
+        margin-top: 75px;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        transform: translateX(0);
+    }
+    button {
+        font-size: 0.9em;
+    }
+    a#click {
+        font-size: 1.5em;
+        top: 50%;
+        right: 17%;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+    svg {
+        margin-top: 0;
+        height: 957px; 
+    }
+    img {
+        margin-top: 0;
+        height: 957px; 
+        width: auto;
+        display: block;
+        margin: auto;
+    }
+    div.back {
+        
+        bottom: 5%;
+    }
+    button {
+        font-size: 1.2em;
+    }
+    div.back {
+        position: absolute;
+        bottom: 2.5%;
+    }
+    a#click {
+        font-size: 2em;
+        top: 50%;
+        right: 28%;
+    }
+}

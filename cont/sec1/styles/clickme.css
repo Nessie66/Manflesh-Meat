@@ -1,0 +1,13 @@
+body {
+    background-image:  url("../img/clickme/space.gif");
+    background-color: black;
+}
+div.container {
+    margin: auto;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+img {
+    max-width: 50%;
+}
