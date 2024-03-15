@@ -37,12 +37,13 @@ button {
 
 a#click.show {
     opacity: 1;
+    top: 60%;
 }
 
 a#click {
     opacity: 0;
     position: absolute;
-    top: 60%;
+    top: 200%;
     right: 15%;
     animation-name: rainbowtext;
     animation-duration: 0.2s;
@@ -89,7 +90,7 @@ a#click {
     button {
         font-size: 0.9em;
     }
-    a#click {
+    a#click.show {
         font-size: 1.5em;
         top: 50%;
         right: 17%;
@@ -120,7 +121,7 @@ a#click {
         position: absolute;
         bottom: 2.5%;
     }
-    a#click {
+    a#click.show {
         font-size: 2em;
         top: 50%;
         right: 28%;

@@ -23,12 +23,12 @@ body {
 }
 h1 {
     color: white;
-    font-size: 1em;
+    font-size: 0.9em;
     margin-bottom: 0.5%;
 }
 h2 {
     color: white;
-    font-size: 0.45em;
+    font-size: 0.35em;
     margin-bottom: 2%;
     margin-left: 1%;
     font-weight: lighter;
@@ -36,7 +36,7 @@ h2 {
 }
 a {
     color: white;
-    font-size: 0.7em;
+    font-size: 0.6em;
     display: inline-block;
     margin:  0.5% 5%;
 }

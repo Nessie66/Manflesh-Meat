@@ -10,14 +10,15 @@
 
 window.onload = function () {
     let link = document.getElementById("click")
-    if(localStorage.getItem("hallway3") == 1){
-        link.classList.add("show")
-        link.addEventListener("click", function() {
-            console.log("clicked")
-            localStorage.setItem("clickme", 1)  
-        });
-        if(localStorage.getItem("clickme") == 1){
-            link.classList.remove("show")
+    if(localStorage.getItem("clickme") == 1){
+        link.classList.remove("show")
+    } else {
+        if(localStorage.getItem("hallway3") == 1){
+            link.classList.add("show")
+            link.addEventListener("click", function() {
+                console.log("clicked")
+                localStorage.setItem("clickme", 1)  
+            });
         }
     }
 }
