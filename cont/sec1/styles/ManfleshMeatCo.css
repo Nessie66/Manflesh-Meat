@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-color: black;
+}
+div.content {
+    background-color: rgb(87, 0, 0);
+    display: block;
+    margin: auto;
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 84%;
+    height: 100%;
+}
+img {
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+img#title {
+    position: relative;
+    width: 90%;
+    top: 2%;
+    padding: 3%;
+    background-color: rgb(41, 41, 41);
+    margin-bottom: 2%;
+}
+div.nav {
+    text-align: center;
+    display: block;
+    margin: auto;
+    background-color:darkred;
+}
+div.nav a{
+    color: rgb(238, 255, 0);
+    margin: 2%;
+    font-size: 0.7em;
+    display: inline-block;
+    border-color: black;   
+}

@@ -9,10 +9,14 @@ body {
     background-color: black;
 }
 img {
-    margin-top: 25%;
+    margin-top: 25%; 
     height: 40%;
     margin-left: 47%;
     transform: translateX(-50%);
+}
+svg.h5 {
+    margin-left:54%;
+
 }
 
 svg {
