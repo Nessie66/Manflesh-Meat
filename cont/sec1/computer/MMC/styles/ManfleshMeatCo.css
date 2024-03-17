@@ -55,6 +55,13 @@ footer a{
     display: inline-block;
 
 }
+
+img#mission {
+    width: 110%;
+    margin-top: 5%;
+    margin-left: -5%;
+    background-color: black;
+}
 img#niceday {
     margin-top: 5%;
     
@@ -63,4 +70,25 @@ img#niceday {
 .legal {
     color: blue;
     background-color: white;
+}
+
+.about {
+    margin: 2% 2% 2% 2%;
+    color: white;
+    background-color: darkred;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mission {
+    margin: 2% 2% 2% 2%;
+    color: rgb(255, 0, 0);
+    background-color: rgba(0, 0, 0, 0.753);
+}
+
+.r1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.center {
+    text-align: center;
 }
