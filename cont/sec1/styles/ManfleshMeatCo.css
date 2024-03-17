@@ -2,10 +2,11 @@
     padding: 0;
     margin: 0;
     -webkit-tap-highlight-color: transparent;
-    font-family: 'Times New Roman', Times, serif;
 }
 body {
-    background-color: black;
+    background-color: rgb(206, 144, 94);
+    background-image: url("../img/ManfleshMeatCo/skin.jfif");
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 div.content {
     background-color: rgb(87, 0, 0);
@@ -15,6 +16,7 @@ div.content {
     margin-right: 8%;
     width: 84%;
     height: 100%;
+    background-image: url("../img/ManfleshMeatCo/meat1.jpg");
 }
 img {
     width: 85%;
@@ -23,22 +25,33 @@ img {
 }
 img#title {
     position: relative;
-    width: 90%;
+    width: 94%;
     top: 2%;
     padding: 3%;
-    background-color: rgb(41, 41, 41);
     margin-bottom: 2%;
+    background-image: url("../img/ManfleshMeatCo/bone.jpg");
 }
 div.nav {
     text-align: center;
     display: block;
     margin: auto;
     background-color:darkred;
+    background-image: url("../img/ManfleshMeatCo/veiny2.jpg");
 }
 div.nav a{
-    color: rgb(238, 255, 0);
+    color: rgb(231, 231, 231);
     margin: 2%;
     font-size: 0.7em;
     display: inline-block;
     border-color: black;   
+    font-weight: lighter;
+}
+h2 {
+background-color: darkred;
+    color: white;
+    font-size: 0.7em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    margin: 5% 5% 5% 5%;
+    padding: 1%;
 }
