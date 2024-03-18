@@ -135,27 +135,29 @@ input[type=text], select, textarea {
     margin-top: 6px; 
     margin-bottom: 16px; 
     resize: vertical 
-  }
+}
+
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
   
-  input[type=submit] {
-    background-color: #494949;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #ff0000;
-  }
-  
-  .form {
+.form {
     margin-top: 5%;
     background-color: #f2f2f2;
     padding: 20px;
-  }
+}
 
 
-  .images img{
+.images img{
     margin-top: 5%;
-  }
+}
+
+#message {
+    height: 200px;
+}

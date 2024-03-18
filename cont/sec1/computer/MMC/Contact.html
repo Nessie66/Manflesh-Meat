@@ -19,29 +19,28 @@
             </ul>
         </div>
 
+        <p class="mission">Please fill out the contact form below if you would like to send a message to a representative at MMC, please enter your email if you require corespondence with a representative. </p>
 
-        <!-- <div class="form">
-            <h1 class="center">CONTACT FORM</h1>
-            <form action="action_page.php">
-          
-              <label for="fname">Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          
-              <label for="lname">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="Your last name..">
-          
-              <label for="subject">Message</label>
-              <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-          
+        <div class="form">
+            <h2 class="center">Contact Form</h2>
+            <form name="submit-to-google-sheet">
+
+                <label for="name">Name</label>
+                <input name="name" id="name" type="text" placeholder="Enter Name" required>
+
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email" placeholder="Enter Email">
+
+                <label for="subject">Subject</label>
+                <input name="subject" id="subject" type="text" placeholder="Enter Subject">
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="4" cols="50" type="text" placeholder="Type message..." required></textarea>
+
+                <button type="submit">Submit</button>
             </form>
-          </div> -->
-
-          <form name="submit-to-google-sheet">
-            <input name="email" type="email" placeholder="Email" required>
-            <button type="submit">Send</button>
-          </form>
+        </div>
+          
           
           <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbwXsopi0SkiJBrD7cQRAU54ZeXa2jCEEf1n0YUCVbkJ9pjFmFWuEdhCoWNRO6cMj34VyA/exec'
@@ -57,6 +56,10 @@
 
 
     </div>
+
+
+    
+
     
     <footer>
         <p>© Manflesh Meat 2008</p>
