@@ -4,9 +4,9 @@
     -webkit-tap-highlight-color: transparent;
 }
 body {
-    background-color: rgb(206, 144, 94);
+    
     background-image: url("../img/ManfleshMeatCo/skin.jfif");
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:Arial, Helvetica, sans-serif ;
 }
 div.content {
     background-color: rgb(87, 0, 0);
@@ -37,7 +37,7 @@ div.nav {
     text-align: center;
     display: block;
     margin: auto;
-    background-color:darkred;
+    
     background-image: url("../img/ManfleshMeatCo/veiny2.jpg");
 }
 div.nav a{
@@ -72,23 +72,90 @@ img#niceday {
     background-color: white;
 }
 
+#final {
+    color: red;
+    text-align: center;
+    background-color: white;
+}
+
 .about {
     margin: 2% 2% 2% 2%;
     color: white;
-    background-color: darkred;
+    
     font-family: 'Times New Roman', Times, serif;
+    background-image: url("../img/ManfleshMeatCo/veiny.jpg");
 }
 
 .mission {
     margin: 2% 2% 2% 2%;
     color: rgb(255, 0, 0);
-    background-color: rgba(0, 0, 0, 0.753);
+    
+    background-image: url("../img/ManfleshMeatCo/veiny3.jpg");
 }
 
 .r1 {
+    color: black;
+    background-color: white;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .center {
     text-align: center;
 }
+
+.reasons li{
+    text-align: left;
+    margin-left: 7%;
+    margin-top: 1%;
+}
+
+.fine {
+    font-size: 0.7em;
+}
+
+.quiz {
+    background-color: white;
+    padding: 1%;
+}
+
+.quiz h1 {
+    font-size: 2.5em;
+}
+
+.quiz a {
+    font-size: 2em;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: #494949;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #ff0000;
+  }
+  
+  .form {
+    margin-top: 5%;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+
+  .images img{
+    margin-top: 5%;
+  }
