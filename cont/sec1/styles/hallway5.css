@@ -14,6 +14,10 @@ img {
     margin-left: 47%;
     transform: translateX(-50%);
 }
+svg.h5 {
+    margin-left:54%;
+
+}
 
 svg {
     margin-top: 25%;
@@ -49,7 +53,7 @@ button {
         width: 100%;
         height: auto;
         margin-left: 0;
-        transform: translateX(0);
+        transform: translateX(-54%);
     }
     button {
         font-size: 0.9em;

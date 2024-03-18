@@ -1,0 +1,44 @@
+.center {
+    text-align: center;
+}
+
+.button {
+    min-width: 70px;
+    visibility: show;
+    text-align: center;
+}
+
+div.Q2_1 button {
+    display: block;
+    position: relative;
+    margin: 1% auto;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+#txt {
+    width: 500px;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.questions {
+    text-align: left;
+    margin-bottom: 5%;
+    display: block;
+    margin-left: 15%;
+}
+
+div.questions h2{
+    display: inline-block;
+    margin-bottom: 1%;
+    margin-left: 10px;
+}
