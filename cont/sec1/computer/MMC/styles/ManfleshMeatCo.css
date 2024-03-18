@@ -31,8 +31,12 @@ img#title {
     padding: 3%;
     margin-bottom: 2%;
     margin-top: 3%;
+}
+
+div.title {
     background-image: url("../img/ManfleshMeatCo/bone.jpg");
 }
+
 div.nav {
     text-align: center;
     display: block;
@@ -59,7 +63,8 @@ footer a{
 img#mission {
     width: 110%;
     margin-top: 5%;
-    margin-left: -5%;
+    display: block;
+    margin: auto;
     background-color: black;
 }
 img#niceday {
@@ -160,4 +165,34 @@ input[type=email], select, textarea {
 
 #message {
     height: 200px;
+}
+
+@media only screen and (min-width: 480px) {
+    img {
+        max-width: 500px;
+        
+    }
+    img#mission {
+        max-width: 100%;
+    }
+    img#title {
+        max-width: 2000px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+    img#title {
+        padding: 1%;
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+    div.content {
+        padding-top: 1%;
+    }
+    img#title {
+        max-width: 1200px;
+    }
+
 }

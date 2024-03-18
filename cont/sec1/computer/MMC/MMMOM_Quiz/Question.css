@@ -1,44 +1,106 @@
+* {
+    overflow-x: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .center {
     text-align: center;
 }
 
 .button {
-    min-width: 70px;
+    min-width: 30px;
     visibility: show;
     text-align: center;
-}
-
-div.Q2_1 button {
-    display: block;
-    position: relative;
-    margin: 1% auto;
 }
 
 .hide {
     visibility: hidden;
 }
 
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+
+}
+
 #txt {
-    width: 500px;
+    width: 90%;
+    margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 0.8em;
 }
 
 a {
     text-decoration: none;
 }
 
+button {
+    font-size: 0.7em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 div.questions {
-    text-align: left;
-    margin-bottom: 5%;
     display: block;
-    margin-left: 15%;
+    margin: auto;
+    position: relative;
+}
+
+div.questions3 {
+    display: block;
+    margin: auto;
+    text-align: left;
+    position: relative;
+    left: 2%;
+}
+
+div.questions3 button{
+    margin-left: 2px;
+    display: inline-block;
+    vertical-align:top;
 }
 
 div.questions h2{
     display: inline-block;
-    margin-bottom: 1%;
-    margin-left: 10px;
+    margin: 0 5px 20px;
+}
+
+div.Q2_1 button {
+    display: block;
+    position: relative;
+    margin: 20px auto;
+}
+div.Q1_1 button {
+    margin-left: 1%;
+}
+
+
+@media only screen and (min-width: 480px) {
+    #txt {
+        max-width: 500px;
+    }
+    div.questions3 {
+        left: 25%;
+    }
+    h2 {
+        font-size: 1.1em;
+    }
+    button {
+        font-size: 0.8em;
+    }
+    div.questions h2{
+        
+    }
+    div.questions3 button{
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    div.questions3 {
+        left: 37%;
+    }
 }
