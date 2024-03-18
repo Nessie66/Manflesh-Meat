@@ -20,7 +20,7 @@
         </div>
 
 
-        <div class="form">
+        <!-- <div class="form">
             <h1 class="center">CONTACT FORM</h1>
             <form action="action_page.php">
           
@@ -36,7 +36,26 @@
               <input type="submit" value="Submit">
           
             </form>
-          </div>
+          </div> -->
+
+          <form name="submit-to-google-sheet">
+            <input name="email" type="email" placeholder="Email" required>
+            <button type="submit">Send</button>
+          </form>
+          
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwXsopi0SkiJBrD7cQRAU54ZeXa2jCEEf1n0YUCVbkJ9pjFmFWuEdhCoWNRO6cMj34VyA/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+
     </div>
     
     <footer>
