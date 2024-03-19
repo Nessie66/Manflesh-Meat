@@ -55,12 +55,11 @@ div.nav {
     background-image: url("../img/ManfleshMeatCo/veiny2.jpg");
 }
 div.nav a{
-    color: rgb(231, 231, 231);
-    margin: 2%;
-    font-size: 0.7em;
+    color: rgb(17, 0, 255);
+    margin: 2% 1% 2% 0;
+    font-size: 0.65em;
     display: inline-block;
     border-color: black;   
-    font-weight: lighter;
 }
 footer a{
 
@@ -195,7 +194,10 @@ input[type=email], select, textarea {
     div.title a{
         top: -30%;
     }
-
+    div.nav a{
+        font-size: 1.2em;  
+        margin-left: 4%;
+    }
 }
 
 
@@ -214,5 +216,8 @@ input[type=email], select, textarea {
     div.title a{
         top: -30%;
     }
-
+    div.nav a{
+        font-size: 1.4em;  
+        margin-left: 5%;
+    }
 }
