@@ -41,7 +41,15 @@ function answer(q, a) {
 
     if (pressed == 17){
         localStorage.setItem("qScore", score);
-        window.location.href = "Quiz_results.html";
+        if ((score >= 0) && (score <= 4)) {
+            window.location.href = "results/failiure.html";
+        } else if ((score => 5) && (score <= 10)) {
+            window.location.href = "results/keep_trying.html"
+        } else if ((score > 10 && score <= 14)) {
+            window.location.href = "results/success.html"
+        } else if ((score > 14 && score <= 17)) {
+            window.location.href = "results/prodigy.html"
+        } 
     }
 }
 
@@ -49,3 +57,4 @@ function getScore() {
     console.log(localStorage.getItem("qScore"))
 
 }
+

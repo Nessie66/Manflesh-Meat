@@ -1,0 +1,57 @@
+
+div.failed {
+    position: relative;
+    top: 35%;
+    text-align: center;
+    
+}
+
+body {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+body.prodigy img{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+img#title {
+    margin-top: 50px;
+}
+
+img.celebrate {
+    width: 70%;
+    max-width: 400px;
+}
+
+img#conga {
+    width: 50%;
+    max-width: 300px;
+}
+
+
+a {
+    font-size: 0.8em;
+    color: blue;
+}
+
+a.link{
+    font-size: 1em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+body.prodigy {
+    background-image: url("");
+}
