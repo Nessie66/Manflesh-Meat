@@ -5,7 +5,7 @@
 }
 body {
     
-    background-image: url("../img/ManfleshMeatCo/skin.jfif");
+    background-image: url("../img/ManfleshMeatCo/skin2.jpg");
     font-family:Arial, Helvetica, sans-serif ;
 }
 div.content {
@@ -24,23 +24,33 @@ img {
     display: block;
     margin: auto;
 }
-img#title {
+div.title a{
     position: relative;
-    width: 94%;
-    top: 2%;
-    padding: 3%;
-    margin-bottom: 2%;
+    top: -22%;
     margin-top: 3%;
+}
+
+img#title {
+    width: 94%;
 }
 
 div.title {
     background-image: url("../img/ManfleshMeatCo/bone.jpg");
+    height: 12vw;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+
+footer a{
+    background-color: white;
 }
 
 div.nav {
     text-align: center;
     display: block;
     margin: auto;
+    margin-bottom: 2%;
     
     background-image: url("../img/ManfleshMeatCo/veiny2.jpg");
 }
@@ -178,6 +188,13 @@ input[type=email], select, textarea {
     img#title {
         max-width: 2000px;
     }
+    div.title {
+        margin-bottom: 6%;
+        max-height: 200px;
+    }
+    div.title a{
+        top: -30%;
+    }
 
 }
 
@@ -193,6 +210,9 @@ input[type=email], select, textarea {
     }
     img#title {
         max-width: 1200px;
+    }
+    div.title a{
+        top: -30%;
     }
 
 }
