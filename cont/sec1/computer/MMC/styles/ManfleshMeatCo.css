@@ -220,6 +220,10 @@ div.org2 p {
     text-align: center;
 }
 
+.nostyle  {
+    list-style: none;
+}
+
 @media only screen and (min-width: 480px) {
     img {
         max-width: 500px;

@@ -48,10 +48,17 @@ p {
 
 }
 @media only screen and (min-width: 620px) {
+    h1 {
+        left: 20%;
+    }
     div.poem {
-        left: 21%;
+        left: 35%;
         font-size: 1em;
     
+    }
+    img {
+        margin-left: 42%;
+        transform: translateX(-50%);
     }
 }
 @media only screen and (min-width: 1210px) {
