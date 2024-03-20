@@ -167,6 +167,10 @@ input[type=email], select, textarea {
     padding: 20px;
 }
 
+#girl {
+    width: 400px;
+    margin-left: 0;
+}
 
 .images img{
     margin-top: 5%;
@@ -174,6 +178,47 @@ input[type=email], select, textarea {
 
 #message {
     height: 200px;
+}
+
+.blackout {
+    display: inline;
+    color: black;
+    background-color: black;
+}
+
+#dave {
+    display: inline;
+}
+
+div.org1 {
+    display: block;
+    margin: auto;
+    margin-left: 0%;
+}
+
+div.org1 img {
+    display: inline;
+    width: 48%;
+    margin-left: 1%;
+}
+
+div.org1 p {
+    margin-left: 1%;
+    display: inline;
+    margin-right: 0%;
+}
+
+div.org2 {
+    display: block;
+}
+
+div.org2 img {
+    width: 50%;
+    margin-bottom: ;
+}
+
+div.org2 p {
+    text-align: center;
 }
 
 @media only screen and (min-width: 480px) {
@@ -198,6 +243,16 @@ input[type=email], select, textarea {
         font-size: 1.2em;  
         margin-left: 4%;
     }
+
+    div.org1 {
+        margin-left: 0%;
+    }
+
+
+    div.org1 p {
+        margin-left: 1%;
+        margin-right: 5%;
+    }
 }
 
 
@@ -219,5 +274,15 @@ input[type=email], select, textarea {
     div.nav a{
         font-size: 1.4em;  
         margin-left: 4%;
+    }
+    
+    div.org1 {
+        margin-left: 15%;
+    }
+
+
+    div.org1 p {
+        margin-left: 5%;
+        margin-right: 6%;
     }
 }

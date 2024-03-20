@@ -52,7 +52,7 @@ div.questions {
     position: relative;
 }
 
-div.questions3 {
+div.questions4 {
     display: block;
     margin: auto;
     text-align: left;
@@ -60,7 +60,7 @@ div.questions3 {
     left: 2%;
 }
 
-div.questions3 button{
+div.questions4 button{
     margin-left: 2px;
     display: inline-block;
     vertical-align:top;
@@ -85,7 +85,7 @@ div.Q1_1 button {
     #txt {
         max-width: 500px;
     }
-    div.questions3 {
+    div.questions4 {
         left: 25%;
     }
     h2 {
@@ -94,13 +94,13 @@ div.Q1_1 button {
     button {
         font-size: 0.8em;
     }
-    div.questions3 button{
+    div.questions4 button{
         margin-left: 10px;
     }
 }
 
 @media only screen and (min-width: 1000px) {
-    div.questions3 {
+    div.questions4 {
         left: 37%;
     }
 }
