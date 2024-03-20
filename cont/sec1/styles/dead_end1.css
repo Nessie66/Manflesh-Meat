@@ -46,14 +46,14 @@ div.speech {
     opacity: 0;
     padding-left: 0.3%;
     padding-right: 0.3%;
-    width: 120px;
+    width: 140px;
     text-align: left;
 }
 
 div.talk {
     position: absolute;
     top: calc(61vw);
-    right: 6%;
+    right: 4%;
     text-align: center;
 }
 
@@ -80,7 +80,12 @@ div.show {
 }
 
 div.killyourselfcss {
-    right: 4%;
+    right: 2%;
+}
+
+div.DEQ {
+    width: 200px;
+    right: -3%;
 }
 
 @media only screen and (min-width: 480px) {
@@ -103,18 +108,23 @@ div.killyourselfcss {
     }
     div.talk {
         top: 46%;
-        right: 8%;
+        right: 4%;
     }
     div.killyourselfcss {
-        right: 0%;
+        top: 50%;
+        right: 2%;
     }
     div.speech {
         font-size: 1.45vw;
-        width: 68%;
+        width: 300px;
         
     }
     button#next {
         font-size: 0.75em;
+    }
+    div.DEQ {
+        width: 300px;
+        right: 4%;
     }
 
 }
@@ -148,17 +158,22 @@ div.killyourselfcss {
     div.talk {
 
         top: 43%;
-        right: 23%;
+        right: 19%;
     }
     div.killyourselfcss {
-        right: 15%;
+        right: 18%;
     }
     div.speech {
         font-size: 1.2em;
-        width: 60%;
+        width: 400px;
         
     }
     button#next {
         font-size: 1em;
     }
+    div.DEQ {
+        width: 400px;
+        right: 19%;
+    }
+
 }

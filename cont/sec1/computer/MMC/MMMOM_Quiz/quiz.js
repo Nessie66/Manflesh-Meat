@@ -27,6 +27,11 @@ const answers =
 'N',//Q16 Have you ever eaten a human body?
 'N'];//Q17 Have you ever made a planet, or nation, radioactive?
 
+function DEQ(){
+    localStorage.setItem("DEQ", 1) 
+}
+
+
 
 function answer(q, a) {
     q = q-1     
