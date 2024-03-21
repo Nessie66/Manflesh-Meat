@@ -23,6 +23,10 @@ p {
 h2 {
     font-size: 1.2em;
 }
+
+h3 {
+    font-size: 0.8em;
+}
 div.images p {
     margin-top: 1%;
     margin-bottom: 8%;
