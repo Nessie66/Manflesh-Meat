@@ -86,6 +86,9 @@ window.onload = function () {
         reset();
         console.log("remove m1")
         
+    } else if (localStorage.getItem("crossroads1") == 1) {
+        reset();
+        console.log("remove m1")
     } else {
         showSpeech();
         
