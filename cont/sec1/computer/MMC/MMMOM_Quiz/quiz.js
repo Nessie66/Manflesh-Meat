@@ -28,10 +28,12 @@ const answers =
 'N'];//Q17 Have you ever made a planet, or nation, radioactive?
 
 function DEQ(){
-    localStorage.setItem("DEQ", 1) 
+    if (localStorage.getItem("DEQ") != 2) {
+        localStorage.setItem("DEQ", 1) 
+    }
+    console.log(localStorage.getItem("DEQ"))
+    
 }
-
-
 
 function answer(q, a) {
     q = q-1     

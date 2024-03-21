@@ -15,10 +15,11 @@ window.onload = function () {
     } else {
         if(localStorage.getItem("hallway3") == 1){
             link.classList.add("show")
-            link.addEventListener("click", function() {
-                console.log("clicked")
-                localStorage.setItem("clickme", 1)  
-            });
+            localStorage.setItem("clickme", 1) 
+            // link.addEventListener("click", function() {
+            //     console.log("clicked")
+            //     localStorage.setItem("clickme", 1)  
+            // });
         }
     }
 }

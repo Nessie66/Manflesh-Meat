@@ -46,7 +46,7 @@ div.speech {
     opacity: 0;
     padding-left: 0.3%;
     padding-right: 0.3%;
-    width: 140px;
+    width: 150px;
     text-align: left;
     padding: 1%;
 }
@@ -81,7 +81,8 @@ div.show {
 }
 
 div.killyourselfcss {
-    right: 2%;
+    top: calc(63vw);
+    right: 1%;
 }
 
 div.DEQ {

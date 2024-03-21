@@ -49,11 +49,9 @@ talk = document.getElementById("talk");
 speech_ = document.getElementById("talk");
 
 window.onload = function () {
-    console.log(localStorage.getItem("dead_end1"))
-    console.log(localStorage.getItem("DEQ"))
     if(localStorage.getItem("dead_end1") == null){
         if((localStorage.getItem("DEQ") == 1)){
-            speech("Argh! You scared me, where on earth did you come from?<br><br>Girlwolf decade destroyer?<br>Where did you hear about that? Why do you want to know?")  
+            speech("Argh! You scared me, what are you doing here?<br><br>Girlwolf decade destroyer?<br>Where did you hear about that? Why do you want to know?")  
         }
         showSpeech()
         button1.classList.add("show");
@@ -66,9 +64,13 @@ window.onload = function () {
         });
     }
     if((localStorage.getItem("dead_end1") == 1) && (localStorage.getItem("DEQ") == 1)){
-        speech("Argh! You scared me, where on earth did you come from?")
+        speech("Arck! You jumped me. Where on earth did you come from?")
         speech_.classList.add("DEQ");
         showSpeech()
         localStorage.setItem("DEQ", 2)  
     }
+
+    console.log(localStorage.getItem("DEQ"))
+
+    console.log((localStorage.getItem("dead_end1") == 1) && (localStorage.getItem("DEQ") == 1))
 }
