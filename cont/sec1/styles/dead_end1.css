@@ -90,6 +90,24 @@ div.DEQ {
     right: -3%;
 }
 
+@media only screen and (max-width: 380px) {
+    img {
+        margin-top: 25%;
+        height: 44%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    div.speech {
+        font-size: 0.4em;
+        width: 115px;
+    }
+    div.talk {
+
+        top: calc(61vw);
+        right: 2%;
+    }
+}
+
 @media only screen and (min-width: 480px) {
     img {
         margin-top: 75px;

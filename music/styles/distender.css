@@ -37,6 +37,16 @@ video {
 div.content {
     margin: 0 10% 0;
 }
+
+@media only screen and (max-width: 350px) {
+    a {
+        font-size: 0.6em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+}
+
 @media only screen and (min-width: 700px) {
     video {
         width: 500px;

@@ -45,6 +45,28 @@ div.back {
 button {
     font-size: 0.8em;
 }
+
+@media only screen and (max-width: 350px) {
+    h1 {
+        font-size: 1em;
+    }
+    p {
+        font-size: 0.5em;
+    }
+    h2 {
+        font-size: 0.8em;
+    }
+    img {
+        margin-left: 1%;
+    }
+    div.poem {
+        font-size: 0.8em;
+    }
+    button {
+        font-size: 0.4em;
+    }
+}
+
 @media only screen and (min-width: 600px) {
     h1 {
         font-size: 2em;

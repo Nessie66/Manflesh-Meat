@@ -87,6 +87,26 @@ div.m2 {
 }
 
 
+@media only screen and (max-width: 380px) {
+
+
+    div.talk {
+        position: absolute;
+        top: calc(45vw);
+        right: -30%;
+        text-align: center;
+    }
+    svg {
+        margin-left: 64%;
+    }
+    div.m2 {
+        width: 80%;
+        right: 10%;
+        top: calc(37vw);
+    }
+
+}
+
 @media only screen and (min-width: 480px) {
     img {
         margin-top: 75px;

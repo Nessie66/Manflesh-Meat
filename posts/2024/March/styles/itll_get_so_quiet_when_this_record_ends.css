@@ -7,12 +7,13 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 2.2m;
+    font-size: 2em;
     margin-top: 1%;
 }
 
 h2 {
     text-align: center;
+    font-size: 1.3em;
 }
 
 img {
@@ -30,6 +31,7 @@ img#img1 {
     width: 48%;
     float: right;
     margin-bottom: 1%;
+    margin-left: 1%;
 }
 
 img#img3 {
@@ -44,6 +46,20 @@ img#img4 {
 button {
     width: 10%;
     font-size: 0.7em;
+}
+
+div.lyrics p{
+    margin-bottom: 15%;
+}
+
+@media only screen and (max-width: 380px) {
+
+    body {
+        font-size: 0.7em;
+    }
+    button {
+        padding: 0;
+    }
 }
 
 @media only screen and (min-width: 800px) {
@@ -100,6 +116,9 @@ button {
     }
     img#img3 {
         max-width: 800px;
+    }
+    button {
+        width: 50px;
     }
     
 }

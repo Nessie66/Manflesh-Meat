@@ -56,6 +56,18 @@ p#sleep1 {
     margin-bottom: 8%;
 }
 
+@media only screen and (max-width: 350px) {
+    h1 {
+        font-size: 0.9em;
+    }
+    p {
+        font-size: 0.5em;
+    }
+    button {
+        font-size: 0.5em;
+    }
+}
+
 @media only screen and (min-width: 700px) {
     h1 {
         font-size: 2.2em;

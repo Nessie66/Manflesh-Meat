@@ -4,6 +4,11 @@
     -webkit-tap-highlight-color: transparent;
     font-family: 'Times New Roman', Times, serif;
 }
+
+/* @media only screen and (max-width: 300px) {
+    
+} */
+
 body {
     background-color: rgb(0, 0, 0);
 }
@@ -86,6 +91,20 @@ svg.show {
 
 div.show {
     opacity: 1;
+}
+
+@media only screen and (max-width: 380px) {
+    div.speech{
+        font-size: 7px;
+        width: 75px;
+        top: calc(18vw);
+    }
+    h3 {
+        font-size: 9px;
+    }
+    button {
+        font-size: 6px;
+    }
 }
 
 @media only screen and (min-width: 700px) {

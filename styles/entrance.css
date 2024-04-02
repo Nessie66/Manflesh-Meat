@@ -31,6 +31,16 @@ button {
     margin-top: 4%;
     font-size: 0.7em;
 }
+
+@media only screen and (max-width: 380px) {
+    h2 {
+        font-size: 0.7em;
+    }
+    button {
+        font-size: 6px;
+    }
+}
+
 @media only screen and (min-width: 600px) {
 
     img {

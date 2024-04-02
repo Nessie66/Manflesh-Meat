@@ -23,6 +23,19 @@ div.content {
 div.winter {
     margin-bottom: 5%;
 }
+
+@media only screen and (max-width: 350px) {
+    a {
+        font-size: 0.6em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    audio {
+        height: 30px;
+    }
+}
+
 @media only screen and (min-width: 700px) {
     audio {
         width: 300px;
