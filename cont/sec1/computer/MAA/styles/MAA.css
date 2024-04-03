@@ -9,8 +9,6 @@ img {
     width: 100%;
     display: block;
     margin: auto;
-    padding-top: 5%;
-    padding-bottom: 5%;
 }
 
 .title {
@@ -33,7 +31,7 @@ body {
     background-color: #ff0000; 
     overflow-x: hidden;
     position: absolute;
-    margin-top: 17%;
+    margin-top: 30.5%;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 2px;
@@ -84,6 +82,16 @@ h3.poem {
     margin-top: 2%;
 }
 
+h3.poem2 {
+    font-weight: lighter;
+    text-align: center;
+    margin: 1%;
+    margin-top: 2%;
+    font-size: 0.9em;
+    color: rgb(112, 116, 158);
+
+}
+
 h4.poem {
     font-weight: lighter;
     text-align: center;
@@ -98,10 +106,10 @@ div.table {
     border: solid;
     border-color: red;
     border-width: 2px;
-    margin-bottom: 1%;
     padding-left: 1%;
     margin-left: 1%;
     border-top: hidden;
+    border-bottom: hidden;
     
     
 }
