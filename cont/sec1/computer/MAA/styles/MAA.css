@@ -22,7 +22,6 @@ body {
 }
 
 
-
 .sNav {
     width: 15%; 
     position: fixed; 
@@ -31,12 +30,12 @@ body {
     background-color: #ff0000; 
     overflow-x: hidden;
     position: absolute;
-    margin-top: 30.5%;
+    margin-top: 31%;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 2px;
     margin-left: 2%;
-    max-width: 250px;
+    max-width: 200px;
 }
 
 .sNav a {
@@ -149,21 +148,41 @@ footer {
     font-size: 0.5em;
 }
 
+div.temp br {
+    display: none;
+}
+
 @media only screen and (max-width: 380px) {
+    body {
+        font-size: 0.8em;
+    }
 
 }
 
 @media only screen and (min-width: 600px) {
-    .sNav a {
-        font-size: 1em;
+    body {
+        font-size: 1.3em;
+    }
+    
+    div.temp br {
+        display: block;
     }
 }
 
 @media only screen and (min-width: 1000px) {
-    .sNav a {
-        font-size: 1.3em;
+    body {
+        font-size: 1.5em;
+    }
+
+    .title img {
+        max-width: 1200px;
+        margin-left: 0;
+    }
+
+    .notNav {
+        margin-left: 18%;
+    }
+    .sNav {
+        margin-top: calc(39vh);
     }
 }
-
-
-
