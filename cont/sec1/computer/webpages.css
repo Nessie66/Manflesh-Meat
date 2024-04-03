@@ -1,0 +1,45 @@
+
+body {
+    background-color: black;
+}
+
+img.net {
+    width: 90%;
+    display: block;
+    margin: auto;
+    background: rgb(202, 202, 202);
+    padding: 1%;
+    margin-top: 3%;
+}
+
+img.icon {
+    display: inline;
+    vertical-align:middle ;
+    width: 25px;
+    position: relative;
+    bottom: 3px;
+}
+
+
+.content {
+    position: relative;
+}
+
+.links {
+    position: absolute;
+    margin-left: 8%;
+    top: 28%;
+}
+
+h2 {
+    color: blue;
+    text-decoration: underline;
+    font-weight: lighter;
+}
+
+.links a {
+    font-size: 1.2em;
+    margin-bottom: 5%;
+    display: inline-block;
+    color: blue;
+}
