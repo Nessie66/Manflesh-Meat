@@ -8,6 +8,15 @@ body {
     background-image: url("../img/ManfleshMeatCo/skin2.jpg");
     font-family:Arial, Helvetica, sans-serif ;
 }
+
+.backArrow {
+    position: absolute;
+    width: 40px;
+    margin: 1%;
+    color: blue;
+    text-align: center;
+}
+
 div.content {
     background-color: rgb(87, 0, 0);
     display: block;
@@ -235,6 +244,17 @@ div.org2 p {
     list-style: none;
 }
 
+@media only screen and (max-width: 390px) {
+    .backArrow {
+        position: absolute;
+        width: 30px;
+        margin: 0.25%;
+        font-size: 0.7em;
+
+    }
+}
+
+
 @media only screen and (min-width: 480px) {
     img {
         max-width: 500px;
@@ -276,6 +296,12 @@ div.org2 p {
 
 
 @media only screen and (min-width: 1000px) {
+    .backArrow {
+        position: absolute;
+        width: 60px;
+        font-size: 1.2em;
+
+    }
     img#title {
         margin-bottom: 1%;
         max-width: 1200px;

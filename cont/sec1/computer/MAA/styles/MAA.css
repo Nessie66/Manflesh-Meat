@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 img {
@@ -19,11 +20,10 @@ img {
 body {
     background-color: black;
     color: white;
+
 }
 
-hr {
-    border: 1px solid red;
-}
+
 
 .sNav {
     width: 15%; 
@@ -57,12 +57,88 @@ hr {
 
 .content {
     margin-right: 1%;
+    font-size: 0.7em;
 }
 
-.content hr {
-    width: 120%;
-    margin-left: -5%;    
+.content p {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
 
+.content h1 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.content h2 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-left: 1%;
+}
+
+
+h3.poem {
+    font-weight: lighter;
+    text-align: center;
+    margin: 1%;
+    margin-top: 2%;
+}
+
+h4.poem {
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 2%;
+    color: rgb(112, 116, 158);
+}
+
+
+div.table {
+    display: inline-block;
+    width: 46%;
+    border: solid;
+    border-color: red;
+    border-width: 2px;
+    margin-bottom: 1%;
+    padding-left: 1%;
+    margin-left: 1%;
+    border-top: hidden;
+    
+    
+}
+
+li {
+    list-style-type: none;
+    border: solid;
+    border-color: red;
+    border-width: 2px;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    padding-left: 1%;
+}
+
+hr {
+    border-color: red;
+    margin: 0;
+    padding: 0;
+    
+}
+
+hr.hrB {
+    margin-left: -20%;
+    width: 120.5%;
+}
+
+
+
+div.table h2 {
+    display: inline-block;
+}
+
+
+footer {
+    margin: 1%;
+    text-align: right;
+    font-size: 0.5em;
 }
 
 @media only screen and (max-width: 380px) {
