@@ -1,23 +1,24 @@
 
 body {
     background-color: black;
+    font-size: 0.7em;
 }
 
 img.net {
-    width: 90%;
+    width: 98%;
     display: block;
     margin: auto;
     background: rgb(202, 202, 202);
     padding: 1%;
-    margin-top: 3%;
+    margin-top: 10%;
 }
 
 img.icon {
     display: inline;
     vertical-align:middle ;
-    width: 25px;
+    width: 15px;
     position: relative;
-    bottom: 3px;
+    bottom: 1px;
 }
 
 
@@ -27,7 +28,7 @@ img.icon {
 
 .links {
     position: absolute;
-    margin-left: 8%;
+    margin-left: 7%;
     top: 28%;
 }
 
@@ -43,3 +44,39 @@ h2 {
     display: inline-block;
     color: blue;
 }
+
+@media only screen and (max-width: 380px) {
+    
+
+}
+
+@media only screen and (min-width: 600px) {
+    img.net {
+        width: 90%;
+        max-width: 1000px;
+    }
+    body {
+        font-size: 1.2em;
+    }
+    img.icon {
+        width: 25px;
+        bottom: 3px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    img.net {
+        margin-top: 3%;
+    }
+    .links {
+        right: 55%;
+    }
+    body {
+        font-size: 1.3em;
+    }
+    img.icon {
+        width: 28px;
+
+    }
+}
+
