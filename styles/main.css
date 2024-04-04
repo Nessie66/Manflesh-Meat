@@ -39,6 +39,7 @@ a {
     font-size: 0.6em;
     display: inline-block;
     margin:  0.5% 5%;
+    margin-right: 0;
 }
 a:link {
     color: white;
@@ -57,7 +58,25 @@ div.container {
 }
 div.posts {
     position: absolute;
-    top: 4%;
+    top: 9vh;
+    left: 3%;
+    width: 47%;
+    max-width: 490px;
+    text-wrap: nowrap;
+    
+}
+
+
+li {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+
+
+div.titles {
+    position: absolute;
+    top: 4vh;
     left: 3%;
 }
 
@@ -73,6 +92,20 @@ div.back a {
 div.back a:active {
     color: white;
 }
+
+a#a1{
+    position: relative;
+    z-index: 1;
+}
+
+path#path1{
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
 @media only screen and (min-aspect-ratio:1280/2267) {
     * {
         overflow-y: auto;
@@ -88,7 +121,7 @@ div.back a:active {
 @media only screen and (max-width: 380px) {
     div.posts {
         left: 3%;
-        top: 3%;
+        top: 9vh;
     }
     h1 {
         font-size: 0.6sem;
@@ -123,6 +156,31 @@ div.back a:active {
 @media only screen and (min-width: 630px) {
     div.posts {
         left: 4%;
+        top: 1vh;
+    }
+    div.titles {
+        top: 4vh;
+    }
+    h1 {
+        font-size: 1.5em;
+
+    }
+    h2 {
+        font-size: 0.6em;
+
+    }
+    a {
+        font-size: 1em;
+        
+    }    
+}
+@media only screen and (min-width: 750px) {
+    div.posts {
+        left: 4%;
+        top: 16vh;
+    }
+    div.titles {
+        top: 7vh;
     }
     h1 {
         font-size: 1.9em;
@@ -133,7 +191,7 @@ div.back a:active {
 
     }
     a {
-        font-size: 1.3em;
+        font-size: 1.2em;
         
     }    
 }
@@ -150,7 +208,7 @@ div.back a:active {
         font-size: 1.4em;
     } 
     ul {
-        width: 81%;
+        width: 100%;
     } 
 }
 @media only screen and (min-width: 1260px) {
@@ -167,12 +225,15 @@ div.back a:active {
     a {
         font-size: 1.5em;
     }
-    ul {
-        width: 100%;
-    }   
+
     div.posts {
         left: 20%;
+        top: 18vh;
 
+    }
+
+    div.titles {
+        left: 20%;
     }
     div.back {
         left: 75%;
