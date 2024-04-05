@@ -54,7 +54,7 @@ div.speech {
 div.talk {
     position: absolute;
     top: calc(61vw);
-    right: 2%;
+    right: 3%;
     text-align: center;
     z-index: 1;
 }
@@ -83,7 +83,7 @@ div.show {
 
 div.killyourselfcss {
     top: calc(63vw);
-    right: 1%;
+    right: 2%;
 }
 
 div.DEQ {

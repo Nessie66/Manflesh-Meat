@@ -80,7 +80,7 @@ div.speech {
     padding-left: 0.3%;
     padding-right: 0.3%;
     position: absolute;
-    top: calc(21vw);
+    top: calc(20vw);
     left: 46%;
     width: 100px;
 }
@@ -97,7 +97,7 @@ div.show {
     div.speech{
         font-size: 7px;
         width: 75px;
-        top: calc(18vw);
+        top: calc(16vw);
     }
     h3 {
         font-size: 9px;
