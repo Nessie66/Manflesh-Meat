@@ -42,7 +42,7 @@ div.speech {
     border-color: black;
     border-width: 0.5px; */
     display: inline-block;
-    font-size: 0.5em;
+    font-size: 0.4em;
     opacity: 0;
     padding-left: 0.3%;
     padding-right: 0.3%;
@@ -178,7 +178,7 @@ div.DEQ {
     div.talk {
 
         top: 43%;
-        right: 19%;
+        right: 18%;
     }
     div.killyourselfcss {
         right: 18%;
