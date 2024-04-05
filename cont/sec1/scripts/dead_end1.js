@@ -27,6 +27,7 @@ function showSpeech() {
     let div = document.getElementsByClassName("speech")
     let text = div[0].getElementsByTagName("p")
     div[0].classList.add("show")
+    console.log("speech")
     // let svg = document.getElementsByTagName("svg");
     // svg[0].classList.add("show")
 }

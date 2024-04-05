@@ -54,8 +54,9 @@ div.speech {
 div.talk {
     position: absolute;
     top: calc(61vw);
-    right: 4%;
+    right: 2%;
     text-align: center;
+    z-index: 1;
 }
 
 button#next {
