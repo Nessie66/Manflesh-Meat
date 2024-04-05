@@ -50,13 +50,19 @@ talk = document.getElementById("talk");
 
 speech_ = document.getElementById("talk");
 
+
+if((localStorage.getItem("DEQ") == 1)){
+    speech("Argh! You scared me, what are you doing here?<br><br>Girlwolf decade destroyer?<br>Where did you hear about that? Why do you want to know?")  
+}
+
+if(localStorage.getItem("dead_end1") == null){     
+    showSpeech()
+    button1.classList.add("show");
+}
+
 window.onload = function () {
-    if(localStorage.getItem("dead_end1") == null){
-        if((localStorage.getItem("DEQ") == 1)){
-            speech("Argh! You scared me, what are you doing here?<br><br>Girlwolf decade destroyer?<br>Where did you hear about that? Why do you want to know?")  
-        }
-        showSpeech()
-        button1.classList.add("show");
+    if(localStorage.getItem("dead_end1") == null){     
+        
         button1.addEventListener("click", function() {
             talk.classList.add("killyourselfcss");
             changeImage(event1);
