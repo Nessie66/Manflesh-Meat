@@ -29,6 +29,7 @@ div {
 button {
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5%;
 }
 div.cave {
     margin: 0;
