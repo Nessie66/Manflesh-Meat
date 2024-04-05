@@ -23,6 +23,10 @@ body {
     text-align: center;
 }
 
+p {
+    font-size: 0.8em;
+}
+
 @media only screen and (max-width: 380px) {
     h1 {
         font-size: 1.3em;

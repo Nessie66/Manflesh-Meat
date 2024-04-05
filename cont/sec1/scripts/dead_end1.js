@@ -40,7 +40,8 @@ function changeImage(a) {
 //events
 const event0 = "img/drag/drag1opt.gif";
 const event1 = "img/drag/drag2opt.gif";
-const event3 = "img/drag/empty";
+const event3 = "img/drag/empty.jpg";
+const fullRes = "img/drag/drag1.gif";
  
 button1 = document.getElementById("next");
 
@@ -73,4 +74,6 @@ window.onload = function () {
     console.log(localStorage.getItem("DEQ"))
 
     console.log((localStorage.getItem("dead_end1") == 1) && (localStorage.getItem("DEQ") == 1))
-}
+    }
+
+

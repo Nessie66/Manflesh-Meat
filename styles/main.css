@@ -60,7 +60,7 @@ div.posts {
     position: absolute;
     top: 9vh;
     left: 3%;
-    width: 47%;
+    width: 50%;
     max-width: 490px;
     text-wrap: nowrap;
     
@@ -157,6 +157,7 @@ path#path1{
     div.posts {
         left: 4%;
         top: 1vh;
+        width: 47%;
     }
     div.titles {
         top: 4vh;
