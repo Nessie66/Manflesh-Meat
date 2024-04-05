@@ -61,10 +61,9 @@ if(localStorage.getItem("dead_end1") == null){
 
 window.onload = function () {
     if(localStorage.getItem("dead_end1") == null){     
-
         button1.addEventListener("click", function() {
-            talk.classList.add("killyourselfcss");
             changeImage(event1);
+            talk.classList.add("killyourselfcss");
             button1.classList.remove("show");
             speech("So be it... I hear she lurks around the potential pits, if you can make it that far.<br> I'd be wary of venturing any deeper. Horrid things lurk down there. Muligastric above and multigastric below you see. We're trapped.")
             localStorage.setItem("dead_end1", 1)  
