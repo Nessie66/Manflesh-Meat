@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(0, 0, 0);
+    color: rgb(189, 0, 0);
+    margin: 1% 2% 1% 2%;
+}
+img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+h1 {
+    font-size: 1.5em;
+}
+p {
+    font-size: 0.7em;
+
+}
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 0.8em;
+}
+div.images p {
+    margin-top: 1%;
+    margin-bottom: 8%;
+    
+}
+div.poem {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 1.2em;   
+    letter-spacing: 3%;
+}
+div.back {
+    float: right;
+}
+button {
+    font-size: 0.8em;
+}
+
+@media only screen and (max-width: 350px) {
+    h1 {
+        font-size: 1em;
+    }
+    p {
+        font-size: 0.5em;
+    }
+    h2 {
+        font-size: 0.8em;
+    }
+    img {
+        margin-left: 1%;
+    }
+    div.poem {
+        font-size: 0.8em;
+    }
+    button {
+        font-size: 0.4em;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1em;
+    }
+    h2 {
+        font-size: 1.7em;
+    }
+    img {
+        margin-left: 2%;
+    }
+    img#img1 {
+        height: 500px;
+        width: auto;
+    }
+    img#img2 {
+        height: 1000px;
+        width: auto;
+    }
+    img#img3 {
+        height: 500px;
+        width: auto;
+    }
+    button {
+        font-size: 1em;
+    }
+
+}

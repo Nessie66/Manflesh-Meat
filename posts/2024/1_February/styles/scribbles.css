@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(243, 239, 220);
+    color: rgb(131, 43, 28);
+    margin: 1% 2% 1% 2%;
+    overflow-x: hidden;
+}
+h1 {
+    font-size: 1.3em;
+}
+p {
+    font-size: 0.7em;
+    margin-right: 15%;
+}
+img {
+    width: 46%;
+    vertical-align: top;
+    margin: 3% auto 3% auto;
+}
+
+img#img2 {
+    width: 42%;
+    float: right;
+}
+
+img#img3 {
+    width: 50%;
+}
+
+img#img4 {
+    float: right;
+    width: 30%;
+}
+
+img#ed {
+    width: 98%;
+    display: block;
+}
+
+p#ed2 {
+    text-align: center;
+    width: 100%;
+}
+
+img#img6 {
+    width: 98%;
+    display: block;
+}
+
+p#sleep1 {
+    margin-left: 8%;
+    margin-bottom: 8%;
+}
+
+@media only screen and (max-width: 350px) {
+    h1 {
+        font-size: 0.9em;
+    }
+    p {
+        font-size: 0.5em;
+    }
+    button {
+        font-size: 0.5em;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    h1 {
+        font-size: 2.2em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    button {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 860px) {
+    img#img1 {
+        width: 420px;
+        height: auto;
+    }
+    img#img2 {
+        width: 380px;
+        height: auto;
+        float:none;
+    }
+    img#img3 {
+        width: 450px;
+        height: auto;
+    }
+    img#ed {
+        width: 900px;
+        margin-left: 2%;
+    }
+    p#ed2 {
+        margin-left: 10%;
+        text-align: left;
+    }
+    img#img6 {
+        width: 900px;
+        height: auto;
+        margin-left: 2%;
+    }
+    img#img7 {
+        width: 360px;
+        height: auto;
+        margin-right: 5%;
+        vertical-align: bottom;
+    }
+    img#img8 {
+        width: 400px;
+        height: auto;
+    }
+}

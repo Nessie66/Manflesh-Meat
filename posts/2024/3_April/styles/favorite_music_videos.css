@@ -1,0 +1,48 @@
+video {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    height: auto;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+}
+
+body {
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 0.6em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.content a {
+    display: inline-block;
+    margin-bottom: 10%;
+}
+
+p {
+    margin-bottom: 10%;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    video {
+        width: 1200px;
+        height: 675px;
+    }
+
+    iframe {
+        width: 1200px;
+        height: 675px;
+    }
+}
+

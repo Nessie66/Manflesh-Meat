@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(76, 0, 255);
+}
+a {
+    background-color: white;
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+img {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+div.back {
+    margin: 2.5%;
+    float: right;
+}
+button {
+    font-size: 0.8em;
+}
+
+
+@media only screen and (max-width: 380px) {
+    a {
+        font-size: 0.8em;
+    }
+    button {
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    img {
+        height: 650px;
+        width: auto;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+    a {
+        margin-top: 2.5%;
+        margin-bottom: 1%;
+        font-size: 1em;
+    }
+    button {
+        font-size: 1em;
+    }
+}
