@@ -23,8 +23,46 @@
 
     <div class="content">
         <div class="notNav">
-            <h1>Contact</h1>
+            <h1>Contact Me</h1>
+            <hr class="hrB">
+            <p>Please fill out this contact form if you need to contact me for any reason including:</p>
+            <ul class="contactLi">
+                <li>To request additional information</li>
+                <li>Website feedback - broken links, rewording ect</li>
+                <li>Provide information, artifacts or documents for the cause</li>
+                <li>Ask personal questions - how I'm feeling, if im eating well, ect.</li>
+            </ul>
+            <p>I will try to create a public FAQ from this, if needed.</p>
             
+            <div class="form">
+                <h2 class="center"></h2>
+                <form name="submit-to-google-sheet">
+    
+                    <label  for="name">Name</label>
+                    <input name="name" id="name" type="text" placeholder=" your name" required>
+    
+                    <br><br>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="4" cols="50" type="text" placeholder=" message..." required></textarea>
+                    
+                    <button type="submit" onClick="setTimeout(function() { window.location.reload()(); }, 1000);">Submit</button>
+
+                    
+                </form>
+            </div>
+              
+              
+              <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbwXsopi0SkiJBrD7cQRAU54ZeXa2jCEEf1n0YUCVbkJ9pjFmFWuEdhCoWNRO6cMj34VyA/exec'
+                const form = document.forms['submit-to-google-sheet']
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => console.log('Success!', response))
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
 
     </div>
 
