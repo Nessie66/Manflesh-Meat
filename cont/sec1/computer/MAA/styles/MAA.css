@@ -132,12 +132,15 @@ hr {
     
 }
 
+hr.hrA{
+    margin-left: -25%;
+    width: 125.5%;
+}
+
 hr.hrB {
     margin-left: -20%;
     width: 120.5%;
 }
-
-
 
 div.table h2 {
     display: inline-block;
