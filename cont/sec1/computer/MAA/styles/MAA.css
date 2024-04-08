@@ -154,6 +154,18 @@ div.temp br {
     display: none;
 }
 
+div.finnant img{
+    width: 40%;
+    float: right;
+    margin-left: 1%;
+    max-width: 500px;
+}
+
+div.finnant {
+    margin-bottom: 10%;
+}
+
+
 @media only screen and (max-width: 380px) {
     body {
         font-size: 0.8em;
@@ -165,9 +177,14 @@ div.temp br {
     body {
         font-size: 1.3em;
     }
-    
+    footer {
+        font-size: 0.6em;
+    }
     div.temp br {
         display: block;
+    }
+    div.finnant {
+        margin-bottom: 23%;
     }
 }
 
