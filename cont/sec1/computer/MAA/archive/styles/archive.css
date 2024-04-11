@@ -85,6 +85,12 @@ div.imgADJ div{
     width: 54%;
     margin-left: 10px;
 }
+
+div.adj2 div{
+    width: 45%;
+    vertical-align: top;
+}
+
 div.imgADJ img{
     vertical-align: middle;
     margin-left: 1%;
