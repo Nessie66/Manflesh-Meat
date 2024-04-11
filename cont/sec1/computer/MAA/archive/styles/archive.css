@@ -24,12 +24,84 @@ div.timeline p{
     margin-top: 0%;
 }
 
+img {
+    width: 100%;
+}
+
+/* archive pages */
+
+br.temp {
+    display: none;
+}
+
+
+img.imgCenter {
+    width: 80%;
+    display: block;
+    margin: auto;
+    max-width: 800px;
+}
+
+div.imgRight img{
+    width: 100%;
+
+    max-width: 400px;
+}
+
+div.imgRight{
+    width: 40%;
+    float: right;
+    text-align: center;
+    margin-left: 10px;
+}
+
+
+
+h4.caption{
+    text-align: center;
+    margin-top: 2px;
+    font-size: 0.7em;
+}
+
+div.center h3{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+div.center h3.s1 {
+    margin-top: 0;
+}
+
+div.center p{
+    margin-top: 5px;
+}
+
+div.center h3.s2 {
+    margin-top: 23%;
+}
+
+
 @media only screen and (min-width: 600px) {
     body {
         font-size: 1em;
     }
     footer {
         font-size: 0.6em;
+    }
+
+    div.center {
+        font-size: 1.1em;
+        display: block;
+        width: 90%;
+        margin: auto;
+
+    }
+
+    div.center h3.s2 {
+        margin-top: 40px;
+    }
+    div.center p.s2 {
+        margin-top: 5%;
     }
 }
 
@@ -39,5 +111,16 @@ div.timeline p{
     }
     footer {
         font-size: 0.6em;
+    }
+
+    div.center {
+        font-size: 1.1em;
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    div.center p.s2 {
+        margin-top: 10%;
     }
 }
