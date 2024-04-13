@@ -91,6 +91,16 @@ div.adj2 div{
     vertical-align: top;
 }
 
+div.adj4 div{
+    width: 45%;
+    vertical-align: top;
+}
+
+div.adj4 div#MS{
+    width: 48%;
+    vertical-align: top;
+}
+
 div.imgADJ img{
     vertical-align: middle;
     margin-left: 1%;
@@ -130,6 +140,10 @@ div#ms {
     div.imgADJ div{
         margin-left: 20px;
     }
+
+    div.adj3{
+        margin-top: 15%;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -153,5 +167,9 @@ div#ms {
 
     div.imgADJ {
         margin-top: 10%;
+    }
+
+    div.adj3{
+        margin-top: 20%;
     }
 }
