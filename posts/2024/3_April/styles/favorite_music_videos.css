@@ -44,5 +44,9 @@ p {
         width: 1200px;
         height: 675px;
     }
+
+    iframe#anco {
+        height: 600px;
+    }
 }
 
