@@ -15,7 +15,7 @@ window.onload = function() {
     });
 };
 
-const num = 300;
+const num = 260;
 const phraseBuffer = 25; 
 
 var usedPhrases = [];
