@@ -16,6 +16,9 @@ window.onload = function() {
 };
 
 const num = 200;
+const phraseBuffer = 25; 
+
+var usedPhrases = [];
 
 function displayRandomPhrases(phrases, numberOfPhrases) {
     var phraseContainer = document.getElementById('phrase-container');
@@ -28,9 +31,14 @@ function displayRandomPhrases(phrases, numberOfPhrases) {
             return Math.random() - 0.5;
         });
 
-        // Select a random phrase
-        var randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+        // Select a random phrase that hasn't been used recently
+        var randomPhrase = getRandomUnusedPhrase(phrases);
         selectedPhrases.push(randomPhrase);
+        usedPhrases.push(randomPhrase);
+
+        if (usedPhrases.length > phraseBuffer) {
+            usedPhrases.shift(); // Remove oldest phrase from buffer
+        }
     }
 
     var allPhrases = selectedPhrases.join(' ');
@@ -40,4 +48,9 @@ function displayRandomPhrases(phrases, numberOfPhrases) {
     phraseContainer.appendChild(paragraph);
 }
 
-
+function getRandomUnusedPhrase(phrases) {
+    var unusedPhrases = phrases.filter(function(phrase) {
+        return !usedPhrases.includes(phrase);
+    });
+    return unusedPhrases[Math.floor(Math.random() * unusedPhrases.length)];
+}
