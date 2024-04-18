@@ -55,7 +55,7 @@ function displayRandomPhrases(phrases, numberOfPhrases) {
     var allPhrases = selectedPhrases.join(' ');
 
     var randomPosition = Math.floor(Math.random() * allPhrases.length);
-    allPhrases = allPhrases.slice(0, randomPosition) + '<a class="link" href="immitation_crab_meat.html">&nbspHEY MAN SHUTUP YOURE JUST SPOUTING EMPTY WORDS AND RHYMES!&nbsp</a>' + allPhrases.slice(randomPosition);
+    allPhrases = allPhrases.slice(0, randomPosition) + '<a class="link" href="immitation_crab_meat.html">&nbspHEY MAN SHUTUP YOURE JUST SPOUTING EMPTY WORDS AND RHYMES&nbsp</a>' + allPhrases.slice(randomPosition);
 
     var paragraph = document.createElement('p');
     paragraph.textContent = allPhrases;
