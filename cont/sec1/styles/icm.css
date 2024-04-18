@@ -4,7 +4,7 @@ body {
     padding:0;
     color: white;
     background-color: black;
-    font-size: 0.7em;
+    font-size: 0.5em;
 }
 
 
@@ -16,12 +16,36 @@ img {
     width: 100%;
     display: block;
     margin: auto;
+} 
+
+img#y1 {
+    margin-left: 0;
+    width: 45%;
 }
 
+div.image {
+    display: none;
+}
+
+div.image2 {
+    display: block;
+}
+
+a.link {
+    font-size: 1.2em;
+
+}
 
 @media only screen and (min-width: 600px) {
     body {
-        font-size: 1em;
+        font-size: 0.9em;
+    }
+    div.image {
+        display: block;
+    }
+
+    div.image2 {
+        display: none;
     }
 
 }

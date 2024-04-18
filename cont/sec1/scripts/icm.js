@@ -15,7 +15,7 @@ window.onload = function() {
     });
 };
 
-const num = 200;
+const num = 300;
 const phraseBuffer = 25; 
 
 var usedPhrases = [];
@@ -24,33 +24,37 @@ function displayRandomPhrases(phrases, numberOfPhrases) {
     var phraseContainer = document.getElementById('phrase-container');
     phraseContainer.innerHTML = '';
 
+    // Initialize a counter object to keep track of phrase occurrences
+    var phraseCounters = {};
+
+    for (var i = 0; i < phrases.length; i++) {
+        phraseCounters[phrases[i]] = 0;
+    }
+
     var selectedPhrases = [];
     while (selectedPhrases.length < numberOfPhrases) {
-        
         phrases.sort(function() {
             return Math.random() - 0.5;
         });
 
-        // Select a random phrase that hasn't been used recently
-        var randomPhrase = getRandomUnusedPhrase(phrases);
-        selectedPhrases.push(randomPhrase);
-        usedPhrases.push(randomPhrase);
-
-        if (usedPhrases.length > phraseBuffer) {
-            usedPhrases.shift(); // Remove oldest phrase from buffer
+        // Select a random phrase
+        var randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+        
+        // Check if the phrase can be displayed based on its counter
+        if (phraseCounters[randomPhrase] < 10) { // Change 10 to your desired limit
+            selectedPhrases.push(randomPhrase);
+            phraseCounters[randomPhrase]++;
         }
     }
 
     var allPhrases = selectedPhrases.join(' ');
 
+    // Inserting <a> tag at a random position in the paragraph
+    var randomPosition = Math.floor(Math.random() * allPhrases.length);
+    allPhrases = allPhrases.slice(0, randomPosition) + '<a class="link" href="immitation_crab_meat.html">&nbspHEY MAN SHUTUP YOURE JUST SPOUTING EMPTY WORDS AND RHYMES!&nbsp</a>' + allPhrases.slice(randomPosition);
+
     var paragraph = document.createElement('p');
-    paragraph.textContent = allPhrases;
+    paragraph.innerHTML = allPhrases; // Use innerHTML to insert HTML tags
     phraseContainer.appendChild(paragraph);
 }
 
-function getRandomUnusedPhrase(phrases) {
-    var unusedPhrases = phrases.filter(function(phrase) {
-        return !usedPhrases.includes(phrase);
-    });
-    return unusedPhrases[Math.floor(Math.random() * unusedPhrases.length)];
-}
