@@ -54,9 +54,9 @@ let randomEvent;
             break;
     }
 
-//SVG replacer machine (with timeout)
+//SVG replacer machine
 function replaceSVG(filepath) {
-    //load content asynchronously
+    //load content asynchronously (whatever that means)
     fetch(filepath)
     .then(response => response.text())
     .then(data => {
