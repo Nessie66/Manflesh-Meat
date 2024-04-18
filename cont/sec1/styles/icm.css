@@ -1,0 +1,27 @@
+body {
+    height: 100%;
+    margin:10px;
+    padding:0;
+    color: white;
+    background-color: black;
+    font-size: 0.7em;
+}
+
+
+div#phrase-container p{
+    margin-top: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 1em;
+    }
+
+}
