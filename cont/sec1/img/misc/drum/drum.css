@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: blue;
+}
+
+div.content {
+    text-align: center;
+    margin-top: 250px;
+}
+
+img {
+    width: 40%;
+    margin: auto;
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 2.3vw;
+}
