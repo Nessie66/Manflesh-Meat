@@ -51,7 +51,7 @@ function hideButton() {
 
 window.onload = function() {
     document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, user-scalable=no, initial-scale='+(1/window.devicePixelRatio)+'');
-    window.scrollTo(250, 0);
+    window.scrollTo(420, 0);
 
     button1.addEventListener("click", function() {
         button1.classList.remove("show");

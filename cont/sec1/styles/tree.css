@@ -9,19 +9,20 @@ body {
     background-color: black;
     color: white;
     /* text-align: center; */
+    font-size: 2em;
 }
 
 html { height: 100%; overflow:auto; }
 body { height: 100%; }
 
 h2 {
-    margin-top: 30px;
+    margin-top: 80px;
     font-size: 0.7em;
     text-align: center;
 }
 
 svg {
-    margin-top:150px;
+    margin-top:230px;
     height: 80%;
 }
  
@@ -73,7 +74,7 @@ div.speech {
     left: 3%;
     color: black;
     max-width: 500px;
-    font-size: 1em;
+    font-size: 0.8em;
     opacity: 0;
 }
 div.speech p{
@@ -107,22 +108,21 @@ div.top {
 
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 900px) {
     h2 {
-        font-size: 1.1em;
+        
         font-weight: lighter;
         margin-top: 60px;
     }
 
-    h4 {
-        font-size: 0.8em;
+    body {
+        font-size: 1.5em;
     }
 
-    a {
-        font-size: 1.1em;
-    }
+    
     svg {
-        /* width: 100%; */
+        margin-top: 150px;
+        width: 100%;
     }
 }
 
