@@ -9,7 +9,7 @@ body {
     background-color: black;
     color: white;
     /* text-align: center; */
-    font-size: 2em;
+    font-size: 1em;
 }
 
 h2 {
@@ -19,8 +19,8 @@ h2 {
 }
 
 svg {
-    margin-top:230px;
-    height: 80%;
+    margin-top:170px;
+    height: 75%;
 }
  
 a {
@@ -116,10 +116,14 @@ div.top {
         font-size: 1.5em;
     }
 
+    * {
+        overflow: hidden;
+    }
     
     svg {
-        margin-top: 150px;
-        /* width: 100%; */
+        display: block;
+        margin: auto;
+        margin-top: 170px;
     }
 }
 
