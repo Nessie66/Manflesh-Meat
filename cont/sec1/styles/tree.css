@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom:70px;
+}
+
+svg {
+    width: 100%;
+}
+ 
+a {
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 380px) {
+
+}
+
+@media only screen and (min-width: 480px) {
+    h2 {
+        font-size: 1.1em;
+        font-weight: lighter;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+
+}
