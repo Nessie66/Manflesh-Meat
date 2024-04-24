@@ -3,24 +3,103 @@
     margin: 0;
     -webkit-tap-highlight-color: transparent;
     font-family: 'Times New Roman', Times, serif;
+    /* overflow-y: hidden; */
 }
 body {
     background-color: black;
     color: white;
-    text-align: center;
+    /* text-align: center; */
 }
+
+html { height: 100%; overflow:auto; }
+body { height: 100%; }
 
 h2 {
     margin-top: 30px;
-    margin-bottom:70px;
+    font-size: 0.7em;
+    text-align: center;
 }
 
 svg {
-    width: 100%;
+    margin-top:150px;
+    height: 80%;
 }
  
 a {
     cursor: pointer;
+}
+
+h4 {
+    display: inline;
+    font-weight: lighter;
+    font-size: 0.6em;
+    letter-spacing: 3px;
+}
+
+h4#l1 {
+    color:rgb(97, 97, 97);
+}
+
+h4#l2 {
+    color: rgb(194, 194, 194);
+}
+
+h4#l3 {
+    color: white;
+}
+
+div.light {
+    display: inline;
+}
+
+div.back {
+    display: inline;
+    float: right;
+}
+
+a:visited {
+    color: blue;
+}
+
+a {
+    font-size: 0.8em;
+    margin: 5px;
+}
+
+div.speech {
+    position: absolute;
+    display: inline-block;
+    top: 140%;
+    left: 3%;
+    color: black;
+    max-width: 500px;
+    font-size: 1em;
+    opacity: 0;
+}
+div.speech p{
+    background-color: white;
+    padding: 3px;
+}
+
+
+button{
+    display: none;
+    padding: 1px;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+button.show {
+    display: inline-block;
+}
+
+div.show {
+    opacity: 1;
+}
+
+div.top {
+    position:fixed;
+    width: 100%;
 }
 
 
@@ -32,9 +111,25 @@ a {
     h2 {
         font-size: 1.1em;
         font-weight: lighter;
+        margin-top: 60px;
+    }
+
+    h4 {
+        font-size: 0.8em;
+    }
+
+    a {
+        font-size: 1.1em;
+    }
+    svg {
+        width: 100%;
     }
 }
 
 @media only screen and (min-width: 1280px) {
+    a {
+        font-size: 1.4em;
+        margin: 20px;
+    }
 
 }

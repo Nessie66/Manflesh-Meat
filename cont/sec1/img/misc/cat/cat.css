@@ -1,3 +1,7 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
     background-color: black;
     color: rgb(55, 55, 165);
@@ -15,7 +19,7 @@ img {
     cursor: pointer;
 
 }
-
+ 
 h2 {
     font-size: 1em;
 }

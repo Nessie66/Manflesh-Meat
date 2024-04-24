@@ -1,6 +1,9 @@
+* {
+    overflow:hidden ;
+}
+
 body {
     background-color: black;
-    overflow: hidden;
 }
 
 div.content {
@@ -9,9 +12,10 @@ div.content {
 }
 
 img {
-    width: 105%;
+    width: 120%;
     margin: auto;
     max-width: 1000px;
+    margin-left: -3%;
 }
 
 @media only screen and (max-width: 380px) {
