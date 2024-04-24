@@ -28,7 +28,7 @@ svg {
 a {
     cursor: pointer;
 }
-
+ 
 h4 {
     display: inline;
     font-weight: lighter;
@@ -122,7 +122,7 @@ div.top {
         font-size: 1.1em;
     }
     svg {
-        width: 100%;
+        /* width: 100%; */
     }
 }
 
