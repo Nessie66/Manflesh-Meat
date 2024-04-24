@@ -12,9 +12,6 @@ body {
     font-size: 2em;
 }
 
-html { height: 100%; overflow:auto; }
-body { height: 100%; }
-
 h2 {
     margin-top: 80px;
     font-size: 0.7em;
@@ -122,7 +119,7 @@ div.top {
     
     svg {
         margin-top: 150px;
-        width: 100%;
+        /* width: 100%; */
     }
 }
 
