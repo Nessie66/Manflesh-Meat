@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+body {
+    background-color: black;
+    color: red;
+    text-align: center;
+}
+
+div.hanging img {
+    margin: -2px;
+    display: inline;
+    width: 33.3%;
+}
+div.hanging {
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+div.hanging img.hidden {
+    display: none;
+}
+
+
+img.face {
+    width: 50%;
+    display: block;
+    margin: auto;
+    max-width: 150px;
+}
+
+@media only screen and (min-width: 1000px) {
+    div.hanging img.hidden {
+        display: inline;
+    }
+    div.hanging img {
+        margin: -2px;
+        display: inline;
+        width: 16.6%;
+    }
+    div.hanging {
+        max-width: 100%;
+    }
+}
