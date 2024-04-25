@@ -9,17 +9,17 @@ body {
     background-color: black;
     color: white;
     /* text-align: center; */
-    font-size: 1em;
+    font-size: 2em;
 }
 
 h2 {
-    margin-top: 50px;
+    margin-top: 100px;
     font-size: 0.7em;
     text-align: center;
 }
 
 svg {
-    margin-top:170px;
+    margin-top:270px;
     height: 75%;
 }
  
