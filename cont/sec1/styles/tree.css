@@ -9,17 +9,17 @@ body {
     background-color: black;
     color: white;
     /* text-align: center; */
-    font-size: 2em;
+    font-size: 1em;
 }
 
 h2 {
-    margin-top: 90px;
+    margin-top: 50px;
     font-size: 0.7em;
     text-align: center;
 }
 
 svg {
-    margin-top:280px;
+    margin-top:170px;
     height: 75%;
 }
  
@@ -101,7 +101,7 @@ div.top {
 }
 
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-device-width: 380px) {
 
 }
 
@@ -116,18 +116,24 @@ div.top {
         font-size: 1.5em;
     }
 
-    * {
-        overflow: hidden;
+    div.top {
+        margin-top: -180px;
     }
+
+    div.speech {
+        font-size: 0.7em;
+    }
+    
     
     svg {
         display: block;
         margin: auto;
-        margin-top: 170px;
+        margin-top: 180px;
+        width: 100%;
     }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-device-width: 1280px) {
     a {
         font-size: 1em;
         margin: 20px;
