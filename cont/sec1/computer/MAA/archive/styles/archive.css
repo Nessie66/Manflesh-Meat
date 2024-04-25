@@ -54,6 +54,29 @@ div.imgRight{
     margin-left: 10px;
 }
 
+div.imgRightField{
+    width: 25%;
+    float: right;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 250px;
+    position: relative;
+    top: 30px;
+}
+
+div#scriptOld {
+    width: 20%;
+    max-width: 200px;
+    top: 0;
+}
+
+div#fig3 {
+    width: 25%;
+    max-width: 250px;
+}
+
+
 
 
 h4.caption{
