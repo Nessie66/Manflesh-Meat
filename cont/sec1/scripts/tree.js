@@ -68,12 +68,12 @@ const fly = "img/misc/otherfliesare/otherfliesare.html"
 //speech functions
 function lounging(){
     hideButton();
-    speech("I survived a rod in my neck and hooks in my hands and feet and actually they rodded up my entire body and they posed me in different ways. Anyway I survived  and so I'm sure I'll survive this.");
+    speech("I survived a rod in my neck and hooks in my hands and feet and actually they rodded up my entire body and they posed me in different ways. Anyway I survived that and so I'm sure I'll survive this.");
 }
 
 function dangling(){
     hideButton();
-    speech("did you know they dont even build the staircases into the building anymore they just build the building then put the staircase in later? you probably did. yeah.. sorry i don't mean to treat you like an idiot.");
+    speech("Did you know they dont even build the staircases into the building anymore they just build the building then put the staircase in later? You probably did.. Yeah... Sorry i don't mean to treat you like an idiot.");
 }
 
 function reaching(){
@@ -92,22 +92,22 @@ function pushing(){
 }
 
 function clinging(){
-    speech("quick. find something profound to look at for this bit, here this dripping exhaust pipe'll do yeah the uh water drips represent the sadness dripping out of you and. and uh the silver of the metal represents your lycanthropy");
+    speech("Quick. Find something profound to look at for this bit, here this dripping exhaust pipe'll do, yeah the uh, water drips represent the sadness dripping out of you and... and uh, the silver of the metal represents your lycanthropy!");
     showButton();
 }
 
 function dragging(){
     hideButton();
-    speech("trapped between a rock and a lard place.<br> the rock pushes you into the lard and now you're stuck in a block of lard.<br> while pondering how you could see the bright side of this, the lard starts to melt and you begin to sink into it.<br> you dont worry too much though as blocks of lard usually have a bottom.");
+    speech("Trapped between a rock and a lard place.<br> The rock pushes you into the lard and now you're stuck in a block of lard.<br> While pondering how you can see the bright side of this, the lard starts to melt and you begin to sink into it.<br> You dont worry too much though as blocks of lard usually have a bottom.");
 }
 
 function hanging(){
     hideButton();
-    speech("Why do flies suicide themselves into your eyes?<br>just not a productive use of their time is it")
+    speech("Why do flies suicide themselves into your eyes?<br>Just not a productive use of their time is it.")
     setTimeout(function(){ redirect(fly); }, 3500);
 }
 
 function bending(){
     hideButton();
-    speech("please don't unleash wild animals.<br>you know why.<br><br>what a horrible day.<br>what a horrible name");
+    speech("please don't unleash wild animals.<br>you know why.<br><br>what a horrible day.<br>what a horrible name.");
 }
