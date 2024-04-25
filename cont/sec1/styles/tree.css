@@ -112,13 +112,17 @@ div.top {
         margin-top: 60px;
     }
 
+    div.top {
+        margin-top: -170px;
+    }
+
     body {
         font-size: 1.5em;
     }
 
-    * {
+    /* * {
         overflow: hidden;
-    }
+    } */
     
     svg {
         display: block;
@@ -129,7 +133,7 @@ div.top {
 
 @media only screen and (min-width: 1280px) {
     a {
-        font-size: 1.4em;
+        font-size: 1em;
         margin: 20px;
     }
 

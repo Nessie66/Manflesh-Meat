@@ -53,6 +53,15 @@ window.onload = function() {
     document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, user-scalable=no, initial-scale='+(1/window.devicePixelRatio)+'');
     window.scrollTo(420, 0);
 
+    window.addEventListener('resize', function() {
+        var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+        if (viewportWidth >= 900) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    });
+
     button1.addEventListener("click", function() {
         button1.classList.remove("show");
         speech("and now its just open road. being eaten up by the car for reasons it doesn't understand.");
