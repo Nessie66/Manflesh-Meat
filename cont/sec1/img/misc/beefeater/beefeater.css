@@ -8,6 +8,7 @@ body {
     background-color: black;
     color: red;
     text-align: center;
+    font-size: 0.8em;
 }
 
 div.hanging img {
@@ -28,10 +29,22 @@ div.hanging img.hidden {
 
 
 img.face {
-    width: 50%;
+    width: 30%;
     display: block;
     margin: auto;
     max-width: 150px;
+    margin-top: 20px;
+}
+
+
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 1em;
+    }
+    img.face {
+        width: 40%;
+        margin-top: 0;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
