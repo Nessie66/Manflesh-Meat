@@ -93,6 +93,39 @@ div.show {
     opacity: 1;
 }
 
+div.quiz {
+    width: 35%;
+}
+
+h2 {
+    background-color: rgb(255, 0, 0);
+    color: greenyellow;
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+div.quiz {
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    scale: 0.7;
+    top: 43%;
+}
+
+div.quiz img{
+    width: 100%;
+    background-color: black;
+}
+
+img#enter {
+    width: 95%;
+}
+
+img.line {
+    background-color: black;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
 @media only screen and (max-width: 380px) {
     div.speech{
         font-size: 7px;

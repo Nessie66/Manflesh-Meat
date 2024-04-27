@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>???</title>
+    <link rel="stylesheet" href="question.css">
+</head>
+<body>
+    <div class="content">
+        <img src="img/candle1.gif" class="candle left">
+        <h2>If you had to make a zombie werewolf ghost vampire hybrid,<br> 
+        in which order would the person need to be transformed? </h2>
+        <img src="img/candle1.gif" class="candle right">
+        <h3>(there is a right answer)</h3>
+        <img id="line" src="img/1.gif">
+        <img class="hidden" id="line" src="img/1.gif">
+        <img class="hidden" id="line" src="img/1.gif">
+        <img src="img/zombie.gif">
+        <img src="img/werewolf2.gif">
+        <img src="img/vampire.gif">
+        <div class="question">
+            <form name="horror-question-form">
+                <label for="monster">Select the correct order:</label>
+                <select name="monster_1" id="monster_1" required>
+                    <option value="zombie">Zombie</option>
+                    <option value="werewolf">Werewolf</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="vampire">Vampire</option>
+                </select>
+                <select name="monster_2" id="monster_2" required>
+                    <option value="zombie">Zombie</option>
+                    <option value="werewolf">Werewolf</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="vampire">Vampire</option>
+                </select>
+                <select name="monster_3" id="monster_3" required>
+                    <option value="zombie">Zombie</option>
+                    <option value="werewolf">Werewolf</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="vampire">Vampire</option>
+                </select>
+                <select name="monster_4" id="monster_4" required>
+                    <option value="zombie">Zombie</option>
+                    <option value="werewolf">Werewolf</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="vampire">Vampire</option>
+                </select>
+                <br>
+                <label for="name">Name</label>
+                <input name="name" id="name" type="text" placeholder="Type name" required>
+                <br>
+
+                <label for="explanation">Explain your reasoning: </label>
+                <textarea name="explanation" id="explanation" rows="4" cols="50" type="text" placeholder="Type explanation..." required></textarea>
+                <br>
+                <button type="submit" onClick="setTimeout(function() { window.location.reload()(); }, 1000);">Submit</button>
+            </form>
+        </div>
+
+        <img class="blood" src="img/blood.gif">
+
+        <h4>ask me about human flesh</h4>
+    </div>
+
+    <script src="question.js"></script>
+</body>
+</html>
