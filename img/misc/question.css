@@ -5,7 +5,6 @@
 body {
     background-color: rgb(0, 0, 0);
     color: greenyellow;
-    text-align: center;
 }
 
 .content {
@@ -15,7 +14,7 @@ body {
 
 
 h2 {
-    font-size: 0.8em;
+    font-size: 0.7em;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 3px;
@@ -23,11 +22,36 @@ h2 {
 }
 
 h3 {
-    font-size: 0.7em;
+    font-size: 0.65em;
     margin-top: 0;
     color: rgba(255, 46, 46, 0.712)
 }
 
+h4 {
+    font-weight: lighter;
+}
+
+div.back {
+    display: inline;
+    vertical-align: top;
+    margin-left: 1%;
+    text-align: left;
+    z-index: 2;
+    font-size: 0.9em;
+}
+
+div.back a{
+    color: rgb(255, 0, 0);
+}
+
+div.back a:active {
+    color: yellowgreen;
+}
+
+/* css is a plague */
+.center {
+    text-align: center;
+}
 
 /* Form */
 
@@ -36,6 +60,12 @@ div.question {
     text-align: center;
     margin: auto;
     font-size: 0.7em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+form {
+    margin-bottom: 0;
 }
 
 select {
@@ -53,6 +83,10 @@ label {
 textarea {
     margin-bottom: 10px;
     width: 45%;
+}
+
+button {
+    margin-bottom: 0;
 }
 
 /* images */
@@ -73,7 +107,7 @@ textarea {
 
 #line {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     max-width: 100%;
 }
 
@@ -88,11 +122,14 @@ img {
 
 img.blood {
     width: 75px;
+    position: relative;
+    margin-top: 0;
 }
 
 .hidden {
     display: none;
 }
+
 
 @media only screen and (min-width: 600px) {
 
@@ -118,6 +155,10 @@ img.blood {
 
     div.question {
         font-size: 1em;
+    }
+
+    div.back {
+        font-size: 1.3em;
     }
     
 }
@@ -162,6 +203,10 @@ img.blood {
         width: 30%;
     }
 
+    div.back {
+        margin-left: 20%;
+    }
+
 }
 
 @media only screen and (max-width: 380px) {
@@ -169,7 +214,7 @@ img.blood {
         width: 60px;
     }
     h2 {
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
     h3 {
         font-size: 0.6em;

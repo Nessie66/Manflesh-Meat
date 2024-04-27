@@ -107,8 +107,9 @@ h2 {
 div.quiz {
     background-color: rgb(255, 0, 0);
     position: absolute;
-    scale: 0.7;
-    top: 43%;
+    scale: 0.6;
+    top: 40%;
+    left: -2%;
 }
 
 div.quiz img{
@@ -125,6 +126,7 @@ img.line {
     position: absolute;
     bottom: -1px;
     left: 0;
+    height: 50px;
 }
 @media only screen and (max-width: 380px) {
     div.speech{
@@ -176,7 +178,12 @@ img.line {
     }
 
     div.quiz {
-        top: 54%;
+        top: 58%;
+        left: -2%;
+    }
+
+    img.line {
+        height: 60px;
     }
 }
 @media only screen and (min-width: 980px) {
@@ -217,8 +224,15 @@ img.line {
         right: 35%;
     }
     div.quiz {
-        top: 33%;
+        top: 36%;
         left: 13%;
-        scale: 0.4;
+        scale: 0.3;
+    }
+    h2 {
+        font-size: 3em;
+        width: 100%;
+    }
+    img.line {
+        height: 100px;
     }
 }
