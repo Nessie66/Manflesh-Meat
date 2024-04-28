@@ -10,7 +10,6 @@
 // pages
 const pages = [
     "img/misc/beefeater/beefeater.html",
-    "img/misc/birdy/birdy.html",
     "img/misc/cat/cat.html",
     "img/misc/chickenhunt/chickenhunt.html",
     "img/misc/down/down.html",
@@ -20,6 +19,7 @@ const pages = [
     "img/misc/iwonteat/iwonteat.html",
     "img/misc/jenko/jenko.html",
     "img/misc/lackofbalance/lackofbalance.html",
+    "img/misc/manimitchy/manimitchy.html",
     "img/misc/orlok/orlok.html",
     "img/misc/volatileshore/volatileshore.html",
     "img/misc/waybacktothecar/waybacktothecar.html",
@@ -114,25 +114,3 @@ window.onload = function () {
     }
     
 }
-
-// window.onload = function () {
-//     if(localStorage.getItem("dead_end1") == null){     
-//         button1.addEventListener("click", function() {
-//             changeImage(event1);
-//             talk.classList.add("killyourselfcss");
-//             button1.classList.remove("show");
-//             speech("So be it... I hear she lurks around the potential pits, if you can make it that far.<br> I'd be wary of venturing any deeper. Horrid things lurk down there. Muligastric above and multigastric below you see. We're trapped.")
-//             localStorage.setItem("dead_end1", 1)  
-//         });
-//     }
-//     if((localStorage.getItem("dead_end1") == 1) && (localStorage.getItem("DEQ") == 1)){
-//         speech("Arck! You jumped me. Where on earth did you come from?")
-//         speech_.classList.add("DEQ");
-//         showSpeech()
-//         localStorage.setItem("DEQ", 2)  
-//     }
-
-//     console.log(localStorage.getItem("DEQ"))
-
-//     console.log((localStorage.getItem("dead_end1") == 1) && (localStorage.getItem("DEQ") == 1))
-//     }

@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow-y: hidden; */
+}
+
+body {
+    background-color:#0e0e0e;
+    background-image: url("g1.gif");
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+img#man {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+div.poem {
+    color: rgb(255, 255, 255);
+    position: absolute;
+}
+
+div.speech {
+    display: inline-block;
+    font-size: 0.9em;
+    padding-left: 0.3%;
+    padding-right: 0.3%;
+    white-space: nowrap;
+    text-align: center;
+    padding: 1%;
+}
+
+div.speech p {
+    background-color: white;
+}
+
+
+button.button {
+    margin-top: 2%;
+    font-size: 0.7em;
+    display: none;
+}
+
+div.talk {
+    position: absolute;
+    top: calc(170vw);
+    left: 3%;
+    text-align: center;
+    z-index: 1;
+}
+
+button.show {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+@media only screen and (max-width: 380px) {
+    div.talk {
+        top: 75vh;
+        left: 2%;
+    }
+    div.speech {
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    img#man {
+        max-width: 600px;
+    }
+    div.poem {
+        font-size: 1.1em;
+    }
+    div.talk {
+        top: 65vh;
+        left: 32%;
+    }
+    div.speech {
+        font-size: 1.2em;
+    }
+    button.button {
+        font-size: 1em;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+    div.talk {
+        top: 60vh;
+        left: 65%;
+    }
+}

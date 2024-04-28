@@ -109,5 +109,5 @@ function hanging(){
 
 function bending(){
     hideButton();
-    speech("please don't unleash wild animals.<br>you know why.<br><br>what a horrible day.<br>what a horrible name.");
+    speech("i met a bug with a personality today<br>i read a stage play by accident<br>i cant kick your head in<br>have you heard of empty hell theory?<br> please don't unleash wild animals.<br>you know why.<br><br>what a horrible day.<br>what a horrible name.");
 }
