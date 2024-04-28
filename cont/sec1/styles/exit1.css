@@ -175,6 +175,9 @@ div.show {
 }
 
 @media only screen and (min-width: 1280px) {
+    button {
+        font-size: 1.2em;
+    }
     svg {
         margin-top: 0;
         height: 957px; 
