@@ -146,6 +146,10 @@ div.active li {
     padding-left: 1%;
 }
 
+div.table a{
+    color: blue;
+}
+
 div.table h2 {
     display: inline-block;
 }

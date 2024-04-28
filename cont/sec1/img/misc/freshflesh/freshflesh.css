@@ -1,0 +1,62 @@
+
+* {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    background-color: black;
+    
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 250%;
+    margin-top: -20%;
+    margin-left: -75%;
+    overflow-y: hidden;
+
+}
+
+div.p2 {
+    color:rgba(136, 17, 41, 0.521);
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    bottom: 50px;
+    font-size: 0.8em;
+}
+
+@media only screen and (max-width: 380px) {
+
+}
+
+@media only screen and (min-width: 600px) {
+    div.p2 {
+        bottom: 100px;
+        font-size: 1em;
+    }
+    img {
+        display: block;
+        margin: auto;
+        width: 150%;
+        margin-top: -20%;
+        margin-left: -25%;
+    
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+    *{
+        overflow-y:auto;
+    }
+    div.p2 {
+        font-size: 1.2em;
+        bottom: 150px;
+    }
+    img {
+        margin-top: -25%;
+    }
+}

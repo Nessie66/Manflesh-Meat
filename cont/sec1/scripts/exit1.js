@@ -13,7 +13,7 @@ const pages = [
     "img/misc/cat/cat.html",
     "img/misc/chickenhunt/chickenhunt.html",
     "img/misc/down/down.html",
-    "img/misc/drum/drum.html",
+    "img/misc/freshflesh/freshflesh.html",
     "img/misc/gutless/gutless.html",
     "img/misc/idontwannaknow/idontwannaknow.html",
     "img/misc/iwonteat/iwonteat.html",
@@ -45,10 +45,6 @@ function randomPage() {
 }
 
 
-function guts(){
-    console.log("guts")
-    
-}
 
 
 //speech bubble changer/shower
@@ -86,7 +82,8 @@ const button1 = document.getElementById("nothing");
 const button2 = document.getElementById("showme");
 const button3 = document.getElementById("showmemore");
 
-window.onload = function () {
+function guts () {
+    console.log("guts")
     if(localStorage.getItem("guts") == 1){  
         talk.classList.add("more");
         button1.classList.remove("show");

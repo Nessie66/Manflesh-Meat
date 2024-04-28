@@ -304,14 +304,14 @@ div.org2 p {
     }
     img#title {
         margin-bottom: 1%;
-        max-width: 1200px;
+        max-width: 1000px;
         opacity: 0;
     }
     img#title2 {
-        max-width: 1400px;
+        max-width: 1100px;
         position: absolute;
         top: 1%;
-        left: 13%;
+        left: 21%;
         opacity: 1;
     }
     div.content {
@@ -336,5 +336,8 @@ div.org2 p {
     }
     #final {
         font-size: 1.5em;
+    }
+    img#mission {
+        width: 80%;
     }
 }
