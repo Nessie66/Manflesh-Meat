@@ -104,7 +104,7 @@ function dragging(){
 function hanging(){
     hideButton();
     speech("Why do flies suicide themselves into your eyes?<br>Just not a productive use of their time is it.")
-    setTimeout(function(){ redirect(fly); }, 3500);
+    setTimeout(function(){ redirect(fly); }, 3000);
 }
 
 function bending(){
