@@ -124,6 +124,7 @@ h4.poem {
 div.table {
     display: inline-block;
     width: 46%;
+    max-width: 500px;
     border: solid;
     border-color: red;
     border-width: 2px;
@@ -145,6 +146,26 @@ div.active li {
     padding-left: 1%;
 }
 
+div.table h2 {
+    display: inline-block;
+}
+
+div.spotlight li img {
+    display: inline-block;
+    width: 46%;
+    margin: 2%;
+}
+
+div.spotlight li p {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+
+div.recent li#li2{
+    margin-bottom: 35.5%;
+}
+
 hr {
     border-color: red;
     margin: 0;
@@ -162,9 +183,6 @@ hr.hrB {
     width: 115.5%;
 }
 
-div.table h2 {
-    display: inline-block;
-}
 
 
 footer {
@@ -257,6 +275,14 @@ img#door {
     max-width: 200px;
 }
 
+img#face1 {
+    width: 50px;
+    float: right;
+    margin: 0;
+    margin-right: 5px;
+}
+
+
 @media only screen and (max-width: 380px) {
     body {
         font-size: 0.8em;
@@ -281,6 +307,19 @@ img#door {
         width: 30%;
     
     }
+    div.recent li#li2{
+        margin-bottom: 216px;
+        margin-bottom: 50.5%;
+    }
+    div.spotlight li img {
+        width: 46%;
+        margin: 2%;
+    }
+
+    img#face1 {
+        width: 150px;
+        margin-right: 100px;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -291,6 +330,10 @@ img#door {
     .title img {
         max-width: 1200px;
         margin-left: 0;
+    }
+
+    img#avirex {
+        width: 30%;
     }
 
     .notNav {
@@ -311,5 +354,9 @@ img#door {
 
     div.history img {
         margin-left: 1%;
+    }
+
+    div.table {
+        margin-left: 16%;
     }
 }
