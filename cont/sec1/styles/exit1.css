@@ -3,7 +3,7 @@
     margin: 0;
     -webkit-tap-highlight-color: transparent;
     font-family: 'Times New Roman', Times, serif;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 body {
     background-color: black;
@@ -36,7 +36,7 @@ button {
 }
 
 p {
-    color: white;
+    color: rgb(255, 255, 255);
     margin-left: 20px;
     font-size: 0.8em;
 }
@@ -50,14 +50,86 @@ div.bottom {
     text-align: center;
 }
 
+/* speech bubble */
+div.speech {
+    background-color: white;
+    /* border-style: solid;
+    border-color: black;
+    border-width: 0.5px; */
+    display: inline-block;
+    font-size: 0.9em;
+    opacity: 0;
+    padding-left: 0.3%;
+    padding-right: 0.3%;
+    white-space: nowrap;
+    text-align: left;
+    padding: 1%;
+}
+
+div.speech p {
+    color: black;
+    margin-left: 0;
+}
+
+div.talk {
+    position: absolute;
+    top: calc(65vw);
+    left: 4%;
+    text-align: center;
+    z-index: 1;
+}
+
+button.button {
+    margin-top: 2%;
+    font-size: 0.7em;
+    display: none;
+}
+
+div.more {
+    top: calc(75vw);
+    left: 11%;
+}
+
+.hide {
+    opacity: 0;
+}
+
+button.show {
+    display: inline-block;
+}
+
+svg.show {
+    opacity: 1;
+}
+
+div.show {
+    opacity: 1;
+}
+
 
 @media only screen and (max-width: 380px) {
-    button {
-        font-size: 0.6em;
-    }
     svg {
         height: 43%;
         margin-left: 50%;
+    }
+    p {
+        font-size: 0.7em;
+    }
+    div.speech {
+        font-size: 0.9em;
+    }
+    div.talk {
+        top: 35vh;
+    }
+    
+    button.button {
+
+        font-size: 0.6em;
+    }
+    
+    div.more {
+    top: 40vh;
+    left: 17%;
     }
 }
 
@@ -82,6 +154,23 @@ div.bottom {
     p {
         font-size: 1em;
     }
+    div.speech {
+        font-size: 1.1em;
+    }
+    div.talk {
+        top: calc(45vh);
+        left: 9%;
+    }
+    
+    button.button {
+        margin-top:2%;
+        font-size: 1em;
+    }
+    
+    div.more {
+        top: calc(55vh);
+        left: 21%;
+    }
 
 }
 
@@ -100,9 +189,6 @@ div.bottom {
     div.back {
         bottom: 5%;
     }
-    button {
-        font-size: 1.2em;
-    }
     div.back {
         position: absolute;
         bottom: 2%;
@@ -112,8 +198,23 @@ div.bottom {
         top:2%;
         left: 38%;
     }
-    p {
+    div.bottom p {
         font-size: 1.2em;
         background-color: black;
+    }
+    div.speech {
+        font-size: 1.2em;
+    }
+    div.talk {
+        top: calc(57vh);
+        left: 25%;
+    }
+    button.button {
+        font-size: 1.1em;
+    }
+
+    div.more {
+        top: calc(60vh);
+        left: 32%;
     }
 }
