@@ -1,0 +1,49 @@
+
+
+body {
+    background-color: black;
+    color: white;
+}
+
+div.images {
+    text-align: center;
+}
+
+div.images div.row{
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+div.images div.lying div{
+    width: 80%;
+    max-width: 800px;
+}
+
+
+img {
+    width: 100%;
+
+}
+div.row div {
+    text-align: left;
+    display: inline-block;
+    width: 43%;
+    margin-right: 3%;
+    margin-left: 3%;
+    max-width: 500px;
+}
+
+h2 {
+    font-size: 0.8em;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+a {
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
