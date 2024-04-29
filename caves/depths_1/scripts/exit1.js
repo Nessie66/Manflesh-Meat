@@ -56,7 +56,7 @@ function randomPage() {
     localStorage.setItem("previous2", localStorage.getItem("previous1"));
     localStorage.setItem("previous1", randomPage);
 
-    // setTimeout(function() { window.location.href = randomPage; }, 1000);
+    setTimeout(function() { window.location.href = randomPage; }, 1000);
 }
 
 
