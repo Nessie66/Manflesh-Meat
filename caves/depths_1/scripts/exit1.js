@@ -1,3 +1,5 @@
+const flesh = document.getElementById('flesh');
+
 // reload page on back
 (function () {
     window.onpageshow = function(event) {
@@ -7,7 +9,6 @@
     };
 })();
 
-// pages
 const pages = [
     "img/misc/beefeater/beefeater.html",
     "img/misc/cat/cat.html",
@@ -28,23 +29,28 @@ const pages = [
     "img/misc/wrong/wrong.html"
 ];
 
-var previous = -1;
 
 function randomPage() {
-    console.log("sometimes i'll see, who'll I'll never be");
+    console.log("sometimes I'll see, who'll I'll never be");
     let randomIndex = Math.floor(Math.random() * pages.length);
-    const randomPage = pages[randomIndex];
+    let randomPage = pages[randomIndex];
 
-    if (previous == randomPage){
-        randomPage();
+
+    while (randomPage === localStorage.getItem("previous1") || randomPage === localStorage.getItem("previous2") || randomPage === localStorage.getItem("previous3") || randomPage === localStorage.getItem("previous4") || randomPage === localStorage.getItem("previous5")) {
+        console.log("reroll")
+        randomIndex = Math.floor(Math.random() * pages.length);
+        randomPage = pages[randomIndex];
+        console.log("new page selected is " + randomPage)
     }
-
-    previous = randomPage;
+    // this all disgusts me
+    localStorage.setItem("previous5", localStorage.getItem("previous4"));
+    localStorage.setItem("previous4", localStorage.getItem("previous3"));
+    localStorage.setItem("previous3", localStorage.getItem("previous2"));
+    localStorage.setItem("previous2", localStorage.getItem("previous1"));
+    localStorage.setItem("previous1", randomPage);
 
     setTimeout(function() { window.location.href = randomPage; }, 1000);
 }
-
-
 
 
 //speech bubble changer/shower
@@ -77,25 +83,30 @@ talk = document.getElementById("talk");
 
 speech_ = document.getElementById("talk");
 
-
 const button1 = document.getElementById("nothing"); 
 const button2 = document.getElementById("showme");
 const button3 = document.getElementById("showmemore");
 
 function guts () {
-    console.log("guts")
+    console.log("guts") 
+    console.log("flesh")
+    flesh.muted = false;
+    flesh.play();
 
     if(localStorage.getItem("guts") == null){    
         showSpeech();
-        button1.classList.add("show");
+        if(localStorage.getItem("guts") != 1){
+            button1.classList.add("show");
+        }
         button1.addEventListener("click", function() {
             button1.classList.remove("show");
             button2.classList.add("show");
             speech("but i have thoughts worth revealing.<br>do you know how it feels to put concept on a feeling?&nbsp&nbsp<br>to take a word and change the meaning?")
+            localStorage.setItem("guts", 1) 
             button2.addEventListener("click", function() {
                 button2.classList.remove("show")
                 randomPage();
-                localStorage.setItem("guts", 1)  
+                localStorage.setItem("guts", 2)  
             });
         });
         
@@ -104,7 +115,7 @@ function guts () {
 }
 
 window.onload = function() {
-    if(localStorage.getItem("guts") == 1){  
+    if(localStorage.getItem("guts") == 2){  
         talk.classList.add("more");
         button1.classList.remove("show");
         speech("")

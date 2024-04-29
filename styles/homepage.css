@@ -128,6 +128,36 @@ img.line {
     left: 0;
     height: 50px;
 }
+
+/* withering */
+div.withering {
+    text-align: centers;
+    position: absolute;
+    right: 0;
+    margin-top: -90px;
+    margin-right: 8%;
+    font-size: 0.8em;
+    display: inline-block;
+    scale: 1.2;
+}
+
+div.withering a{
+    color: rgb(255, 123, 0);
+    background-color:rgb(54, 25, 63);
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+div.withering a:active{
+    color: rgb(255, 255, 255);
+}
+
+div.withering img {
+    width: 60px;
+    margin-bottom: -4px;
+    z-index: -1;
+}
+
 @media only screen and (max-width: 380px) {
     div.speech{
         font-size: 7px;
@@ -185,7 +215,18 @@ img.line {
     img.line {
         height: 60px;
     }
+    div.withering {
+        font-size: 1.3em;
+        margin-right: 15%;
+        margin-top: -100px;
+    }
+    div.withering img {
+        width: 100px;
+    }
 }
+
+
+
 @media only screen and (min-width: 980px) {
     h2 {
         font-size: 1.7em;
@@ -234,5 +275,9 @@ img.line {
     }
     img.line {
         height: 100px;
+    }
+    div.withering {
+        font-size: 1.3em;
+        margin-right: 33%;
     }
 }

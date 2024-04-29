@@ -7,7 +7,7 @@
  }
 
  a {
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: white;
  }
 
@@ -20,11 +20,16 @@
  }
 
  img {
-   margin-bottom: ;
+   width: 70px;
  }
+
 
  @media only screen and (min-width: 600px) {
     body {
         font-size: 1em;
     }
+
+    img {
+      width: 90px;
+   }
 }

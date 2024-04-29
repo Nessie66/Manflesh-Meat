@@ -1,7 +1,12 @@
 
+body {
+    margin: 0;
+}
+
 div.content {
     text-align: center;
     margin-top: 150px;
+
 }
 
 img {

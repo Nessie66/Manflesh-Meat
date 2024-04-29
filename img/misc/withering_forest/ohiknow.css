@@ -1,0 +1,27 @@
+* {
+    overflow: hidden;
+}
+body {
+    margin: 0;
+}
+
+svg {
+    width: 110%;
+}
+
+@media only screen and (max-width: 380px) {
+    svg {
+        width: 110%;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    svg {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+}

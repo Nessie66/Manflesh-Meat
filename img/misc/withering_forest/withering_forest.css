@@ -1,0 +1,71 @@
+* {
+    overflow-y: hidden;
+}
+
+.content {
+    position: relative;
+}
+
+div.link {
+    color: white;
+    position:absolute;
+    top: 70px;
+    right: -130%;
+}
+
+a {
+    display: inline-block;
+    color: white;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+img {
+    width: 110%;
+    width: 1300px;
+    margin-top: 50px;
+    margin-left: 3%;
+    margin-right: 10%;
+}
+
+@media only screen and (max-width: 380px) {
+    img {
+        width: 1000px;
+    }
+    div.link {
+        top: 40px;
+        right: -120%;
+    }
+}
+
+@media only screen and (min-device-width: 600px) {
+    img {
+        width: 110%;
+        width: 1500px;
+        margin-top: 30px;
+        margin-left: 3%;
+        margin-right: 10%;
+    }
+    div.link {
+        font-size: 1.1em;
+        top: 100px;
+        right: -20%;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    img {
+        margin-right: 0%;
+    }
+    div.link {
+        top: 100px;
+        right: 40%;
+    }
+}
