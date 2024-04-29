@@ -84,15 +84,6 @@ const button3 = document.getElementById("showmemore");
 
 function guts () {
     console.log("guts")
-    if(localStorage.getItem("guts") == 1){  
-        talk.classList.add("more");
-        button1.classList.remove("show");
-        speech("")
-        button3.classList.add("show");
-        button3.addEventListener("click", function() {
-            randomPage();
-        });
-    }
 
     if(localStorage.getItem("guts") == null){    
         showSpeech();
@@ -110,4 +101,17 @@ function guts () {
         
     }
     
+}
+
+window.onload = function() {
+    if(localStorage.getItem("guts") == 1){  
+        talk.classList.add("more");
+        button1.classList.remove("show");
+        speech("")
+        button3.classList.add("show");
+        button3.addEventListener("click", function() {
+            button3.classList.remove("show");
+            randomPage();
+        });
+    }
 }
