@@ -40,20 +40,23 @@ function randomPage() {
     let randomPage = pages[randomIndex];
 
 
-    while (randomPage === localStorage.getItem("previous1") || randomPage === localStorage.getItem("previous2") || randomPage === localStorage.getItem("previous3") || randomPage === localStorage.getItem("previous4") || randomPage === localStorage.getItem("previous5")) {
+    while (randomPage === localStorage.getItem("previous1") || randomPage === localStorage.getItem("previous2") || randomPage === localStorage.getItem("previous3") || randomPage === localStorage.getItem("previous4") || randomPage === localStorage.getItem("previous5") || randomPage === localStorage.getItem("previous6") || randomPage === localStorage.getItem("previous7") || randomPage === localStorage.getItem("previous8")) {
         console.log("reroll")
         randomIndex = Math.floor(Math.random() * pages.length);
         randomPage = pages[randomIndex];
-        console.log("new page selected is " + randomPage)
     }
+
     // this all disgusts me
+    localStorage.setItem("previous8", localStorage.getItem("previous7"));
+    localStorage.setItem("previous7", localStorage.getItem("previous6"));
+    localStorage.setItem("previous6", localStorage.getItem("previous5"));
     localStorage.setItem("previous5", localStorage.getItem("previous4"));
     localStorage.setItem("previous4", localStorage.getItem("previous3"));
     localStorage.setItem("previous3", localStorage.getItem("previous2"));
     localStorage.setItem("previous2", localStorage.getItem("previous1"));
     localStorage.setItem("previous1", randomPage);
 
-    setTimeout(function() { window.location.href = randomPage; }, 1000);
+    // setTimeout(function() { window.location.href = randomPage; }, 1000);
 }
 
 
