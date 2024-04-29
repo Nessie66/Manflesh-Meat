@@ -59,7 +59,7 @@ window.onload = function () {
 
     if(localStorage.getItem("hallway5") == 1){
         talk.classList.add("m2");
-        speech("what you nosin around for, you a pervert or something? only thing round here is rats with bad teeth and grumpy old men with bad teeth. still, better than being out in the hills.. cant complain eh!");
+        speech("what you nosin around for, you a pervert or something? nothing interesting round here 'cept rats with bad teeth and finite failures withering away. its like they say; you wont find a painless way to die man. still, beats being out in the hills. cant complain eh!");
         localStorage.setItem("hallway5", 2)  
     }
 

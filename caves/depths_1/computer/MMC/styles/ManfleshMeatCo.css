@@ -210,23 +210,18 @@ input[type=email], select, textarea {
 }
 
 div.org1 {
-    display: block;
-    margin: auto;
-    margin-left: 0%;
+    width: 100%;
+    text-align: center;
 }
 
-div.org1 img {
-    display: inline;
+div.org1 div{
     width: 48%;
-    margin-left: 1%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0.8em;
 }
 
-div.org1 p {
-    margin-left: 1%;
-    display: inline;
-    margin-right: 0%;
-    font-size: 0.54em;
-}
+
 
 div.org2 {
     display: block;
@@ -277,10 +272,6 @@ div.org2 p {
         font-size: 1.2em;  
         margin-left: 4%;
     }
-
-    div.org1 {
-        margin-left: 0%;
-    }
     .r1 {
         font-size: 1em;
     }
@@ -325,14 +316,9 @@ div.org2 p {
         margin-left: 4%;
     }
     
-    div.org1 {
-        margin-left: 15%;
-    }
 
-
-    div.org1 p {
-        margin-left: 5%;
-        margin-right: 6%;
+    div.org1 div{
+        font-size: 01em;
     }
     #final {
         font-size: 1.5em;
