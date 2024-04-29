@@ -1,8 +1,10 @@
 body {
-    /* background-color: black; */
+    background-color: black;
     background-image: url(forest.jpg);
     background-size: cover;
     overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 
 div.content {
