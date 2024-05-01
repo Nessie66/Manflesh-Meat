@@ -58,7 +58,7 @@ window.onload = function () {
         if (localStorage.getItem("entrance") == 1){
             replaceSVG(event1);
             if (localStorage.getItem("homepage") == null)
-            setTimeout(function(){ speech("i wonder whats down there<br>&nbsp&nbspi wonder whats down there"); }, 500);
+            speech("i wonder whats down there<br>&nbsp&nbspi wonder whats down there");
             console.log("event 1")
         } else {
             let svg = document.getElementsByTagName("svg");
