@@ -12,6 +12,7 @@ div.link {
     position:absolute;
     top: 90px;
     right: -580px;
+    font-weight: lighter;
 }
 
 a {
