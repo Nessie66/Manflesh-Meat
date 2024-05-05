@@ -58,7 +58,7 @@ div.container {
 }
 div.posts {
     position: absolute;
-    top: 9vh;
+    top: 10vh;
     left: 3%;
     width: 55%;
     max-width: 490px;
@@ -121,7 +121,7 @@ path#path1{
 @media only screen and (max-width: 380px) {
     div.posts {
         left: 3%;
-        top: 9vh;
+        top: 11vh;
     }
     h1 {
         font-size: 0.6sem;
@@ -178,7 +178,7 @@ path#path1{
 @media only screen and (min-width: 750px) {
     div.posts {
         left: 4%;
-        top: 16vh;
+        top: 18vh;
     }
     div.titles {
         top: 7vh;
@@ -229,7 +229,7 @@ path#path1{
 
     div.posts {
         left: 20%;
-        top: 18vh;
+        top: 20vh;
 
     }
 
