@@ -8,6 +8,7 @@ img {
     margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
+    max-width: 1200px;
 }
 h1 {
     text-align: center;
