@@ -86,6 +86,7 @@ a:active {
 @media only screen and (min-width: 700px) {
     .artist {
         margin-top: 1%;
+        height: 40px;
     }
     
     #leg {
