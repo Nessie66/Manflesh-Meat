@@ -240,3 +240,19 @@ path#path1{
         left: 75%;
     }
 }
+
+@media only screen and (min-width: 2000px) {
+
+    div.posts {
+        left: 28%;
+        top: 20vh;
+
+    }
+
+    div.titles {
+        left: 28%;
+    }
+    div.back {
+        left: 68%;
+    }
+}
