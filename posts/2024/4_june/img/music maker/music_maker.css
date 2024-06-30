@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+
+label {
+  margin: 2px;
+}
+
+div.back {
+    margin: 10px;
+}
+
+body {
+    background-color: black;
+    color: blue;
+    font-size: 0.7em;
+}
+
+div.content {
+    text-align: center;
+}
+
+svg {
+    margin-top: 50px;
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+@keyframes rotate360 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate {
+    animation: rotate360 2s linear infinite; /* Change 2s to adjust animation speed */
+  }
+
+  @media only screen and (max-width: 380px) {
+
+  }
+  
+  @media only screen and (min-width: 600px) {
+    body {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media only screen and (min-width: 1000px) {
+
+  }
