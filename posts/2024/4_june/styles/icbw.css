@@ -26,11 +26,12 @@ img {
 
 img#planet {
     max-width: 1000px;
-    margin-top: -90px;
+    margin-top: -50px;
 }
 
 img#story {
     max-width: 1000px;
+    margin-top: -50px;
 }
 
 div.background {
