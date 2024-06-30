@@ -20,12 +20,18 @@ body {
     font-size: 0.7em;
 }
 
+h2 {
+  color: rgba(255, 208, 0, 0.575);
+  text-align: center;
+  font-size: 0.8em;
+}
+
 div.content {
     text-align: center;
 }
 
 svg {
-    margin-top: 50px;
+    margin-top: 10px;
     width: 200px;
     margin-bottom: 50px;
 }
@@ -50,6 +56,9 @@ svg {
   @media only screen and (min-width: 600px) {
     body {
       font-size: 0.9em;
+    }
+    svg {
+      margin-top: 50px;
     }
   }
   
