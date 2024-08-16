@@ -42,7 +42,7 @@ function tellFortune(fortunes) {
     }
 
     if (localStorage.getItem("try") == 2) {
-        fortune.innerHTML = 'alright fine. I give in, I am just a manfly after all. <br> <a href="fortune.html">YOUR FORTUNE FORETOLD. AGAIN.</a>';
+        fortune.innerHTML = 'alright fine. I give in, I am just a manfly after all. <br> <a href="tunnel.html">YOUR FORTUNE FORETOLD. AGAIN.</a>';
         localStorage.setItem("try", 3)
     }
 
