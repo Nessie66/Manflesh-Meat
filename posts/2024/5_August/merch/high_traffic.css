@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    display: block;
+    margin: auto;
+    margin-top: 30%;
+}
+
+body {
+    text-align: center;
+}
+
+@media only screen and (max-width: 380px) {
+    body {
+        font-size: 0.8em;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    img {
+        margin-top: 300px;
+    }
+    
+}

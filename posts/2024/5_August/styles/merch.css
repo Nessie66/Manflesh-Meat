@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: black;
+}
+
+div.back {
+    margin: 5px;
+}
+
+img {
+    width: 90%;
+    margin-bottom: 15px;
+    max-width: 900px;
+}
+
+a {
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+
+div.links {
+    display: block;
+    margin: auto;
+    width: 20%;
+}
+
+@media only screen and (max-width: 380px) {
+
+
+}
+
+@media only screen and (min-width: 600px) {
+    a {
+        font-size: 1.8em;
+    }
+    div.links {
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    img {
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+}

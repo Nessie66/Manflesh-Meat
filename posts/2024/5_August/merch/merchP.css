@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+
+body {
+    font-size: 0.7em;
+    color: rgb(255, 0, 0);
+    background-color: black;
+    margin-left: 3px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+div.back {
+    margin: 5px;
+}
+
+img {
+    width: 60%;
+    display: block;
+    margin: 5px;
+    max-width: 500px;
+}
+
+a.buy {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 380px) {
+
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    a.buy {
+        margin-left: -70%;
+    }
+}
+
