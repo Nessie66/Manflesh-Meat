@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+}
+
+div.content {
+    position: relative;
+}
+
+img#text {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+    max-width: 700px;
+}
+
+div.speech {
+    width: fit-content;
+    display: block;
+    margin: auto;
+    margin-right: 20px;
+    margin-top: 30px;
+    position: relative;
+}
+
+img#speech {
+    display: block;
+    margin: auto;
+    margin-right: 20px;
+    width:80%;
+}
+
+img#flyman {
+    width: 90%;
+    max-width: 650px;
+}
+
+p#fortune {
+    color: white;
+    position: absolute;
+    top: 23%;
+    left: 28%;
+    width: 58%;
+    font-size: 0.9em;
+}
+
+a {
+    color: red;
+    font-size: 0.9em;
+}
+
+@media only screen and (max-width: 380px) {
+    p#fortune {
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    div.speech {
+        margin-right: 100px;
+    }
+    img#speech {
+        width: 400px;
+    }
+
+    img#flyman {
+        display: block;
+        margin: auto;
+    }
+    p#fortune {
+        font-size: 1.2em;
+        left: 14%;
+        top: 18%;
+        width: 70%;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    div.speech {
+        margin-right: 33%;
+    }
+}
