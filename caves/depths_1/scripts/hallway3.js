@@ -31,16 +31,31 @@ function showSpeech() {
     // svg[0].classList.add("show")
 }
 
+//door function
+function doorOpen() {
+    changeImage(event1)
+}
+
+function doorClose() {
+    changeImage(event0)
+}
+
+const doorcreak = document.getElementById('doorcreak');
+
+function creak(){
+    doorcreak.muted = false;
+    doorcreak.play();
+}
+
 //image changer
 function changeImage(a) {
-    document.getElementById("").src=a;
+    document.getElementById("door").src=a;
 }
 
 
 //events
-const event0 = "img/jpg/h3v1";
-const event1 = "img/jpg/h3v3";
-const event3 = "img/jpg/h3";
+const event0 = "img/door/full0.png";
+const event1 = "img/door/full1.png";
 
 button1 = document.getElementById("next");
 

@@ -3,7 +3,8 @@
     margin: 0;
     -webkit-tap-highlight-color: transparent;
     font-family: 'Times New Roman', Times, serif;
-    overflow: hidden;
+    overflow: hidden; 
+;
 }
 body {
     background-color: black;
@@ -11,15 +12,29 @@ body {
 img {
     margin-top: 25%;
     margin-left: 72%;
-    height: 50%;
-    transform: translateX(-50%);
+    height: 35%;
+    transform: translateX(-70%);
+    pointer-events:none;
 }
+
+#door {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
 
 svg {
     margin-top: 25%;
     margin-left: 72%;
-    height: 50%;
-    transform: translateX(-50%);
+    height: 35%;
+    transform: translateX(-70%);
+}
+
+div.cave {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 div.container{
@@ -27,9 +42,11 @@ div.container{
 }
 
 div.back {
+    position: absolute;
     width: 100%;
     text-align: center;
-    margin-top: 2.5%;
+    top: 50%;
+
 }
 button {
     font-size: 0.8em;
@@ -97,12 +114,23 @@ div.m2 {
         text-align: center;
     }
     svg {
-        margin-left: 64%;
+        height: 30%;
+        margin-left: 73%;
     }
+
+    img {
+        height: 30%;
+        margin-left: 73%;
+    }
+
     div.m2 {
         width: 80%;
         right: 10%;
         top: calc(37vw);
+    }
+
+    div.back {
+        top: 40%;
     }
 
 }
@@ -144,6 +172,10 @@ div.m2 {
         top: 28%;
     }
 
+    div.back {
+        top: 78%;
+    }
+
 }
 
 @media only screen and (min-width: 1280px) {
@@ -153,7 +185,16 @@ div.m2 {
         width: auto;
         display: block;
         margin: auto;
+        position: relative;
+        transform: translate(0, -100%);
+
     }
+
+    #door{
+        position: relative;
+        
+    }
+
     img {
         margin-top: 0;
         height: 957px; 
@@ -163,7 +204,7 @@ div.m2 {
     }
     div.back {
         
-        bottom: 5%;
+        top: 95%;
     }
     button {
         font-size: 1.2em;
