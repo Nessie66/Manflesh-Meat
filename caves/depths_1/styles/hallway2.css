@@ -138,4 +138,10 @@ a#click {
         button {
             font-size: 1.3em;
         }
+
+        a#click.show {
+            font-size: 2em;
+            top: 50%;
+            right: 34%;
+        }
 }

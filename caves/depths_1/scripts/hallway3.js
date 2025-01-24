@@ -31,6 +31,10 @@ function showSpeech() {
     // svg[0].classList.add("show")
 }
 
+function redirect(link) {
+    window.location.href = link;
+}
+
 //door function
 function doorOpen() {
     changeImage(event1)
@@ -52,13 +56,27 @@ function changeImage(a) {
     document.getElementById("door").src=a;
 }
 
+//mobile4creak
+function isMobile() {
+    return window.innerWidth <= 480;  
+  }
+
+const way = "megaroy/ontheway!.html";
+
+function door() {
+    if (isMobile() == true){
+        setTimeout(function(){ redirect(way); }, 1700);
+    } else {
+        redirect(way); 
+    }
+}
 
 //events
 const event0 = "img/door/full0.png";
 const event1 = "img/door/full1.png";
 
 button1 = document.getElementById("next");
-
+ 
 
 talk = document.getElementById("talk");
 

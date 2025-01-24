@@ -226,13 +226,13 @@ div.show {
 @media only screen and (min-width: 2000px) {
     div.talk {
         top: calc(36vh);
-        left: 27%;
+        left: 30%;
     }
     div.speech {
-        font-size: 1.8em;
+        font-size: 1.3em;
     }
     button.button {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     div.back {
