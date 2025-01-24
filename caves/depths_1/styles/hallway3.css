@@ -39,6 +39,7 @@ div.cave {
 
 div.container{
     position: relative;
+    overflow: visible;
 }
 
 div.back {
@@ -70,8 +71,8 @@ div.speech {
 
 div.talk {
     position: absolute;
-    top: calc(49vw);
-    right: -30%;
+    top: calc(40vw);
+    right: -15%;
     text-align: center;
 }
 
@@ -100,7 +101,7 @@ div.show {
 div.m2 {
     width: 80%;
     right: 8%;
-    top: calc(45vw);
+    top: calc(32vw);
 }
 
 
@@ -109,8 +110,8 @@ div.m2 {
 
     div.talk {
         position: absolute;
-        top: calc(45vw);
-        right: -30%;
+        top: calc(38vw);
+        right: -12%;
         text-align: center;
     }
     svg {
@@ -126,7 +127,7 @@ div.m2 {
     div.m2 {
         width: 80%;
         right: 10%;
-        top: calc(37vw);
+        top: calc(23vw);
     }
 
     div.back {
@@ -155,8 +156,8 @@ div.m2 {
         font-size: 0.9em;
     }
     div.talk {
-        top: 34%;
-        right: -12%;
+        top: 23%;
+        right: 5%;
     }
     div.speech {
         font-size: 1.4vw;
@@ -169,7 +170,7 @@ div.m2 {
 
     div.m2 {
         right: 12%;
-        top: 28%;
+        top: 20%;
     }
 
     div.back {
@@ -218,8 +219,8 @@ div.m2 {
     }
     div.talk {
 
-        top: 28%;
-        right: 6%;
+        top: 23%;
+        right: 18%;
     }
     div.speech {
         font-size: 1.2em;
@@ -231,7 +232,25 @@ div.m2 {
     }
     div.m2 {
         width: 65%;
-        right: 20%;
-        top: 24%;
+        right: 18%;
+        top: 20%;
+    }
+
+    
+}
+
+@media only screen and (min-width: 2000px) {
+
+    div.m2 {
+
+        top: 16%;
+    }
+
+    div.back {
+        position: absolute;
+        bottom: -5%;
+    }
+    button {
+        font-size: 1.5em;
     }
 }

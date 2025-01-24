@@ -24,6 +24,7 @@ svg {
 
 div.container{
     position: relative;
+    overflow: visible;
 }
 
 div.back {
@@ -89,5 +90,19 @@ button {
     div.back {
         position: absolute;
         bottom: 2.5%;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+
+    div.back.dontwanttofigureoutwhythisisntworkingsoimdoingthisinstead{
+        bottom: 30%;
+    }
+    div.back {
+        position: absolute;
+        bottom: -5%;
+    }
+    button {
+        font-size: 1.5em;
     }
 }

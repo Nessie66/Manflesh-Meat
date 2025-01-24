@@ -24,6 +24,7 @@ svg {
 
 div.container{
     position: relative;
+    overflow: visible;
 }
 
 div.back {
@@ -221,3 +222,15 @@ div.show {
         left: 32%;
     }
 }
+
+@media only screen and (min-width: 2000px) {
+
+    div.back {
+        position: absolute;
+        bottom: -5%;
+
+    }
+    button {
+        font-size: 1.5em;
+    }
+}   

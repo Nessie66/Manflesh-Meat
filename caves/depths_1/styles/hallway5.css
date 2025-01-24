@@ -28,6 +28,7 @@ svg {
 
 div.container{
     position: relative;
+    overflow: visible;
 }
 
 div.back {
@@ -93,4 +94,16 @@ button {
         position: absolute;
         bottom: 2.5%;
     }
+}
+
+@media only screen and (min-width: 2000px) {
+
+    div.back {
+        position: absolute;
+        bottom: 30%;
+    }
+    button {
+        font-size: 1.5em;
+    }
+
 }
