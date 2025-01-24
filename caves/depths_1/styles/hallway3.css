@@ -248,9 +248,9 @@ div.m2 {
 
     div.back {
         position: absolute;
-        bottom: -5%;
+        top: 68%;
     }
     button {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 }
