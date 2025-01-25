@@ -81,8 +81,6 @@ button1 = document.getElementById("next");
 talk = document.getElementById("talk");
 
 window.onload = function () {
-    
-    speech("what you nosing around for, you a pervert or something? nothing interesting round here except rats with bad teeth and failures withering away. its like they say, you wont find a painless way to die man. still, beats being out in the hills, cant complain!");
     talk.classList.add("m2");
     if(localStorage.getItem("hallway3") == null){
         showSpeech()
@@ -97,6 +95,7 @@ window.onload = function () {
         talk.classList.add("m2");
         speech("what you nosing around for, you a pervert or something? nothing interesting round here except rats with bad teeth and failures withering away. its like they say, you wont find a painless way to die man. still, beats being out in the hills, cant complain!");
         localStorage.setItem("hallway5", 2)  
+
     }
 
 }
