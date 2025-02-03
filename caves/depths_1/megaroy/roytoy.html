@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manflesh Meat</title>
+    <link rel="stylesheet" href="styles/roytoy.css">
+</head>
+<body>
+    <h1>ROYTOY</h1>
+    <input type="text" id="input" placeholder="Enter message" maxlength="250">
+    <select id="font">
+        <option value="default">default</option>
+        <option value="black">black</option>
+        <option value="paper">paper</option>
+    </select>
+    <select id="colour">
+        <option value="none">no background</option>
+        <option value="black">black</option>
+        <option value="white">white</option>
+    </select>
+    <br>
+    <button onclick="generate()">Generate</button>
+
+    <div id="canvas_container">
+        <canvas id="canvas"></canvas>
+        <br>
+        <button id="download" onclick="downloadImage()">Download</button>
+    </div>
+
+    <script src="scripts/roytoy.js"></script>
+</body>
+</html>

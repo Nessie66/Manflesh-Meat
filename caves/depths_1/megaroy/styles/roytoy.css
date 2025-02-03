@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+body {
+    color: white;
+    text-align: center;
+    margin: 50px;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 50px;
+}
+
+canvas {
+    max-height: 50vh;
+    max-width: 100%;
+
+}
+
+div#canvas_container {
+    margin-top: 50px;
+    overflow-x: auto; 
+}
+
+@media only screen and (max-width: 380px) {
+
+}
+
+@media only screen and (min-width: 480px) {
+    canvas {
+
+        max-width: 100%;
+        max-height: 600px;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+}
+
+@media only screen and (min-width: 2000px) {
+
+}
