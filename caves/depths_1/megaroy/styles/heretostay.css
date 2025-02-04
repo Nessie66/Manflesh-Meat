@@ -31,13 +31,13 @@ a {
 }
 
 img#entry {
-    z-index: 1;
     pointer-events: none;
 }
 
 img#main {
+    z-index: -1;
     position: absolute;
-    z-index: -2;
+    left: 0;
 }
 
 div.links {
@@ -50,8 +50,8 @@ div.select {
     position: absolute;
     right: 6%;
     top: 150px;
-    z-index: -1;
     font-size: 0.6em;
+    visibility: hidden;
 }
 
 p#speech {

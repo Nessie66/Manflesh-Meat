@@ -1,8 +1,11 @@
 function hideImage() {
     const image = document.getElementById('entry');
 
+    const divS = document.getElementById('select');
+
     setTimeout(function() {
-        image.style.display = 'none';
+        divS.style.visibility = 'visible';
+        image.style.visibility = 'hidden';
     }, 3000);
 }
 
