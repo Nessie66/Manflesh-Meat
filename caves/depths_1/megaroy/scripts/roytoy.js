@@ -26,13 +26,13 @@ function generate() {
 
           //special char
           if (char === '.') {
-            imgSrc = 'img/font_roytoy/' + font + '/_FS.png';
+            imgSrc = `img/font_roytoy/${font}/Zfullstop.png`;
             console.log("FS src: " + imgSrc)
           } else if (char === '?') {
-            imgSrc = 'img/font_roytoy/' + font + '/_QM.png';
+            imgSrc = `img/font_roytoy/${font}/Zquestion.png`;
             console.log("QM src: " + imgSrc)
           } else if (char === '!') {
-            imgSrc = 'img/font_roytoy/' + font + '/_EM.png';
+            imgSrc = `img/font_roytoy/${font}/Zexclamation.png`;
             console.log("EM src: " + imgSrc)
           } else if (/[A-Z]/.test(char)) { 
             imgSrc = `img/font_roytoy/${font}/${char}.png`;
