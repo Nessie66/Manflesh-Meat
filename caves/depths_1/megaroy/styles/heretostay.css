@@ -32,6 +32,7 @@ a {
 
 img#entry {
     z-index: 1;
+    pointer-events: none;
 }
 
 img#main {
