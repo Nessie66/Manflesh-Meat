@@ -27,12 +27,16 @@ function generate() {
           //special char
           if (char === '.') {
             imgSrc = 'img/font_roytoy/' + font + '/_FS.png';
+            console.log("FS src: " + imgSrc)
           } else if (char === '?') {
             imgSrc = 'img/font_roytoy/' + font + '/_QM.png';
+            console.log("QM src: " + imgSrc)
           } else if (char === '!') {
             imgSrc = 'img/font_roytoy/' + font + '/_EM.png';
+            console.log("EM src: " + imgSrc)
           } else if (/[A-Z]/.test(char)) { 
             imgSrc = `img/font_roytoy/${font}/${char}.png`;
+            console.log("letter src: " + imgSrc)
           }
           if (/[A-Z!?.]/.test(char)) { 
               const img = new Image();
