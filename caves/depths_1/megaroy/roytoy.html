@@ -6,25 +6,39 @@
     <link rel="stylesheet" href="styles/roytoy.css">
 </head>
 <body>
-    <h1>ROYTOY</h1>
-    <input type="text" id="input" placeholder="Enter message" maxlength="250">
-    <select id="font">
-        <option value="default">default</option>
-        <option value="black">black</option>
-        <option value="paper">paper</option>
-    </select>
-    <select id="colour">
-        <option value="none">no background</option>
-        <option value="black">black</option>
-        <option value="white">white</option>
-    </select>
-    <br>
-    <button onclick="generate()">Generate</button>
+    <div class="main">
+        <div class="back">
+            <a href="heretostay.html">back</a>
 
-    <div id="canvas_container">
-        <canvas id="canvas"></canvas>
+        </div>
+        <h1>ROYTOY</h1>
+        <input type="text" id="input" placeholder="Enter message" maxlength="250">
+        <select id="font">
+            <option value="default">default</option>
+            <option value="black">black</option>
+            <option value="paper">paper</option>
+        </select>
+        <select id="colour">
+            <option value="none">no background</option>
+            <option value="black">black</option> 
+            <option value="white">white</option>
+        </select>
         <br>
-        <button id="download" onclick="downloadImage()">Download</button>
+        <button onclick="generate()">Generate</button>
+
+        <div id="canvas_container">
+            <h2 id="placeholder">ask and ill say it with my chest and my arms and my hands and my feet </h2>
+            <canvas id="canvas" width="300" height="80"></canvas>
+            <br>
+            <button id="download" onclick="downloadImage()">Download</button>
+        </div>
+    </div>
+    
+
+    <div class="roy">
+        <img id="megaroy" src="img/megaroy/png/Megaroy.png">
+        <img id="tick" src="img/megaroy/tick.png">
+
     </div>
 
     <script src="scripts/roytoy.js"></script>

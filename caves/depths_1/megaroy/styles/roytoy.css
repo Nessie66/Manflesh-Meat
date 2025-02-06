@@ -3,15 +3,21 @@
     margin: 0;
     -webkit-tap-highlight-color: transparent;
     font-family: 'Times New Roman', Times, serif;
-
+    overflow: hidden;
 }
 
 body {
-    color: white;
+    color: black;
     text-align: center;
-    margin: 50px;
-    background-color: white;
+    background-color: black;
     overflow-x: hidden;
+}
+
+div.back{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    margin-left: 8px;
 }
 
 h1 {
@@ -19,18 +25,51 @@ h1 {
 }
 
 button {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 canvas {
     max-height: 50vh;
     max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ 
+div#canvas_container {
+    margin-top: 10px;
+    overflow-x: auto; 
+}
+
+div.main {
+    background-color: white;
+    padding: 10px;
+}
+
+div.roy {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    text-align: right;
+}
+
+img {
+    width: 70%;
+    margin: 20px;
+}
+
+img#tick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    transform-origin:top ;
+    scale: 0.5;
 
 }
 
-div#canvas_container {
-    margin-top: 50px;
-    overflow-x: auto; 
+h2 {
+    position: absolute;
+    margin-top: 20px;
 }
 
 @media only screen and (max-width: 380px) {
@@ -39,7 +78,6 @@ div#canvas_container {
 
 @media only screen and (min-width: 480px) {
     canvas {
-
         max-width: 100%;
         max-height: 600px;
     }
@@ -47,6 +85,13 @@ div#canvas_container {
 }
 
 @media only screen and (min-width: 1280px) {
+    img {
+        max-height: 1000px;
+        width: auto;
+    }
+    img#tick {
+        left: 65%;
+    }
 
 }
 

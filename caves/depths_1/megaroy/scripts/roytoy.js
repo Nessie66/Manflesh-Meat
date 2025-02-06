@@ -1,4 +1,7 @@
 function generate() {
+  const placeholder = document.getElementById('placeholder');
+  placeholder.style.visibility = 'hidden';
+
   const inputText = document.getElementById('input').value.toUpperCase();
   const canvas = document.getElementById('canvas');
   const ctx = canvas.getContext('2d');
@@ -17,7 +20,7 @@ function generate() {
   const wideFactor = 0.9;
 
   //load and calc dimensions
-  function loadImages() {
+  function loadImages() { 
       count = 0;
 
       for (let i = 0; i < inputText.length; i++) {
