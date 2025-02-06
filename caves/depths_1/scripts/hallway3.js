@@ -138,4 +138,6 @@ window.onload = function () {
 
     }
 
+    doorV = document.getElementById("door");
+    doorV.classList.add("show")
 }
