@@ -51,6 +51,32 @@ function creak(){
     doorcreak.play();
 }
 
+function showSVG() {
+    let svg = document.getElementsByTagName("svg");
+    svg[0].classList.add("show")
+}
+//events
+const event2 = "img/svg/h3/h3_1D.svg";
+const event3 = "img/svg/h3/h3_2D.svg";
+
+//SVG replacer machine (with timeout)
+function replaceSVG(filepath) {
+    //load content asynchronously
+    fetch(filepath)
+    .then(response => response.text())
+    .then(data => {
+        //replace content
+        let oldSVG = document.getElementsByTagName("svg")[0];
+        oldSVG.outerHTML = data;
+        //show SVG
+        let svg = document.getElementsByTagName("svg")[0];
+        // setTimeout(function(){ svg.classList.add("show"); }, 500);
+        svg.classList.add("show");
+        
+    })
+    .catch(error => console.error('Error fetching SVG:', error));
+}
+
 //image changer
 function changeImage(a) {
     document.getElementById("door").src=a;
@@ -87,9 +113,23 @@ window.onload = function () {
         localStorage.setItem("hallway3", 1)  
     }
 
-    if(localStorage.getItem("hallway5") == null){
-        console.log("hallway5")
+    if(localStorage.getItem("megaroy") == null){
+        console.log("noROY")
+        showSVG();
     }
+
+    if(localStorage.getItem("hallway5") == null){
+        console.log("hallway5NULL")
+    }
+
+    if(localStorage.getItem("megaroy") == 1){
+        replaceSVG(event3);
+        console.log("event 3")
+    }   else {
+    let svg = document.getElementsByTagName("svg");
+    svg[0].classList.add("show")
+    }
+
 
     if(localStorage.getItem("hallway5") == 1){
         talk.classList.add("m2");

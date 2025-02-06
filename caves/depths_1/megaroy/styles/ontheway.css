@@ -3,6 +3,7 @@
     margin: 0;
     -webkit-tap-highlight-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 
 body {

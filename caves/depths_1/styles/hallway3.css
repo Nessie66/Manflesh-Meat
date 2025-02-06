@@ -29,6 +29,11 @@ svg {
     margin-left: 72%;
     height: 35%;
     transform: translateX(-70%);
+    opacity: 0;
+}
+
+svg.show {
+    opacity: 1;
 }
 
 div.cave {
