@@ -93,7 +93,7 @@ h2 {
 
 @media only screen and (min-width: 1280px) {
     img {
-        max-height: 1000px;
+        max-height: 1400px;
         width: auto;
     }
     img#tick {
