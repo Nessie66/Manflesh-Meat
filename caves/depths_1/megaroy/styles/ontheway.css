@@ -39,7 +39,7 @@ p#link a {
 p#speech {
     color: yellow;
     position: absolute;
-    bottom: 11%;
+    bottom: 9%;
     left: 43%;
 }
 
@@ -72,7 +72,7 @@ a:active {
 
     p#speech {
 
-        bottom: 12%;
+        bottom: 11%;
         left: 45%;
     }
 }
@@ -93,7 +93,7 @@ a:active {
 
     p#speech {
 
-        bottom: 12%;
+        /* bottom: 11%; */
         left: 24%;
     }
     
