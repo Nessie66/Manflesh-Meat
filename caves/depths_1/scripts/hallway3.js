@@ -91,6 +91,7 @@ const way = "megaroy/ontheway!.html";
 
 function door() {
     if (isMobile() == true){
+        console.log(isMobile())
         setTimeout(function(){ redirect(way); }, 1700);
     } else {
         redirect(way); 
