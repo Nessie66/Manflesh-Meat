@@ -2,6 +2,9 @@ function generate() {
   const placeholder = document.getElementById('placeholder');
   placeholder.style.visibility = 'hidden';
 
+  const regRoy = "img/megaroy/png/Megaroy.png"
+  const paperRoy = "img/megaroy/png_withpaper/Final png.png"
+
   const inputText = document.getElementById('input').value.toUpperCase();
   const canvas = document.getElementById('canvas');
   const ctx = canvas.getContext('2d');
@@ -12,6 +15,12 @@ function generate() {
   const spaceWidth = 400;
   const font = document.getElementById('font').value;
   const colour = document.getElementById('colour').value;
+
+  if (font == "paper")  {
+    document.getElementById("megaroy").src=paperRoy;
+  } else {
+    document.getElementById("megaroy").src=regRoy;
+  }
 
   //array
   const images = [];
