@@ -3,10 +3,11 @@
     margin: 0;
     -webkit-tap-highlight-color: transparent;
     font-family: 'Times New Roman', Times, serif;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 body {
     background-color: rgb(0, 0, 0);
+    overflow-y: hidden;
 }
 h1 {
     text-align: center;
@@ -29,8 +30,10 @@ div {
 button {
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 0.5%;
+    margin-top: -3%;
 }
+
+
 div.cave {
     margin: 0;
 }
@@ -40,6 +43,14 @@ svg {
     max-width: auto;
     height: 85%;
     opacity: 0;
+}
+
+img#titleimg {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
 }
 
 /* speech bubble */
@@ -121,6 +132,24 @@ div.show {
     }
   }
 
+  @media only screen and (min-width: 540px) {
+    h2 {
+        font-size: 1.1em;
+        position: relative;
+        bottom: 4%;
+    }
+
+  }
+
+  @media only screen and (min-width: 760px) {
+    h2 {
+        font-size: 1.5em;
+        position: relative;
+        bottom: 4%;
+    }
+
+  }
+
   @media only screen and (max-width: 300px) {
     h1 {
         font-size: 1.2em;
@@ -133,6 +162,16 @@ div.show {
   @media only screen and (min-width: 1000px) {
     div.speech {
         left: 30%;
+    }
+
+    button {
+        margin-top: -25px;
+    }
+
+    img#titleimg {
+        width: 30%;
+        margin-top: 0.8%;
+        margin-bottom: 0.8%;
     }
   }
   @media only screen and (min-width: 1400px) {

@@ -70,10 +70,9 @@ img#tick {
 
 h2 {
     position: absolute;
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 1.1em;
     display: inline-block;
-    translate: -13%;
 }
 
 @media only screen and (max-width: 380px) {
@@ -88,6 +87,7 @@ h2 {
 
     h2 {
         font-size: 1.5em;
+        translate: -13%;
     }
 
     img#tick {
