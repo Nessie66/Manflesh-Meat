@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    /* overflow-x:  hidden; */
+}
+
+body {
+    background-color: black;
+    color: red;
+    text-align: center;
+    font-size: 0.8em;
+    /* overflow: hidden; */
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    z-index: -1;
+}
+
+img {
+    transform-origin: center;
+}
+
+svg {
+    width: 90%;
+}
+
+div.container {
+    position: relative;
+}
+
+div.text {
+    margin: 10px;
+}
+
+div.puzzleSVG {
+    position: relative;
+}
+
+div.partSelect {
+    /* width: 250%; */
+    margin: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.partSelect img{
+    max-width: 95px;
+}
+
+img.background {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    z-index: -2;
+}
+
+div.back {
+    text-align: left;
+    padding: 5px;
+    position: absolute;
+}
+
+div.gestater {
+    margin: 20px;
+}
+
+.partSelect img.selected {
+    border: 2px solid red;
+    box-shadow: 0 0 10px red;
+}
+
+.partSelect img.placed {
+    border: 2px solid blue;
+    box-shadow: 0 0 10px blue;
+}
