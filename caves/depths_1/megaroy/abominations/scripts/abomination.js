@@ -1,7 +1,9 @@
 document.getElementById('b1').addEventListener('click', function() {
-
     var breathingSound = document.getElementById('b');
-    breathingSound.src = ''; 
+    breathingSound.pause(); // Stop the audio
+    breathingSound.currentTime = 0; // Reset the audio to the beginning
+
+    breathingSound.src = ''; // Optional: Clear the source
 
     var sound1 = document.getElementById('sound1');
     
@@ -16,7 +18,6 @@ document.getElementById('b1').addEventListener('click', function() {
     document.querySelector('.misery').style.display = 'block';
     document.querySelector('.default').style.display = 'none';
     document.querySelector('.free').style.display = 'none';
-
     document.querySelector('.select').style.display = 'none';
 
     setTimeout(function() {
@@ -25,10 +26,11 @@ document.getElementById('b1').addEventListener('click', function() {
 });
 
 document.getElementById('b2').addEventListener('click', function() {
-
     var breathingSound = document.getElementById('b');
-    breathingSound.src = ''; 
+    breathingSound.pause(); // Stop the audio
+    breathingSound.currentTime = 0; // Reset the audio to the beginning
 
+    breathingSound.src = ''; // Optional: Clear the source
 
     var sound2 = document.getElementById('sound2');
     sound2.play();
@@ -39,9 +41,7 @@ document.getElementById('b2').addEventListener('click', function() {
 
     document.querySelector('.free').style.display = 'block';
     document.querySelector('.default').style.display = 'none';
-
     document.querySelector('.misery').style.display = 'none';
-
     document.querySelector('.select').style.display = 'none';
 
     setTimeout(function() {

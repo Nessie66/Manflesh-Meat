@@ -30,3 +30,29 @@ div.text {
     left: 5vw;
     background-color: rgba(0, 0, 0, 0.11);
 }
+
+@media only screen and (max-width: 380px) {
+
+}
+
+@media only screen and (min-width: 480px) {
+    img.move {
+        max-width: 1500px;
+        top: -25%;
+        left: 35%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    img.move {
+        max-width: 1500px;
+        top: -25%;
+        left: 65%;
+    }
+    
+
+}
+
+@media only screen and (min-width: 2000px) {
+
+}
