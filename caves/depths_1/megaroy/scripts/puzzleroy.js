@@ -1,25 +1,59 @@
-let selectedImage = null;
-let placedImages = {}; // Keeps track of placed images
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
+const svgElement = document.querySelector('svg');
 
-// Select an image
-document.querySelectorAll(".partSelect img").forEach(img => {
+//scaling factor for res
+const scaleFactor = 2;
+
+//original size for transforms
+const originalWidth = 382.5;
+const originalHeight = 719.5;
+
+let selectedImage = null;
+let placedImages = {}; 
+
+const partSelectImgs = document.querySelectorAll(".partSelect img");
+
+//resize canvas
+function resizeCanvas() {
+    //svg size
+    const svgRect = svgElement.getBoundingClientRect();
+    const svgWidth = svgRect.width;
+    const svgHeight = svgRect.height;
+
+    canvas.style.width = `${svgWidth}px`;
+    canvas.style.height = `${svgHeight}px`;
+
+    //internal res
+    canvas.width = svgWidth * scaleFactor;
+    canvas.height = svgHeight * scaleFactor;
+
+    //reset and scale
+    ctx.setTransform(1, 0, 0, 1, 0, 0); 
+    ctx.scale(scaleFactor, scaleFactor);
+
+    updateCanvas();
+}
+
+resizeCanvas();
+
+window.addEventListener('resize', resizeCanvas);
+
+//Image select
+partSelectImgs.forEach(img => {
     img.addEventListener("click", function () {
-        // Deselect previously selected image and reset borders to blue
-        document.querySelectorAll(".partSelect img").forEach(img => {
+        partSelectImgs.forEach(img => {
             img.classList.remove("selected");
             if (img.classList.contains("placed")) {
-                img.style.borderColor = "blue"; // Placed images should still have blue border
+                img.style.borderColor = "blue"; 
             }
         });
 
-        // If the image is already selected and placed (blue border), change it to red
+        //border red
         if (selectedImage === this.src && this.classList.contains("placed")) {
-            this.style.borderColor = "red"; // Change border to red
-            selectedImage = this.src; // Re-select the image
+            this.style.borderColor = "red"; 
+            selectedImage = this.src; 
         } else {
-            // If it's a newly selected image, add the selected class and set border to red
             this.classList.add("selected");
             this.style.borderColor = "red";
             selectedImage = this.src;
@@ -27,56 +61,52 @@ document.querySelectorAll(".partSelect img").forEach(img => {
     });
 });
 
-// Handle SVG segment selection
+//SVG zone
 function svgZone(segment) {
-    console.log(segment)
-    if (!selectedImage) return; // If no image is selected, do nothing
+    if (!selectedImage) return; //do nothing
 
-    // If this segment already has a placed image, reset its border and association
+    //already placed image
     if (placedImages[segment]) {
-        // Find the previous placed image for this segment
-        let prevImgElement = [...document.querySelectorAll(".partSelect img")].find(img => img.src === placedImages[segment]);
+        let prevImgElement = [...partSelectImgs].find(img => img.src === placedImages[segment]);
         if (prevImgElement) {
             prevImgElement.classList.remove("placed");
-            prevImgElement.style.borderColor = "none"; // Reset the border of the previously placed image
+            prevImgElement.style.borderColor = "none";
         }
     }
 
-    // Find the image element that matches the selected image
-    let selectedImgElement = [...document.querySelectorAll(".partSelect img")].find(img => img.src === selectedImage);
+    let selectedImgElement = [...partSelectImgs].find(img => img.src === selectedImage);
     if (!selectedImgElement) return;
 
-    // Store the selection
+    //store selection
     placedImages[segment] = selectedImage;
 
-    // Update the image appearance
+    //update image border
     selectedImgElement.classList.remove("selected");
     selectedImgElement.classList.add("placed");
-    selectedImgElement.style.borderColor = "blue"; // Set border to blue after placing
+    selectedImgElement.style.borderColor = "blue"; 
 
-    // Reset selectedImage
     selectedImage = null;
 
-    // Update the canvas
     updateCanvas();
 }
 
-// Update the canvas with placed images
+//canvas update
 function updateCanvas() {
-    // Clear the canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Draw each placed image on the canvas
+    //scale factors
+    const svgRect = svgElement.getBoundingClientRect();
+    const scaleX = svgRect.width / originalWidth;
+    const scaleY = svgRect.height / originalHeight;
+
     for (let segment in placedImages) {
         let img = new Image();
-
-        // Modify the image source to point to the "forCanvas" directory
         let forCanvasPath = placedImages[segment].replace('img/puzzleroy/pieces/', 'img/puzzleroy/pieces/forCanvas/');
         img.src = forCanvasPath;
 
         img.onload = () => {
-            // Apply transformations based on the segment
-            let transform = getTransformForSegment(segment);
+            let transform = getTransformForSegment(segment, scaleX, scaleY);
+
             ctx.save();
             ctx.translate(transform.x, transform.y);
             ctx.rotate(transform.rotation);
@@ -87,10 +117,9 @@ function updateCanvas() {
     }
 }
 
-
-// Define transformations for each segment
-function getTransformForSegment(segment) {
-    const transforms = {
+//transformations
+function getTransformForSegment(segment, scaleX, scaleY) {
+    const baseTransforms = {
         "H": { x: 180, y: 10, rotation: 0.03, scaleX: 0.21, scaleY: 0.21 },
         "LH": { x: 180, y: 120, rotation: 1.6, scaleX: 0.11, scaleY: 0.11 },
         "LE": { x: 80, y: 140, rotation: 1.6, scaleX: 0.1, scaleY: 0.1 },
@@ -111,24 +140,28 @@ function getTransformForSegment(segment) {
         "RA1": { x: 300, y: 250, rotation: 0.05, scaleX: 0.11, scaleY: 0.11 },
         "RS": { x: 345, y: 215, rotation: 1.65, scaleX: 0.11, scaleY: 0.11 },
         "RT": { x: 278, y: 270, rotation: 1.6, scaleX: 0.09, scaleY: 0.09 },
-        
     };
-    return transforms[segment] || { x: 0, y: 0, rotation: 0, scaleX: 1, scaleY: 1 };
+
+    let base = baseTransforms[segment] || { x: 0, y: 0, rotation: 0, scaleX: 1, scaleY: 1 };
+
+    return {
+        x: base.x * scaleX,
+        y: base.y * scaleY,
+        rotation: base.rotation,
+        scaleX: base.scaleX * scaleX,
+        scaleY: base.scaleY * scaleY,
+    };
 }
 
-// Check if the player wins
+//win conditions
 document.querySelector(".gestate button").addEventListener("click", function () {
     let correctCount = 0;
     let totalSegments = Object.keys(correctMap).length;
 
     for (let segment in correctMap) {
-        // Compare the correct image to the placed image without base URL or query params
-        let correctImagePath = correctMap[segment].split('/').pop();  // Get the filename only
+        let correctImagePath = correctMap[segment].split('/').pop();  
         let placedImagePath = placedImages[segment] ? placedImages[segment].split('/').pop() : '';
-
-        // Log to see the paths being compared
         console.log(`Checking segment: ${segment}, placed: ${placedImagePath}, correct: ${correctImagePath}`);
-
         if (placedImagePath === correctImagePath) {
             correctCount++;
         }
@@ -142,14 +175,13 @@ document.querySelector(".gestate button").addEventListener("click", function () 
     downloadImage();
 });
 
-  //download function
-  function downloadImage() {
-    const canvas = document.getElementById('canvas'); 
+//download function
+function downloadImage() {
     const link = document.createElement('a');
     link.download = 'whathaveyoumade.png';
     link.href = canvas.toDataURL('image/png');
     link.click();
-  }
+}
 
 const correctMap = {
     "H": "img/puzzleroy/pieces/20.png",

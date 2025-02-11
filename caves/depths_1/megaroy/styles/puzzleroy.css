@@ -14,11 +14,12 @@ body {
     /* overflow: hidden; */
 }
 
+
+
 canvas {
     position: absolute;
     top: 0;
     left: 5%;
-    width: 90%;
     z-index: -1;
 }
 
@@ -28,6 +29,7 @@ img {
 
 svg {
     width: 90%;
+    z-index: 2;
 }
 
 div.container {
@@ -49,8 +51,13 @@ div.partSelect {
     margin-bottom: 50px;
 }
 
+path {
+    cursor: pointer;
+}
+
 .partSelect img{
-    max-width: 95px;
+    max-width: 21%;
+    cursor: pointer;
 }
 
 img.background {
@@ -58,7 +65,7 @@ img.background {
     top: 0;
     left: 5%;
     width: 90%;
-    z-index: -2;
+    z-index: -1;
 }
 
 div.back {
@@ -79,4 +86,66 @@ div.gestater {
 .partSelect img.placed {
     border: 2px solid blue;
     box-shadow: 0 0 10px blue;
+}
+
+@media only screen and (max-width: 380px) {
+    body {
+        font-size: 0.7em;
+    }
+
+    .partSelect img {
+        max-width: 20%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+
+    body {
+        font-size: 1.1em;
+    }
+
+    svg {
+        width: 49%;
+    }
+
+    img.background {
+        width: 49%;
+        left: 25.5%;
+    }
+
+    canvas {
+        left: 25.5%;
+    }
+
+    .partSelect img {
+        max-width: 150px;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+
+    svg {
+        width: 25%;
+    }
+
+    img.background {
+        width: 25%;
+        left: 37.5%;
+    }
+
+    canvas {
+        left: 37.5%;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+
+}
+
+@media only screen and (min-width: 2000px) {
+
 }
