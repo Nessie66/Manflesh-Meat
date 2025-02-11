@@ -6,6 +6,14 @@
     /* overflow-x:  hidden; */
 }
 
+*:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
 body {
     background-color: black;
     color: red;

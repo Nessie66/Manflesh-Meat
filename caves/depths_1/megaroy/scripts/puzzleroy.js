@@ -140,6 +140,7 @@ function getTransformForSegment(segment, scaleX, scaleY) {
         "RA1": { x: 300, y: 250, rotation: 0.05, scaleX: 0.11, scaleY: 0.11 },
         "RS": { x: 345, y: 215, rotation: 1.65, scaleX: 0.11, scaleY: 0.11 },
         "RT": { x: 278, y: 270, rotation: 1.6, scaleX: 0.09, scaleY: 0.09 },
+        "heart": { x: 190, y: 220, rotation: 0.04, scaleX: 0.14, scaleY: 0.14 },
     };
 
     let base = baseTransforms[segment] || { x: 0, y: 0, rotation: 0, scaleX: 1, scaleY: 1 };
@@ -157,23 +158,35 @@ function getTransformForSegment(segment, scaleX, scaleY) {
 document.querySelector(".gestate button").addEventListener("click", function () {
     let correctCount = 0;
     let totalSegments = Object.keys(correctMap).length;
+    let heart = false;
 
     for (let segment in correctMap) {
         let correctImagePath = correctMap[segment].split('/').pop();  
         let placedImagePath = placedImages[segment] ? placedImages[segment].split('/').pop() : '';
-        console.log(`Checking segment: ${segment}, placed: ${placedImagePath}, correct: ${correctImagePath}`);
+        
         if (placedImagePath === correctImagePath) {
             correctCount++;
+            
+            if (segment === "heart" && placedImagePath === "heart.png") {
+                heart = true;
+            }
         }
     }
 
-    if (correctCount >= 5) {
-        alert("You win!");
+    if (correctCount >= 3) {
+        localStorage.setItem("win", "1");
+        localStorage.setItem("lose", "0");
+        if (heart) {
+            localStorage.setItem("heart", "1");
+        }
+        window.location.href = 'abominations/gestating.html';
     } else {
-        alert("You lose!");
+        localStorage.setItem("lose", "1");
+        localStorage.setItem("win", "0");
+        window.location.href = 'abominations/gestating.html';
     }
-    downloadImage();
 });
+
 
 //download function
 function downloadImage() {
@@ -204,4 +217,5 @@ const correctMap = {
     "LT": "img/puzzleroy/pieces/9.png",
     "RT": "img/puzzleroy/pieces/1.png",
     "RH": "img/puzzleroy/pieces/13.png",
+    "heart": "img/puzzleroy/pieces/heart.png",
 };
