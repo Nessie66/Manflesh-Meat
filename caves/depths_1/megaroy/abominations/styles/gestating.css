@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Times New Roman', Times, serif;
+    /* overflow: hidden; */
+}
+
+body {
+    color: greenyellow;
+    background-color: black;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 50%;
+}
+
+@media only screen and (min-width: 1280px) {
+    h1 {
+        margin-top: 25%;
+    }
+}
+
