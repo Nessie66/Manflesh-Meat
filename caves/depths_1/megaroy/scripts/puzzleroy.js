@@ -159,11 +159,16 @@ document.querySelector(".gestate button").addEventListener("click", function () 
     let correctCount = 0;
     let totalSegments = Object.keys(correctMap).length;
     let heart = false;
+    let placedCount = 0;
 
     for (let segment in correctMap) {
         let correctImagePath = correctMap[segment].split('/').pop();  
         let placedImagePath = placedImages[segment] ? placedImages[segment].split('/').pop() : '';
-        
+
+        if (placedImagePath) {
+            placedCount++; 
+        }
+
         if (placedImagePath === correctImagePath) {
             correctCount++;
             
@@ -173,7 +178,13 @@ document.querySelector(".gestate button").addEventListener("click", function () 
         }
     }
 
-    if (correctCount >= 3) {
+    //at least 3 images
+    if (placedCount < 3) {
+        window.location.href = 'abominations/emptyjar.html';
+        return;
+    }
+
+    if (correctCount >= 14) {
         localStorage.setItem("win", "1");
         localStorage.setItem("lose", "0");
         if (heart) {
@@ -186,6 +197,7 @@ document.querySelector(".gestate button").addEventListener("click", function () 
         window.location.href = 'abominations/gestating.html';
     }
 });
+
 
 
 //download function

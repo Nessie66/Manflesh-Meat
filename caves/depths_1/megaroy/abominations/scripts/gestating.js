@@ -18,3 +18,4 @@ if((localStorage.getItem("win") == 1) && (localStorage.getItem("heart") == 1)){
 } else {
     window.location.href = '../puzzleroy.html';
 }
+

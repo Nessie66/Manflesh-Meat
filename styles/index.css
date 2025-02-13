@@ -30,7 +30,7 @@ div {
 button {
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: -0.5%;
+    margin-top: -3%;
 }
 
 
@@ -46,7 +46,7 @@ svg {
 }
 
 img#titleimg {
-    width: 60%;
+    width: 65%;
     display: block;
     margin: auto;
     margin-top: 1.5%;
@@ -165,11 +165,11 @@ div.show {
     }
 
     button {
-        margin-top: 0.5%;
+        margin-top: -1.5%;
     }
 
     img#titleimg {
-        width: 30%;
+        width: 40%;
         margin-top: 0.8%;
         margin-bottom: 0.8%;
     }
@@ -177,5 +177,10 @@ div.show {
   @media only screen and (min-width: 1400px) {
     div.speech {
         left: 37%;
+    }
+    img#titleimg {
+        width: 30%;
+        margin-top: 0.8%;
+        margin-bottom: 0.8%;
     }
   }

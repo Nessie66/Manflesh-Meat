@@ -14,7 +14,7 @@ body {
 }
 
 div.text {
-    margin-top: 50px;
+    margin-top: -10px;
     margin-bottom: 50px;
 }
 
@@ -24,7 +24,7 @@ div.image {
 }
 
 img {
-    width: 30%;
+    width: 60%;
     display: block;
     margin: auto;
     max-width: 400px;

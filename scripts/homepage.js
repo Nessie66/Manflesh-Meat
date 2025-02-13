@@ -104,3 +104,9 @@ window.onload = function () {
         svg[0].classList.add("show")
     }
 }
+
+function wirral() {
+        window.location.href = 'caves/depths_1/hallway3.html'; 
+        localStorage.setItem("wirral", 1)
+
+}

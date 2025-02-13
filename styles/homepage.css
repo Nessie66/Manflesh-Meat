@@ -3,6 +3,7 @@
     margin: 0;
     -webkit-tap-highlight-color: transparent;
     font-family: 'Times New Roman', Times, serif;
+
 }
 
 /* @media only screen and (max-width: 300px) {
@@ -11,6 +12,7 @@
 
 body {
     background-color: rgb(0, 0, 0);
+    overflow: hidden;
 }
 h2 {
     font-size: 0.75em;
@@ -47,6 +49,7 @@ h3 {
     color: rgb(170, 22, 22);
     background-color: rgb(0, 0, 0);
 }
+
 
 div.container {
     position: relative;
@@ -158,6 +161,41 @@ div.withering img {
     z-index: -1;
 }
 
+/* wirrel */
+
+div.psst {
+    text-align: centers;
+    position: absolute;
+    left: 10;
+    margin-top: -170px;
+    margin-right: 8%;
+    font-size: 0.7em;
+    display: inline-block;
+    scale: 1;
+}
+
+div.psst img {
+    width: 250px;
+    margin-bottom: -4px;
+    z-index: -1;
+    cursor: pointer;
+}
+
+div.back {
+    margin-left: 50%;
+    z-index: 1;
+}
+
+h4 {
+    color: black;
+    background-color: white;
+    margin-bottom: 10px;
+    width: 80%;
+
+}
+
+
+
 @media only screen and (max-width: 380px) {
     div.speech{
         font-size: 7px;
@@ -223,8 +261,32 @@ div.withering img {
     div.withering img {
         width: 100px;
     }
+
+    div.psst {
+        scale: 2.3;
+        left: 180;
+        margin-top: -180px;
+        font-size: 0.5em;
+    }
+
+    h4 {
+        width: 150px;
+    }
+
+    
 }
 
+@media only screen and (max-width: 350px) {
+    div.psst {
+        width: 50%;
+        font-size: 0.4em;
+        margin-top: -120px;
+    }
+    img#wirrel {
+        width: 100%;
+    }
+    
+}
 
 
 @media only screen and (min-width: 980px) {
@@ -279,5 +341,15 @@ div.withering img {
     div.withering {
         font-size: 1.3em;
         margin-right: 33%;
+    }
+
+    div.psst {
+        scale: 2.1;
+        left: 160;
+        margin-top: -300;
+    }
+
+    div.back {
+        margin-left: 0%;
     }
 }

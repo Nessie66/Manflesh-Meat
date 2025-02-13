@@ -113,6 +113,12 @@ div.m2 {
     top: calc(31vw);
 }
 
+div.m3 {
+    width: 70%;
+    top: 42vw;
+    right: 15%;
+}
+
 
 @media only screen and (max-width: 380px) {
 
@@ -141,6 +147,12 @@ div.m2 {
 
     div.back {
         top: 40%;
+    }
+
+    div.m3 {
+        width: 300px;
+        top: 43vw;
+        right: 5%;
     }
 
 }
@@ -184,6 +196,12 @@ div.m2 {
 
     div.back {
         top: 78%;
+    }
+
+    div.m3 {
+        width: 500px;
+        top: 25vw;
+        right: 26%;
     }
 
 }
@@ -244,6 +262,11 @@ div.m2 {
         right: 18%;
         top: 20%;
     } 
+    div.m3 {
+        width: 700px;
+        top: 260px;
+        right: 35%;
+    }
 
     
 }

@@ -108,6 +108,12 @@ button1 = document.getElementById("next");
 talk = document.getElementById("talk");
 
 window.onload = function () {
+    if(localStorage.getItem("wirral") == 1){
+        talk.classList.add("m3");
+        speech("looking for megaroy? he's in there.<br> careful around that one...")
+        localStorage.setItem("wirrel", 2)  
+    }
+
     talk.classList.add("m2");
     if(localStorage.getItem("hallway3") == null){
         showSpeech()
@@ -120,7 +126,7 @@ window.onload = function () {
     }
 
     if(localStorage.getItem("hallway5") == null){
-        console.log("hallway5NULL")
+        
     }
 
     if(localStorage.getItem("megaroy") == 1){
