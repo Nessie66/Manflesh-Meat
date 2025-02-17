@@ -71,14 +71,14 @@ img#tick {
 h2 {
     position: absolute;
     margin-top: 20px;
-    font-size: 1.1em;
+    font-size: 1em;
     display: inline-block;
 }
 
 @media only screen and (max-width: 380px) {
 
 }
-
+ 
 @media only screen and (min-width: 480px) {
     canvas {
         max-width: 100%;
