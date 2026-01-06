@@ -39,9 +39,7 @@ div.back {
     margin-top: 2%;
 }
 
-#leg {
-    margin-right: 30px;
-}
+
 ul {
     list-style: none;
 }
@@ -64,9 +62,6 @@ a:active {
 }
 
 @media only screen and (max-width: 380px) {
-    #leg {
-        margin-right: 15px;
-    }
     button {
         font-size: 0.3em;
     }
@@ -89,9 +84,6 @@ a:active {
         height: 40px;
     }
     
-    #leg {
-        margin-right: 50px;
-    }
     button {
         font-size: 0.8em;
     }
@@ -113,11 +105,8 @@ a:active {
         height: 30px;
     }
     
-    #leg {
-        margin-right: 70px;
-    }
     img {
-        height: 75%;
+        height: 70%;
         width: auto;
         max-width: 100%;
     }
@@ -133,6 +122,9 @@ a:active {
     }
     div {
         margin:  1% 8%;
+    }
+    button {
+        font-size: 0.6em;
     }
 }
 

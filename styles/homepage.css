@@ -161,17 +161,17 @@ div.withering img {
     z-index: -1;
 }
 
-/* wirrel */
+/* wirral */
 
 div.psst {
     text-align: centers;
     position: absolute;
-    left: 10;
+    left: -5;
     margin-top: -170px;
     margin-right: 8%;
     font-size: 0.7em;
     display: inline-block;
-    scale: 1;
+    scale: 0.9;
 }
 
 div.psst img {
@@ -182,7 +182,7 @@ div.psst img {
 }
 
 div.back {
-    margin-left: 50%;
+    margin-left: 40%;
     z-index: 1;
 }
 
@@ -227,7 +227,7 @@ h4 {
         left: 5%; */
     }
     h3 {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
     h3.main {
 
@@ -266,7 +266,7 @@ h4 {
         scale: 2.3;
         left: 180;
         margin-top: -180px;
-        font-size: 0.5em;
+        font-size: 0.45em;
     }
 
     h4 {
@@ -296,15 +296,23 @@ h4 {
         left: 20%; */
     }
     h3.main {
-        left: 27%;
+        left: 34%;
         top: 26%;
     }
     h3.music {
-        right: 24%;
+        right: 35%;
         top: 23%;
     }
     button {
         font-size: 1em;
+    }
+
+    div.psst {
+        scale: 2.1;
+        margin-top: -190px;
+    }
+    div.back {
+    margin-left: 0;
     }
     
 }

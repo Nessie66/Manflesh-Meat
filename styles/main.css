@@ -63,6 +63,7 @@ div.posts {
     width: 55%;
     max-width: 490px;
     text-wrap: nowrap;
+    margin-top: 25;
     
 }
 
@@ -214,17 +215,17 @@ path#path1{
 }
 @media only screen and (min-width: 1260px) {
     svg {
-        height: 2200;
+        height: 1700;
     }
     h1 {
-        font-size: 2.5em;
+        font-size: 1.8em;
 
     }
     h2 {
-        font-size: 1.1em;
+        font-size: 1em;
     }
     a {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     div.posts {
