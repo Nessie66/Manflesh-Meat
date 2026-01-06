@@ -154,11 +154,11 @@ div.DEQ {
 @media only screen and (min-width: 1280px) {
     svg {
         margin-top: 0;
-        height: 957px; 
+        height: 100%;
     }
     img {
         margin-top: 0;
-        height: 957px; 
+        height: 100%; 
         width: auto;
         display: block;
         margin: auto;

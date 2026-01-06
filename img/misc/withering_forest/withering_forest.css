@@ -11,7 +11,7 @@ div.link {
     color: rgba(247, 113, 224, 0.452);
     position:absolute;
     top: 90px;
-    right: -580px;
+    right: -480px;
     font-weight: lighter;
 }
 
@@ -35,15 +35,15 @@ body {
 
 img {
     width: 110%;
-    width: 1300px;
+    width: 1000px;
     margin-top: 40px;
     margin-left: 3%;
     margin-right: 10%;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 425px) {
     img {
-        width: 1000px;
+        width: 900px;
     }
     div.link {
         top: 70px;
@@ -55,7 +55,7 @@ img {
 @media only screen and (min-device-width: 600px) {
     img {
         width: 110%;
-        width: 1500px;
+        width: 1150px;
         margin-top: 30px;
         margin-left: 3%;
         margin-right: 10%;
@@ -76,6 +76,6 @@ img {
     div.link {
         font-size: 1.2em;
         top: 100px;
-        right: 700px;
+        right: 35%;
     }
 }

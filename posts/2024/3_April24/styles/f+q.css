@@ -46,10 +46,6 @@ div.container {
 
 
 
-div.quiz {
-    width: 50%;
-}
-
 h2 {
     background-color: rgb(255, 0, 0);
     color: greenyellow;
@@ -64,6 +60,8 @@ div.quiz {
     scale: 0.7;
     top: 43%;
     left: -2%;
+    width: 40%;
+    margin-left: 200px;
 }
 
 div.quiz img{
@@ -166,7 +164,7 @@ div.withering img {
     }
 
     div.quiz {
-        top: 58%;
+        top: -50;
         left: -2%;
     }
 
@@ -176,7 +174,7 @@ div.withering img {
     div.withering {
         font-size: 1.3em;
         margin-right: 20%;
-        margin-top: 30%;
+        margin-top: 25%;
         scale: 2.5;
     }
     div.withering img {
@@ -192,16 +190,16 @@ div.withering img {
     }
     
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1920px) {
     h2 {
         font-size: 1.7em;
         width: 50%;
         margin: 10px auto;
     }
     div.quiz {
-        margin-top: -10%;
-        left: 13%;
-        scale: 0.3;
+        margin-top: -50;
+        left: 50;
+        scale: 0.5;
     }
     h2 {
         font-size: 3em;

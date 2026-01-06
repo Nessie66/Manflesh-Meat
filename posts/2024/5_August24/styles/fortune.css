@@ -19,7 +19,7 @@ img#text {
     margin: auto;
     margin-top: 10px;
     width: 90%;
-    max-width: 700px;
+    max-width: 600px;
 }
 
 div.speech {
@@ -40,7 +40,7 @@ img#speech {
 
 img#flyman {
     width: 90%;
-    max-width: 650px;
+    max-width: 500px;
 }
 
 p#fortune {
@@ -68,7 +68,7 @@ a {
         margin-right: 100px;
     }
     img#speech {
-        width: 400px;
+        width: 300px;
     }
 
     img#flyman {
@@ -76,7 +76,7 @@ a {
         margin: auto;
     }
     p#fortune {
-        font-size: 1.2em;
+        font-size: 1.1em;
         left: 14%;
         top: 18%;
         width: 70%;

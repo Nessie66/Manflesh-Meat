@@ -14,12 +14,15 @@ div.image {
     margin: auto;
     width: fit-content;
     margin-top: 100px;
-    margin-left: 18%;
+    max-width: 350px;
+    overflow: visible;
 }
 
 img#fly {
+    display: block;
+    margin: auto;
+    margin-left: 35;
     width: 70%;
-    max-width: 500px;
 }
 
 
@@ -35,16 +38,12 @@ h2 {
 }
 
 @media only screen and (min-width: 600px) {
-    div.image {
-        margin-left: 28%;
-    }
+
     h2 {
         font-size: 2em;
     }
 }
 
 @media only screen and (min-width: 1000px) {
-    div.image {
-        margin-left: auto;
-    }
+
 }

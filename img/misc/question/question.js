@@ -14,8 +14,9 @@ form.addEventListener('submit', e => {
     const monster3 = document.getElementById('monster_3').value;
     const monster4 = document.getElementById('monster_4').value;
 
-    // Check if the order is correct (Werewolf, Zombie, Vampire, Ghost)
-    if (monster1 === 'werewolf' && monster2 === 'zombie' && monster3 === 'vampire' && monster4 === 'ghost') {
+    // Check if the order is correct (Werewolf, Vampire, Zombie, Ghost)
+    // ive had it set wrong the whole time what an embarrassment
+    if (monster1 === 'werewolf' && monster2 === 'vampire' && monster3 === 'zombie' && monster4 === 'ghost') {
     // Redirect to another webpage if the order is correct
     window.location.href = 'correct_answer.html';
     } else {

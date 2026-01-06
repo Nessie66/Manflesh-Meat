@@ -49,11 +49,11 @@ button {
 @media only screen and (min-width: 1280px) {
     svg {
         margin-top: 0;
-        height: 957px;
+        height: 85%;
     }
     div.back {
         position: absolute;
-        bottom: 5%;
+        bottom: -8%;
     }
     button {
         font-size: 1.2em;

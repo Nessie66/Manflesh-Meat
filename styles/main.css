@@ -242,11 +242,12 @@ path#path1{
     }
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1920px) {
 
     div.posts {
         left: 28%;
         top: 20vh;
+        margin-top: 5;
 
     }
 

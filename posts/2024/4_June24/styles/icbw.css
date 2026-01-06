@@ -62,7 +62,7 @@ div.background {
 
 @media only screen and (min-width: 600px) {
     img {
-        width: 98%;
+        width: 90%;
     }
     html, body {
         overflow-y: auto;
@@ -77,5 +77,8 @@ div.background {
 @media only screen and (min-width: 1000px) {
     img#story {
         margin-top: -50px;
+    }
+    img {
+        width: 50%;
     }
 }
