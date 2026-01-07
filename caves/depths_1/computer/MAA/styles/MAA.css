@@ -30,7 +30,7 @@ body {
 }
 
 div.history img {
-    width: 60%;
+    width: 40%;
     margin-top: 5px;
 }
 
@@ -115,7 +115,7 @@ h3.poem2 {
 
 h4.poem {
     font-weight: lighter;
-    text-align: center;
+    text-align: center; 
     margin-bottom: 2%;
     color: rgb(112, 116, 158);
 }
@@ -132,7 +132,7 @@ div.table {
     margin-left: 1%;
     border-top: hidden;
     border-bottom: hidden;
-    
+    vertical-align: top;
     
 }
 
@@ -142,7 +142,6 @@ div.active li {
     border-color: red;
     border-width: 2px;
     margin-right: 1%;
-    margin-bottom: 1%;
     padding-left: 1%;
 }
 
@@ -158,6 +157,10 @@ div.spotlight li img {
     display: inline-block;
     width: 46%;
     margin: 2%;
+}
+
+div.table.spotlight {
+    vertical-align: top;
 }
 
 div.spotlight li p {
@@ -200,7 +203,7 @@ div.temp br {
 }
 
 div.finnant img{
-    width: 40%;
+    width: 30%;
     float: right;
     margin-left: 1%;
     max-width: 500px;
@@ -242,7 +245,7 @@ a.eyeball {
 }
 
 div.downloads div{
-    width: 45%;
+    width: 30%;
     display: inline-block;
     margin: 5px;
     margin-top: 10px;
@@ -328,16 +331,16 @@ img#face1 {
 
 @media only screen and (min-width: 1000px) {
     body {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .title img {
-        max-width: 1200px;
+        max-width: 935px;
         margin-left: 0;
     }
 
     img#avirex {
-        width: 30%;
+        width: 20%;
     }
 
     .notNav {
@@ -361,6 +364,25 @@ img#face1 {
     }
 
     div.table {
-        margin-left: 16%;
+        margin-left: 13%;
     }
+}
+
+@media only screen and (min-width: 2000px) {
+    body {
+        font-size: 2em;
+    }
+    
+    div.snav {
+        max-width: 300px;
+        font-size: 1.5em;
+        margin-top: 18.1%;
+    }
+
+    .title img {
+        max-width: 1500px;
+        margin-left: 0;
+    }
+
+
 }

@@ -30,7 +30,7 @@ div.hanging img.hidden {
 
 
 img.face {
-    width: 30%;
+    width: 20%;
     display: block;
     margin: auto;
     max-width: 150px;
@@ -40,10 +40,10 @@ img.face {
 
 @media only screen and (min-width: 600px) {
     body {
-        font-size: 1em;
+        font-size: 0.8em;
     }
     img.face {
-        width: 40%;
+        width: 20%;
         margin-top: 0;
     }
 }

@@ -12,7 +12,7 @@ div.content {
 img {
     width: 105%;
     margin: auto;
-    max-width: 1000px;
+    max-width: 800px;
     margin-left: -3%;
 }
 
@@ -24,6 +24,6 @@ img {
 
 @media only screen and (min-width: 600px) {
     div.content {
-        margin-top: 100px;
+        margin-top: 70px;
     }
 }

@@ -26,7 +26,7 @@ document.getElementById('b1').addEventListener('click', function() {
 
     setTimeout(function() {
         window.location.href = '../puzzleroy.html';  
-    }, 7022200);  
+    }, 7000);  
 });
 
 document.getElementById('b2').addEventListener('click', function() {

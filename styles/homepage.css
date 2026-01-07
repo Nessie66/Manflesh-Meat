@@ -263,8 +263,8 @@ h4 {
     }
 
     div.psst {
-        scale: 2.3;
-        left: 180;
+        scale: 2;
+        left: 140;
         margin-top: -180px;
         font-size: 0.45em;
     }
@@ -314,6 +314,13 @@ h4 {
     div.back {
     margin-left: 0;
     }
+
+    div.psst {
+        scale: 2.3;
+        left: 190;
+        margin-top: -230px;
+    }
+
     
 }
 @media only screen and (min-width: 1600px) {

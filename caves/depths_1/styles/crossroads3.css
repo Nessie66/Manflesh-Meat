@@ -17,9 +17,7 @@ img {
 
 svg {
     margin-top: 25%;
-    height: 50%;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
     opacity: 0;
 }
 
@@ -46,8 +44,8 @@ button {
         font-size: 0.6em;
     }
     svg {
-        height: 40%;
-        margin-left: 50%;
+        width: 100%;
+
     }
 }
 

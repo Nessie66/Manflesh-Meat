@@ -24,11 +24,12 @@ img#represent {
     width: 90%;
     bottom: 0;
     right: 0;
-    max-width: 700px;
+    max-width: 550px;
+    z-index: -1;
 
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 430px) {
     img#wrong {
         width: 140%;
         margin-top: 0;
@@ -47,6 +48,13 @@ img#represent {
         z-index: 1;
 
     }
+    img#represent {
+    width: 70%;
+    bottom: 0;
+    right: 0;
+
+
+}
 }
 
 @media only screen and (min-width: 1000px) {

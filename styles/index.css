@@ -43,10 +43,11 @@ svg {
     max-width: auto;
     height: 80%;
     opacity: 0;
+    
 }
 
 img#titleimg {
-    width: 65%;
+    width: 80%;
     display: block;
     margin: auto;
     margin-top: 1.5%;
@@ -77,11 +78,8 @@ div.show {
     opacity: 1;
 }
 
-@media only screen and (max-width: 380px) {
-    h1 {
-        font-size: 1em;
-    }
-}
+
+
 
 
 @media only screen and (max-width: 700px) {
@@ -114,7 +112,8 @@ div.show {
         font-size: 1.8em;
     }
     button {
-        font-size: 0.5em;
+        font-size: 0.75em;
+        margin-top: -5%;
 
     }
     h2 {
@@ -130,7 +129,27 @@ div.show {
         letter-spacing: 0.5em;
         border-width: 0.5px;
     }
+    svg {
+        width: 80%;
+    }
+
+    img#titleimg {
+        width: 90%;
+        margin-top: 3%;
+    }
   }
+
+  @media only screen and (max-width: 380px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 0.6em;
+    }
+
+
+}
 
   @media only screen and (min-width: 540px) {
     h2 {
@@ -180,7 +199,7 @@ div.show {
         top: 40%;
     }
     img#titleimg {
-        width: 35%;
+        width: 40%;
         margin-top: 0.8%;
         margin-bottom: 0.8%;
     }

@@ -4,7 +4,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 img {
-    width: 100%;
+    width: 90%;
     display: block;
     margin: auto;
 }
@@ -15,8 +15,9 @@ body {
     overflow: hidden;
     background-color: black;
     color: blue;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+    font-size: 0.9em;
 }
 button {
     font-size: 0.6em;

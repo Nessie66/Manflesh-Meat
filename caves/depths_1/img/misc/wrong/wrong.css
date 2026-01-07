@@ -33,13 +33,16 @@ img#kiss {
 }
 
 @media only screen and (min-width: 600px) {
-    img#kiss {
+    img{
         width: 30%;
+    }
+    img#kiss {
+        width: 20%;
     }
     div.content {
         margin-top: 75px;
     }
     h3 {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 }

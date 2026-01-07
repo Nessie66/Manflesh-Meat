@@ -15,7 +15,7 @@ div.content {
 img {
     width: 100%;
     margin: auto;
-    max-width: 800px;
+    max-width: 700px;
 }
 
 img#you2 {
@@ -32,6 +32,6 @@ img#you2 {
 
 @media only screen and (min-width: 600px) {
     div.content {
-        margin-top: 150px;
+        margin-top: 125px;
     }
 }

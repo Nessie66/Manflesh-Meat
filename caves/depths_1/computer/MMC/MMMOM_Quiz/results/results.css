@@ -14,7 +14,7 @@ img {
     display: block;
     margin: auto;
     margin-top: 10%;
-    width: 90%;
+    width: 60%;
     max-width: 800px;
     margin-bottom: 40px;
 }
@@ -29,7 +29,7 @@ img#title {
 }
 
 img.celebrate {
-    width: 70%;
+    width: 10%;
     max-width: 400px;
 }
 
@@ -54,4 +54,10 @@ h2 {
 
 body.prodigy {
     background-image: url("");
+}
+
+@media only screen and (min-width: 1000px) {
+    img {
+        width: 30%;
+    }
 }

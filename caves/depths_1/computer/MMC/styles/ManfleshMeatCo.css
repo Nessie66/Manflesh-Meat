@@ -7,6 +7,7 @@ body {
     
     background-image: url("../img/ManfleshMeatCo/skin2.jpg");
     font-family:Arial, Helvetica, sans-serif ;
+    font-size: 0.8em;
 }
 
 .backArrow {
@@ -45,17 +46,18 @@ img#title {
 }
 
 img#title2 {
-    opacity: 0;
+    display: none;
     position: absolute;
     top: 1%;
     left: 13%;
 }
 
 div.title {
-    background-image: url("../img/ManfleshMeatCo/bone.jpg");
+    /* background-image: url("../img/ManfleshMeatCo/bone.jpg"); */
     height: 12vw;
-    margin-bottom: 3%;
-    margin-top: 3%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    text-align: center;
 }
 
 
@@ -251,6 +253,9 @@ div.org2 p {
 
 
 @media only screen and (min-width: 480px) {
+    body {
+        font-size: 1em;
+    }
     img {
         max-width: 500px;
         
@@ -269,7 +274,7 @@ div.org2 p {
         top: -30%;
     }
     div.nav a{
-        font-size: 1.2em;  
+        font-size: 1em;  
         margin-left: 4%;
     }
     .r1 {
@@ -296,26 +301,35 @@ div.org2 p {
     img#title {
         margin-bottom: 1%;
         max-width: 1000px;
-        opacity: 0;
+        display: none;
+    }
+    div.title {
+        margin-top: 0;
+        margin-bottom: 15px;
     }
     img#title2 {
-        max-width: 1100px;
-        position: absolute;
-        top: 1%;
-        left: 21%;
-        opacity: 1;
+        width: 100%;
+        max-width: 850px;
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        margin: auto;
     }
     div.content {
         padding-top: 1%;
     }
     div.title a{
-        top: -30%;
+        top: 0;
     }
+
+
     div.nav a{
-        font-size: 1.4em;  
+        font-size: 1.2em;  
+        margin: 15px 10px 20px 0;
         margin-left: 4%;
     }
-    
+
 
     div.org1 div{
         font-size: 01em;
