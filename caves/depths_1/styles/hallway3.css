@@ -12,10 +12,11 @@ body {
 img {
     margin-top: 25%;
     margin-left: 72%;
-    height: 35%;
+    height: 45%;
     transform: translateX(-70%);
     pointer-events:none;
     opacity: 0;
+    max-width: 900px;
 }
 
 #door {
@@ -28,9 +29,10 @@ img {
 svg {
     margin-top: 25%;
     margin-left: 72%;
-    height: 35%;
+    height: 45%;
     transform: translateX(-70%);
     opacity: 0;
+    max-width: 900px;
 }
 
 svg.show {
@@ -55,7 +57,7 @@ div.back {
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 50%;
+    top: 63%;
 
 }
 button {
@@ -130,12 +132,12 @@ div.m3 {
         text-align: center;
     }
     svg {
-        height: 30%;
+        height: 40%;
         margin-left: 73%;
     }
 
     img {
-        height: 30%;
+        height: 40%;
         margin-left: 73%;
     }
 
@@ -146,7 +148,7 @@ div.m3 {
     }
 
     div.back {
-        top: 40%;
+        top: 56%;
     }
 
     div.m3 {
@@ -195,7 +197,7 @@ div.m3 {
     }
 
     div.back {
-        top: 78%;
+        top: 81%;
     }
 
     div.m3 {
@@ -206,33 +208,40 @@ div.m3 {
 
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 900px) {
     svg {
         margin-top: 0;
-        height: 957px; 
+        height: 100%; 
         width: auto;
         display: block;
         margin: auto;
         position: relative;
         transform: translate(0, -100%);
+        max-width: none;
 
     }
 
     #door{
         position: relative;
+        max-width: none;
         
     }
 
     img {
         margin-top: 0;
-        height: 957px; 
+        height: 100%; 
         width: auto;
         display: block;
         margin: auto;
     }
+
+    div.cave {
+        height: 85%;
+    }
     div.back {
         
-        top: 95%;
+        top: 87%;
+
     }
     button {
         font-size: 1.2em;
@@ -250,8 +259,8 @@ div.m3 {
         right: 18%;
     }
     div.speech {
-        font-size: 1.2em;
-        width: 40%;
+        font-size: 1em;
+        width: 35%;
         
     }
     button#next {
@@ -264,7 +273,7 @@ div.m3 {
     } 
     div.m3 {
         width: 700px;
-        top: 260px;
+        top: 150px;
         right: 35%;
     }
 
@@ -278,11 +287,14 @@ div.m3 {
         top: 16%;
     }
 
+    div.cave{
+        height: 85%;
+    }
     div.back {
         position: absolute;
-        top: 74%;
+        top: 88%;
     }
     button {
-        font-size: 1.3em;
+        font-size: 1.8em;
     }
 }

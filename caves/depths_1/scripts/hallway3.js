@@ -110,7 +110,7 @@ talk = document.getElementById("talk");
 window.onload = function () {
     if(localStorage.getItem("wirral") == 1){
         talk.classList.add("m3");
-        speech("looking for megaroy? he's in there.<br> careful around that one...")
+        speech("looking for megaroy? he's in there.<br> careful around that one.")
         localStorage.setItem("wirrel", 2)  
     }
 
@@ -140,7 +140,7 @@ window.onload = function () {
 
     if(localStorage.getItem("hallway5") == 1){
         talk.classList.add("m2");
-        speech("what you nosing around for, you a pervert or something? nothing interesting round here except rats with bad teeth and failures withering away. its like they say, you wont find a painless way to die man. still, beats being out in the hills, cant complain!");
+        speech("what you nosing around for. you a pervert or something? nothing interesting round here except rats with bad teeth and failures withering away. its like they say, you wont find a painless way to die man. still, beats being out in the hills. cant complain!");
         localStorage.setItem("hallway5", 2)  
 
     }

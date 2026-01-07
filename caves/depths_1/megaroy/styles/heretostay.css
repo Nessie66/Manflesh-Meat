@@ -109,11 +109,11 @@ a {
     }
 
     div.select {
-        font-size: 1em;
+        font-size: 0.8em;
         position: absolute;
         left: 50%;
         top: 49%;
-        width: 200px;
+        width: 160px;
         transform: translate(50%, -55%);
 
     }
@@ -129,11 +129,11 @@ a {
 
 @media only screen and (min-width: 2000px) {
     div.select {
-        font-size: 1.2em;
+        font-size: 1.8em;
         position: absolute;
         left: 50%;
         top: 47%;
         width: 310px;
-        transform: translate(50%, -55%);
+        transform: translate(50%, -45%);
     }
 }

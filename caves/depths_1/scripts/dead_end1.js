@@ -70,7 +70,7 @@ window.onload = function () {
         });
     }
     if((localStorage.getItem("dead_end1") == 1) && (localStorage.getItem("DEQ") == 1)){
-        speech("Arck! You jumped me. Where on earth did you come from?")
+        speech("Arck! You startled me. Where on earth did you come from?")
         speech_.classList.add("DEQ");
         showSpeech()
         localStorage.setItem("DEQ", 2)  

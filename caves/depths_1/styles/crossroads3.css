@@ -17,8 +17,8 @@ img {
 
 svg {
     margin-top: 25%;
-    height: 40%;
-    margin-left: 47%;
+    height: 50%;
+    margin-left: 50%;
     transform: translateX(-50%);
     opacity: 0;
 }
@@ -46,7 +46,7 @@ button {
         font-size: 0.6em;
     }
     svg {
-        height: 43%;
+        height: 40%;
         margin-left: 50%;
     }
 }
@@ -75,7 +75,7 @@ button {
 @media only screen and (min-width: 1280px) {
     svg {
         margin-top: 0;
-        height: 957px; 
+        height: 85%; 
     }
     img {
         margin-top: 0;
@@ -84,16 +84,12 @@ button {
         display: block;
         margin: auto;
     }
-    div.back {
-        
-        bottom: 5%;
-    }
     button {
         font-size: 1.2em;
     }
     div.back {
         position: absolute;
-        bottom: 2.5%;
+        bottom: 10%;
     }
 }
 
@@ -101,9 +97,9 @@ button {
 
     div.back {
         position: absolute;
-        bottom: 24%;
+        bottom: 11%;
     }
     button {
-        font-size: 1.3em;
+        font-size: 1.8em;
     }
 }

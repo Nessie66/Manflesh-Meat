@@ -11,6 +11,7 @@ body {
     background-color: black;
     color: rgba(255, 255, 255, 0.671);
     text-align: center;
+    font-size: 0.8em;
 }
 
 div.text {
@@ -27,7 +28,7 @@ img {
     width: 60%;
     display: block;
     margin: auto;
-    max-width: 400px;
+    max-width: 250px;
 }
 
 
@@ -35,3 +36,27 @@ button {
     margin: 20px;
 }
 
+@media only screen and (max-width: 480px) {
+    img {
+        max-width: 200px;
+    }
+    body {
+        font-size: 0.7em;
+    }
+}
+
+
+@media only screen and (min-width: 1280px) {
+
+    
+
+}
+
+@media only screen and (min-width: 2000px) {
+    img {
+        max-width: 500px;
+    }
+    body {
+        font-size: 1.2em;
+    }
+}

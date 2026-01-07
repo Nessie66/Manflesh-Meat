@@ -13,6 +13,10 @@ document.getElementById('b1').addEventListener('click', function() {
     abomination.onload = function() { 
         sound1.play(); 
         abomination.classList.add('puddle');
+        abomination.classList.remove('m2');
+        abomination.classList.remove('m3');
+        abomination.classList.remove('m4');
+        abomination.classList.remove('m5');
     };
 
     document.querySelector('.misery').style.display = 'block';
@@ -22,7 +26,7 @@ document.getElementById('b1').addEventListener('click', function() {
 
     setTimeout(function() {
         window.location.href = '../puzzleroy.html';  
-    }, 7000);  
+    }, 7022200);  
 });
 
 document.getElementById('b2').addEventListener('click', function() {

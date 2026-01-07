@@ -17,9 +17,9 @@ img {
 
 svg {
     margin-top: 25%;
-    height: 40%;
-    margin-left: 47%;
-    transform: translateX(-50%);
+    width: 100%;
+    /* margin-left: 47%;
+    transform: translateX(-50%); */
 }
 
 div.container{
@@ -102,7 +102,7 @@ a#click {
 @media only screen and (min-width: 1280px) {
     svg {
         margin-top: 0;
-        height: 957px; 
+        height: 85%; 
     }
     img {
         margin-top: 0;
@@ -120,12 +120,12 @@ a#click {
     }
     div.back {
         position: absolute;
-        bottom: 2.5%;
+        bottom: -6%;
     }
     a#click.show {
         font-size: 2em;
         top: 50%;
-        right: 28%;
+        right: 30%;
     }
 }
 
@@ -136,7 +136,7 @@ a#click {
             bottom: -5%;
         }
         button {
-            font-size: 1.3em;
+            font-size: 1.8em;
         }
 
         a#click.show {

@@ -17,9 +17,9 @@ img {
 
 svg {
     margin-top: 25%;
-    height: 40%;
-    margin-left: 47%;
-    transform: translateX(-50%);
+    width: 100%;
+    /* margin-left: 47%;
+    transform: translateX(-50%); */
 }
 
 div.container{
@@ -30,7 +30,7 @@ div.container{
 div.back {
     width: 100%;
     text-align: center;
-    margin-top: 2.5%;
+    margin-top: 1%;
 }
 button {
     font-size: 0.8em;
@@ -58,7 +58,7 @@ div.speech {
     border-color: black;
     border-width: 0.5px; */
     display: inline-block;
-    font-size: 0.9em;
+    font-size: 0.8em;
     opacity: 0;
     padding-left: 0.3%;
     padding-right: 0.3%;
@@ -74,8 +74,8 @@ div.speech p {
 
 div.talk {
     position: absolute;
-    top: calc(65vw);
-    left: 4%;
+    top: calc(64vw);
+    left: 10%;
     text-align: center;
     z-index: 1;
 }
@@ -111,7 +111,6 @@ div.show {
 @media only screen and (max-width: 380px) {
     svg {
         height: 43%;
-        margin-left: 50%;
     }
     p {
         font-size: 0.7em;
@@ -120,7 +119,7 @@ div.show {
         font-size: 0.9em;
     }
     div.talk {
-        top: 35vh;
+        top: 32vh;
     }
     
     button.button {
@@ -153,7 +152,7 @@ div.show {
         font-size: 0.9em;
     }
     p {
-        font-size: 1em;
+        font-size: 0.9em;
     }
     div.speech {
         font-size: 1.1em;
@@ -181,11 +180,11 @@ div.show {
     }
     svg {
         margin-top: 0;
-        height: 957px; 
+        height: 85%; 
     }
     img {
         margin-top: 0;
-        height: 957px; 
+        height: 85%; 
         width: auto;
         display: block;
         margin: auto;
@@ -193,14 +192,10 @@ div.show {
     div.back {
         bottom: 5%;
     }
-    div.back {
-        position: absolute;
-        bottom: 2%;
-    }
     div.bottom {
         position: absolute;
         top:2%;
-        left: 38%;
+        left: 35%;
     }
     div.bottom p {
         font-size: 1.2em;
@@ -210,7 +205,7 @@ div.show {
         font-size: 1.2em;
     }
     div.talk {
-        top: calc(57vh);
+        top: calc(49vh);
         left: 25%;
     }
     button.button {
@@ -218,21 +213,21 @@ div.show {
     }
 
     div.more {
-        top: calc(60vh);
-        left: 32%;
+        top: calc(55vh);
+        left: 34%;
     }
 }
 
 @media only screen and (min-width: 2000px) {
     div.talk {
-        top: calc(36vh);
-        left: 30%;
+        top: calc(52vh);
+        left: 25%;
     }
     div.speech {
-        font-size: 1.3em;
+        font-size: 1.8em;
     }
     button.button {
-        font-size: 1.2em;
+        font-size: 1.7em;
     }
 
     div.back {
@@ -241,10 +236,14 @@ div.show {
 
     }
     button {
-        font-size: 1.3em;
+        font-size: 1.8em;
     }
     div.more {
-        top: calc(43vh);
-        left: 35%;
+        top: calc(58vh);
+        left: 32%;
+    }
+
+    div.bottom {
+        font-size: 1.6em;
     }
 }   

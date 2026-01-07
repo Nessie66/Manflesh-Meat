@@ -10,20 +10,20 @@ body {
 }
 img {
     margin-top: 25%; 
-    height: 40%;
-    margin-left: 47%;
-    transform: translateX(-50%);
+    width: 100%;
+    /* margin-left: 47%;
+    transform: translateX(-50%); */
 }
-svg.h5 {
+/* svg.h5 {
     margin-left:54%;
 
-}
+} */
 
 svg {
     margin-top: 25%;
-    height: 40%;
-    margin-left: 47%;
-    transform: translateX(-50%);
+    width: 100%;
+    /* margin-left: 47%;
+    transform: translateX(-50%); */
 }
 
 div.container{
@@ -42,10 +42,10 @@ button {
 
 
 @media only screen and (max-width: 380px) {
-    svg.h5 {
+    /* svg.h5 {
         height: 30%;
         margin-left: 53%;
-    }
+    } */
 
 }
 
@@ -55,15 +55,15 @@ button {
         margin-top: 75px;
         width: 100%;
         height: auto;
-        margin-left: 0;
-        transform: translateX(0);
+        /* margin-left: 0;
+        transform: translateX(0); */
     }
     svg {
         margin-top: 75px;
         width: 100%;
         height: auto;
-        margin-left: 0;
-        transform: translateX(-54%);
+        /* margin-left: 0;
+        transform: translateX(-54%); */
     }
     button {
         font-size: 0.9em;
@@ -74,7 +74,7 @@ button {
 @media only screen and (min-width: 1280px) {
     svg {
         margin-top: 0;
-        height: 957px; 
+        height: 85%; 
     }
     img {
         margin-top: 0;
@@ -92,7 +92,7 @@ button {
     }
     div.back {
         position: absolute;
-        bottom: 2.5%;
+        bottom: 10%;
     }
 }
 
@@ -100,10 +100,10 @@ button {
 
     div.back {
         position: absolute;
-        bottom: 24%;
+        bottom: 10%;
     }
     button {
-        font-size: 1.3em;
+        font-size: 1.8em;
     }
 
 }

@@ -10,9 +10,9 @@ body {
 }
 svg {
     margin-top: 25%;
-    height: 50%;
-    margin-left: 54%;
-    transform: translateX(-50%);
+    width: 100%;
+    /* margin-left: 54%;
+    transform: translateX(-50%); */
 }
 
 div.container{
@@ -67,6 +67,6 @@ button {
             bottom: -5%;
         }
         button {
-            font-size: 1.3em;
+            font-size: 1.8em;
         }
 }

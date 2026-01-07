@@ -10,9 +10,9 @@ body {
 }
 img {
     margin-top: 25%;
-    height: 40%;
-    margin-left: 47%;
-    transform: translateX(-50%);
+    width: 100%;
+    /* margin-left: 47%;
+    transform: translateX(-50%); */
 }
 svg {
     margin-top: 25%;
@@ -138,7 +138,7 @@ div.DEQ {
     }
     div.speech {
         font-size: 1.45vw;
-        width: 300px;
+        width: 230px;
         
     }
     button#next {
@@ -180,14 +180,14 @@ div.DEQ {
     div.talk {
 
         top: 43%;
-        right: 18%;
+        right: 20%;
     }
     div.killyourselfcss {
-        right: 18%;
+        right: 19%;
     }
     div.speech {
-        font-size: 1.2em;
-        width: 400px;
+        font-size: 0.9em;
+        width: 300px;
         
     }
     button#next {
@@ -203,15 +203,25 @@ div.DEQ {
         div.talk {
 
             top: 43%;
-            right: 26%;
+            right: 15%;
         }
 
         div.back {
             position: absolute;
-            bottom: -5%;
+            bottom: 1%;
+        }
+
+        div.speech {
+        font-size: 1.6em;
+        width: 450px;
+
+        
         }
         button {
-            font-size: 1.5em;
+            font-size: 1.8em;
+        }
+        #next {
+            font-size: 1.8em;
         }
 
     }

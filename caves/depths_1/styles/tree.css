@@ -9,18 +9,18 @@ body {
     background-color: black;
     color: white;
     /* text-align: center; */
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 h2 {
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 0.8em;
     text-align: center;
 }
 
 svg {
-    margin-top:270px;
-    height: 75%;
+    margin-top:130px;
+    height: 80%;
 }
  
 a {
@@ -70,7 +70,7 @@ div.speech {
     top: 140%;
     left: 3%;
     color: black;
-    max-width: 500px;
+    max-width: 400px;
     font-size: 0.7em;
     opacity: 0;
 }
@@ -102,14 +102,19 @@ div.top {
 
 
 @media only screen and (max-device-width: 380px) {
-
+    body {
+        font-size: 1.2em;
+    }
+    div.speech {
+        max-width: 300px;
+    }
 }
 
 @media only screen and (min-device-width: 900px) {
     h2 {
         
         font-weight: lighter;
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
     body {
@@ -117,7 +122,7 @@ div.top {
     }
 
     div.top {
-        margin-top: -180px;
+        margin-top: -130px;
     }
 
     div.speech {
@@ -129,7 +134,7 @@ div.top {
     svg {
         display: block;
         margin: auto;
-        margin-top: 180px;
+        margin-top: 130px;
         width: 100%;
     }
 }
@@ -141,5 +146,17 @@ div.top {
     }
     div.speech {
         left: 15%;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    body {
+        font-size: 3em;
+    }
+
+    svg {
+
+        margin-top: 140px;
+
     }
 }

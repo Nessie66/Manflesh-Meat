@@ -29,7 +29,7 @@ button {
 }
 
 canvas {
-    max-height: 50vh;
+    max-height: 20vh;
     max-width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -82,7 +82,10 @@ h2 {
 @media only screen and (min-width: 480px) {
     canvas {
         max-width: 100%;
-        max-height: 600px;
+        max-height: 100px;
+    }
+    h1 {
+        font-size: 1.5em;
     }
 
     h2 {
@@ -96,19 +99,19 @@ h2 {
 
     img#tick {
         left: 6%;
-        scale: 0.4;
+        scale: 0.3;
     }
 
 }
 
 @media only screen and (min-width: 1280px) {
     img {
-        max-height: 1400px;
+        max-height: 1000px;
         width: auto;
     }
     img#tick {  
         left: 45%;
-        scale: 0.7;
+        scale: 0.5;
     }
 
 }
