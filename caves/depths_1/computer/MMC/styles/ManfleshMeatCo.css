@@ -30,7 +30,7 @@ div.content {
     background-image: url("../img/ManfleshMeatCo/meat1.jpg");
 }
 img {
-    width: 85%;
+    width: 70%;
     display: block;
     margin: auto;
 }
@@ -97,6 +97,8 @@ img#mission {
 }
 img#niceday {
     margin-top: 5%;
+    width: 60%;
+    max-width: 400px;
     
 }
 
@@ -265,7 +267,7 @@ div.org2 p {
     }
     img#title {
         max-width: 2000px;
-    }
+    } 
     div.title {
         margin-bottom: 6%;
         max-height: 200px;
