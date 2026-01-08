@@ -11,8 +11,8 @@ body {
 }
 img {
     margin-top: 25%;
-    margin-left: 69%;
-    height: 45%;
+    margin-left: 70%;
+    height: 40%;
     transform: translateX(-70%);
     pointer-events:none;
     opacity: 0;
@@ -28,8 +28,8 @@ img {
 
 svg {
     margin-top: 25%;
-    margin-left: 69%;
-    height: 45%;
+    margin-left: 70%;
+    height: 40%;
     transform: translateX(-70%);
     opacity: 0;
     max-width: 900px;
@@ -57,7 +57,7 @@ div.back {
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 63%;
+    top: 57%;
 
 }
 button {
@@ -83,7 +83,7 @@ div.speech {
 div.talk {
     position: absolute;
     top: calc(40vw);
-    right: -15%;
+    right: -10%;
     text-align: center;
 }
 
@@ -149,7 +149,7 @@ div.m3 {
     }
 
     div.back {
-        top: 56%;
+        top: 48%;
     }
 
     div.m3 {

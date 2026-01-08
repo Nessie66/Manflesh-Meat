@@ -42,8 +42,9 @@ button {
         font-size: 0.6em;
     }
     svg {
-        height: 43%;
-        margin-left: 50%;
+        /* height: 43%;
+        margin-left: 50%; */
+        width: 100%;
     }
 }
 
