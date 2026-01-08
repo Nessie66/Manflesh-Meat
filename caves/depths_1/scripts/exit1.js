@@ -99,6 +99,7 @@ function guts () {
     console.log("flesh")
     flesh.muted = false;
     flesh.play();
+    console.log(localStorage.getItem("guts"))
 
     if(localStorage.getItem("guts") == null){    
         showSpeech();
@@ -109,7 +110,6 @@ function guts () {
             button1.classList.remove("show");
             button2.classList.add("show");
             speech("but i have thoughts worth revealing.<br>do you know how it feels to put concept on a feeling?&nbsp&nbsp<br>to take a word and change the meaning?")
-            localStorage.setItem("guts", 1) 
             button2.addEventListener("click", function() {
                 button2.classList.remove("show")
                 randomPage();

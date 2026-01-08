@@ -11,7 +11,7 @@ body {
 }
 img {
     margin-top: 25%;
-    margin-left: 72%;
+    margin-left: 69%;
     height: 45%;
     transform: translateX(-70%);
     pointer-events:none;
@@ -28,7 +28,7 @@ img {
 
 svg {
     margin-top: 25%;
-    margin-left: 72%;
+    margin-left: 69%;
     height: 45%;
     transform: translateX(-70%);
     opacity: 0;
@@ -111,8 +111,8 @@ div.show {
 
 div.m2 {
     width: 80%;
-    right: 8%;
-    top: calc(31vw);
+    right: 12%;
+    top: calc(38vw);
 }
 
 div.m3 {
@@ -132,19 +132,20 @@ div.m3 {
         text-align: center;
     }
     svg {
-        height: 40%;
-        margin-left: 73%;
+        height: 35%;
+        margin-left: 72%;
     }
 
     img {
-        height: 40%;
-        margin-left: 73%;
+        height: 35%;
+        margin-left: 72%;
     }
 
     div.m2 {
         width: 80%;
         right: 10%;
-        top: calc(23vw);
+        top: calc(28vw);
+        font-size: 0.8em;
     }
 
     div.back {

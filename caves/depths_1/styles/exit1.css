@@ -38,7 +38,7 @@ button {
 
 p {
     color: rgb(255, 255, 255);
-    margin-left: 20px;
+    margin-left: 0;
     font-size: 0.8em;
 }
 
@@ -158,8 +158,8 @@ div.show {
         font-size: 1.1em;
     }
     div.talk {
-        top: calc(45vh);
-        left: 9%;
+        top: calc(52vh);
+        left: 10%;
     }
     
     button.button {

@@ -111,7 +111,7 @@ window.onload = function () {
     if(localStorage.getItem("wirral") == 1){
         talk.classList.add("m3");
         speech("looking for megaroy? he's in there.<br> careful around that one.")
-        localStorage.setItem("wirrel", 2)  
+        localStorage.setItem("wirral", 2)  
     }
 
     talk.classList.add("m2");
